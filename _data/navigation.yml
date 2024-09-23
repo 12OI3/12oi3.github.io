@@ -1,0 +1,9 @@
+main:
+  - title: "About"
+    url: /about/ 
+  - title: "My Works"
+    url: /my_works/ 
+  - title: "Devlogs"
+    url: /devlogs/ 
+  - title: "Game Design Articles"
+    url: /game_deisgn_articles/ 

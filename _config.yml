@@ -18,21 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: ROB / KuanYen Huang
+subtitle: An average game programer / designer / enjoyer.
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://12oi3.github.io/personal_website/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://12oi3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "12OI3/12oi3.github.io"
+twitter_username: "ROBsayYes"
+github_username:  "12OI3"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
-  - jekyll-feed
   - jekyll-include-cache
 
 # Exclude from processing.
@@ -54,3 +51,60 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# mmistakes syuff
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dirt", "neon", "mint", "plum", "sunrise"
+
+atom_feed:
+  hide: true
+
+author:
+  name: &name ROB / KuanYen Huang
+  avatar: /assets/me.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: >- 
+    An average game programer / designer / enjoyer.
+  email: benbook90@gmail.com
+  links:
+    - label: Resume
+      icon: fas fa-fw fa-user
+      url: &resume /assets/resume.pdf" target="_blank
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: &twitterUrl https://x.com/ROBsayYes" target="_blank
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: &linkedinUrl https://www.linkedin.com/in/kuan-yen-huang-267079294/" target="_blank
+    - label: Itch.io
+      icon: fas fa-fw fa-gamepad
+      url: &itch https://intoxicat-studio.itch.io/" target="_blank
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: &githubUrl https://github.com/12OI3" target="_blank
+    - label: Steam
+      icon: fab fa-fw fa-steam
+      url: &steam https://steamcommunity.com/profiles/76561198395541214/" target="_blank
+      
+# Site Footer
+footer:
+  links:
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: *twitterUrl
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: *linkedinUrl
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: *githubUrl
+    - label: Steam
+      icon: fab fa-fw fa-steam
+      url: *steam
+    - label: Itch.io
+      icon: fas fa-fw fa-gamepad
+      url: *itch
+    - label: Resume
+      icon: fas fa-fw fa-user
+      url: *resume
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
+      url: mailto:benbook90@gmail.com
