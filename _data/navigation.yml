@@ -1,9 +1,9 @@
 main:
   - title: "About"
-    url: /about.html/ 
+    url: /about.html
   - title: "My Works"
-    url: /my_works.html/
+    url: /my_works.html
   - title: "Devlogs"
-    url: /devlogs.html/
+    url: /devlogs.html
   - title: "Game Design Articles"
-    url: /game_deisgn_articles.html/
+    url: /game_deisgn_articles.html
