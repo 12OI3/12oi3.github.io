@@ -1,6 +1,6 @@
 main:
-  - title: "About"
-    url: /about.html
+  - title: "About Me"
+    url: /about_me.html
   - title: "My Works"
     url: /my_works.html
   - title: "Devlogs"

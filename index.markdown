@@ -7,12 +7,13 @@ title: >
     KuanYen Huang
 layout: splash
 header:
+  image: /assets/images/me2.jpg
   overlay_color: "#5e616c"
   actions:
     - label: "About me"
-      url: "/about.html"
+      url: "/about_me.html"
 excerpt: >
-    I am a game developer(programer/designer) from Taiwan. Since, 2018, I have been learning and developing different game projects, mostly using Unity & C#.
+    An average game programmer / designer / enjoyer.
 feature_row:
   - alt: "placeholder"
     title: "What games I have done?"
