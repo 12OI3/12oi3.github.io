@@ -54,9 +54,6 @@ plugins:
 # mmistakes syuff
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dirt", "neon", "mint", "plum", "sunrise"
 
-atom_feed:
-  hide: true
-
 author:
   name: &name ROB / KuanYen Huang
   avatar: /assets/images/me.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
@@ -107,3 +104,42 @@ footer:
     - label: Email
       icon: fas fa-fw fa-envelope-square
       url: mailto:benbook90@gmail.com
+
+atom_feed: # disable feed in footer
+  hide: true
+
+# Front Matter
+defaults:
+  # _work
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: single
+      author_profile: true
+  # _article
+  - scope:
+      path: ""
+      type: article
+    values:
+      layout: single
+      author_profile: true
+  # _devlog
+  - scope:
+      path: ""
+      type: devlog
+    values:
+      layout: single
+      author_profile: true
+
+# Collection
+collections:
+  work:
+    output: true
+    permalink: /:collection/:path/
+  article:
+    output: true
+    permalink: /:collection/:path/
+  devlog:
+    output: true
+    permalink: /:collection/:path/

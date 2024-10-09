@@ -4,9 +4,18 @@
 
 title: "My Works"
 layout: collection
-author_profile: false
+collection: work
+entries_layout: grid
+classes: wide
+sort_order: reverse
+sort_by: number
+author_profile: true
 header:
   overlay_color: "#5e616c"
+  actions:
+    - label: IntoxiCAT Game Studio
+      url: https://intoxicat-studio.itch.io/" target="_blank
 excerpt: >
-    Description.
+  I have been developing games as 'IntoxiCAT Game Studio.'<br/>Feel free to check out my projects here or on Itch.io.
+
 ---
