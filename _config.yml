@@ -56,7 +56,7 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dirt", "n
 
 author:
   name: &name ROB / KuanYen Huang
-  avatar: /assets/images/me.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: /favicon.ico # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: >- 
     An average game programmer / designer / enjoyer.
   email: benbook90@gmail.com
