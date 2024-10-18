@@ -30,9 +30,9 @@ feature_row:
   - alt: "placeholder"
     title: "What games do I like?"
     excerpt: "There are games I loved and wanting to share with you."
-    url: "/game_design_articles.html"
+    url: "/articles.html"
     btn_class: "btn--inverse"
-    btn_label: "Game Design Articles"
+    btn_label: "Articles"
 ---
 
 {% include feature_row %}
