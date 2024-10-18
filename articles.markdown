@@ -7,7 +7,7 @@ layout: collection
 collection: article
 entries_layout: grid
 sort_order: reverse
-sort_by: number
+sort_by: title
 author_profile: true
 classes: wide
 header:
@@ -17,8 +17,5 @@ header:
       url: https://medium.com/@ROBsayYes/" target="_blank
 excerpt: >
     Every game I have played is an experience. <br/>I'll be recording and reviewing some of these interesting experiences here or on Medium.
-    
-gallery:
-  layout: half
 
 ---
