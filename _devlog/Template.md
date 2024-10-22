@@ -5,6 +5,6 @@
 title: "Template"
 excerpt: >
   This is a template file for devlog and SHOULD NOT BE PUBLISHED.
-published: true
+published: false
     
 ---
