@@ -8,7 +8,7 @@ collection: work
 entries_layout: grid
 classes: wide
 sort_order: reverse
-sort_by: number
+sort_by: time
 author_profile: true
 header:
   overlay_color: "#5e616c"

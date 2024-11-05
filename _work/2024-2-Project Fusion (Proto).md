@@ -7,7 +7,7 @@ excerpt: >
   A unique turn based boss rush combat with special order timeline mechanic and artifact fusion system. 
 published: true 
 classes: wide
-number: 8
+time: 2024-2
 
 header:
   teaser: /assets/works/Project Fusion (Proto)/teaser.jpg

@@ -7,7 +7,7 @@ excerpt: >
   A dungeon crawling action game made by Unity created during Global Game Jam 2021, with the theme of ”Lost and Found”.
 published: true 
 classes: wide
-number: 3
+time: 2021-1
 
 header:
   teaser: /assets/works/Lost in Dungeon/teaser.jpg

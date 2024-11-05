@@ -7,7 +7,7 @@ excerpt: >
   A platformer game, but you are the timer?
 published: true 
 classes: wide
-number: 7
+time: 2023-7b
 
 header:
   teaser: /assets/works/Deal Da Time/teaser.jpg

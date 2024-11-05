@@ -7,7 +7,7 @@ excerpt: >
   Yep. Duplicate Solution Unacceptable in this game made by Godot.
 published: true 
 classes: wide
-number: 9
+time: 2024-8
 
 header:
   teaser: /assets/works/Duplicate Solution Unacceptable/teaser.jpg

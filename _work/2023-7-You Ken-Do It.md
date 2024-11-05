@@ -7,7 +7,7 @@ excerpt: >
   A VR kendo game made by Unity focused on Block & Counter mechanic with slashing system from Metal Gear Rising: Revengeance.
 published: true 
 classes: wide
-number: 6
+time: 2023-7a
 
 header:
   teaser: /assets/works/You Ken-Do It/teaser.jpg

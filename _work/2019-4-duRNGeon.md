@@ -7,7 +7,7 @@ excerpt: >
   A dungeon crawler rogue-like game made by Unity if the player can control RNG.
 published: true 
 classes: wide
-number: 2
+time: 2019-4
 
 header:
   teaser: /assets/works/duRNGeon/teaser.jpg

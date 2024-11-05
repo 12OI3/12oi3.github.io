@@ -7,7 +7,7 @@ excerpt: >
   A survivor game made with Unity, where you must defeat monsters, collect ingredients, cook dishes, and strengthen your character.
 published: true 
 classes: wide
-number: 5
+time: 2023-1
 
 header:
   teaser: /assets/works/Survivor For The Feast/teaser.jpg

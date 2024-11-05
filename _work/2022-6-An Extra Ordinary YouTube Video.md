@@ -7,7 +7,7 @@ excerpt: >
   A bullet hell action game made by Cocos with a unique mechanic that you can rewind the boss fight via video progress bar.
 published: true 
 classes: wide
-number: 4
+time: 2022-6
 
 header:
   teaser: /assets/works/An Extra Ordinary YouTube Video/teaser.jpg
