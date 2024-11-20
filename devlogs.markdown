@@ -6,7 +6,7 @@ title: "Devlogs"
 layout: collection
 collection: devlog
 sort_order: reverse
-sort_by: title
+sort_by: time
 author_profile: true
 classes: wide
 header:
