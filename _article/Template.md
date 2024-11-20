@@ -15,12 +15,9 @@ number: 0
     
 ---
 
-<!-- {% capture fig_img %}
-[![Foo](link of picture)](link of game)
-{% endcapture %}
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-</figure> -->
+<!-- 
+[![](link of picture)](link of game)
+  -->
 
 text
 
