@@ -5,7 +5,7 @@
 title: "CreSpiritTalker - Devlog#1"
 excerpt: >
    Showcase of the outsourcing viusal novel tool.
-published: true 
+published: false 
 classes: wide
 time: 2024-11-15
 
