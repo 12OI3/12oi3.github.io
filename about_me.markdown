@@ -14,7 +14,7 @@ header:
     - label: Contact me
       url: mailto:benbook90@gmail.com
 excerpt: >
-  Hi, I am ROB / KuanYen Hunag, a game developer from Taiwan who wants to bring the best game experience to all players.
+  Hi, I am ROB / KuanYen Huang, a game developer from Taiwan who wants to bring the best game experience to all players.
     
 ---
 
