@@ -94,6 +94,10 @@ atom_feed: # disable feed in footer
 
 # Front Matter
 defaults:
+  - scope:
+      path: ""
+    values:
+      css: "main"
   # _projects
   - scope:
       path: ""
@@ -120,8 +124,3 @@ defaults:
       author_profile: false
       classes: superwide
       share: false
-  # custom
-  - scope:
-      path: ""
-    values:
-      css: "custom"
