@@ -1,28 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-
-title: "Template"
+title: "Title"
 excerpt: >
-  This is a template file for devlog and SHOULD NOT BE PUBLISHED.
+  excerpt
 published: false
-classes: wide
-number: 0
+time: 2001-12-15
+header:
+  teaser: /favicon.ico
 
-# header:
-#   teaser: link of picture
-    
 ---
-
-<!-- 
-[![](link of picture)](link of game)
-  -->
-
-text
-
-## Title
-
-text
-
-<!-- [Check the article also on Medium](link fo Medium version) -->

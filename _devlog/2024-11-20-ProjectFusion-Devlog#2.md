@@ -1,12 +1,9 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: "ProjectFusion - Devlog#2"
+title: "ProjectFusion #2"
 excerpt: >
    The failure, the rework, and the break off.
 published: true 
-classes: wide
 time: 2024-11-20
 
 ---
@@ -35,9 +32,9 @@ We found the perfect fit: the auto-battler genre.
 This genre allows players to concentrate on fusing artifacts and discovering the best combinations. 
 The combat, meanwhile, unfolds automatically, reducing the cognitive load and letting the fusion mechanic take center stage.
 
-![](/assets/devlogs/ProjectFusion/ProjectFusion-2-3.png)
+![](/assets/images/devlogs/ProjectFusion-2/3.png)
 
-![](/assets/devlogs/ProjectFusion/ProjectFusion-2-4.png)
+![](/assets/images/devlogs/ProjectFusion-2/4.png)
 
 The result of this rework is what we now call Project Fusion 2.0. 
 Changing to the auto-battler format made the game significantly more intuitive, allowing players to grasp the core mechanic with ease.
@@ -56,15 +53,15 @@ Although switching to Unreal Engine would have been more straightforward, we cho
 
 The gameplay you see now is powered by this custom-built system we made.
 
-![](/assets/devlogs/ProjectFusion/ProjectFusion-2-1.gif)
+![](/assets/images/devlogs/ProjectFusion-2/1.gif)
 
-![](/assets/devlogs/ProjectFusion/ProjectFusion-2-2.gif)
+![](/assets/images/devlogs/ProjectFusion-2/2.gif)
 
 ## The Break Off
 
 While the rework has shown that we are on the right track, we still have a difficult announcement to make: 
 
-Project Fusion will be postponed indefinitely, and development will go on hiatus.
+Project Fusion will be postponed indefinitely.
 
 The primary reason is that our team members have less and less time to dedicate to indie game development. 
 Burnout on the current project has also taken a toll on our enthusiasm and capacity to continue at our previous pace.
@@ -74,3 +71,5 @@ The setbacks we experienced with Project Fusion have taught us valuable lessons 
 
 Someday, we hope to return to Project Fusion and complete it, as it remains a game we deeply care about and aspire to bring to life. 
 Until then, we look forward to embarking on new adventures.
+
+[Take Me To Project Page](/project/2024-2-Project Fusion/)

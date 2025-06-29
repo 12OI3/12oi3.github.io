@@ -19,15 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ROB / KuanYen Huang
+name: ROB
+masthead_title: " "
+
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://12oi3.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "12OI3/12oi3.github.io"
-twitter_username: "ROBsayYes"
-github_username:  "12OI3"
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: null
 plugins:
   - jekyll-include-cache
 
@@ -52,95 +53,75 @@ plugins:
 #   - vendor/ruby/
 
 # mmistakes syuff
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "rob" # "air", "aqua", "contrast", "dark", "default", "dirt", "neon", "mint", "plum", "sunrise"
 
-author:
-  name: &name ROB / KuanYen Huang
-  avatar: /favicon.ico # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: >- 
-    An average game programmer / designer / enjoyer.
-  email: benbook90@gmail.com
+# Site Footer
+footer:
   links:
-    - label: Resume
-      icon: fas fa-fw fa-user
-      url: &resume /assets/resume.pdf" target="_blank
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
       url: &twitterUrl https://x.com/ROBsayYes" target="_blank
     - label: LinkedIn
       icon: fab fa-fw fa-linkedin
       url: &linkedinUrl https://www.linkedin.com/in/kuan-yen-huang-267079294/" target="_blank
-    - label: Itch.io
-      icon: fas fa-fw fa-gamepad
-      url: &itch https://intoxicat-studio.itch.io/" target="_blank
     - label: GitHub
       icon: fab fa-fw fa-github
       url: &githubUrl https://github.com/12OI3" target="_blank
-    - label: Steam
-      icon: fab fa-fw fa-steam
-      url: &steam https://steamcommunity.com/profiles/76561198395541214/" target="_blank
-      
-# Site Footer
-footer:
-  links:
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-      url: *twitterUrl
-    - label: LinkedIn
-      icon: fab fa-fw fa-linkedin
-      url: *linkedinUrl
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: *githubUrl
-    - label: Steam
-      icon: fab fa-fw fa-steam
-      url: *steam
     - label: Itch.io
       icon: fas fa-fw fa-gamepad
-      url: *itch
+      url: &itch https://intoxicat-studio.itch.io/" target="_blank
     - label: Resume
       icon: fas fa-fw fa-user
-      url: *resume
+      url: &resume /assets/resume.pdf" target="_blank
     - label: Email
       icon: fas fa-fw fa-envelope-square
       url: mailto:benbook90@gmail.com
+
+# Collection
+collections:
+  project:
+    output: true
+    permalink: /:collection/:path/
+  devlog:
+    output: true
+    permalink: /:collection/:path/
+  article:
+    output: true
+    permalink: /:collection/:path/
 
 atom_feed: # disable feed in footer
   hide: true
 
 # Front Matter
 defaults:
-  # _work
+  # _projects
   - scope:
       path: ""
-      type: work
+      type: project
     values:
       layout: single
-      author_profile: true
-  # _article
-  - scope:
-      path: ""
-      type: article
-    values:
-      layout: single
-      author_profile: true
-      show_date: true
-  # _devlog
+      author_profile: false
+      share: false
+  # _devlogs
   - scope:
       path: ""
       type: devlog
     values:
       layout: single
-      author_profile: true
-
-# Collection
-collections:
-  work:
-    output: true
-    permalink: /:collection/:path/
-  article:
-    output: true
-    permalink: /:collection/:path/
-  devlog:
-    output: true
-    permalink: /:collection/:path/
+      author_profile: false
+      classes: superwide
+      share: false
+  # _articles
+  - scope:
+      path: ""
+      type: article
+    values:
+      layout: single
+      author_profile: false
+      classes: superwide
+      share: false
+  # custom
+  - scope:
+      path: ""
+    values:
+      css: "custom"

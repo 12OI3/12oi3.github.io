@@ -1,17 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: "Devlogs"
 layout: collection
 collection: devlog
+entries_layout: grid
+classes: superwide supergrid-list
 sort_order: reverse
 sort_by: time
-author_profile: true
-classes: wide
-header:
-  overlay_color: "#5e616c"
-excerpt: >
-    Posting the devlogs of my developing stuffs.
-
 ---
+
+Posting the devlogs of my developing stuffs. 
+<br>
+Sharing progress, ideas, and lessons learned along the way.

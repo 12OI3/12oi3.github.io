@@ -1,8 +1,8 @@
 main:
-  - title: "About Me"
-    url: /about_me.html
-  - title: "My Works"
-    url: /my_works.html
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects.html
   - title: "Devlogs"
     url: /devlogs.html
   - title: "Articles"

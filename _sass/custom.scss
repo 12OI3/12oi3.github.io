@@ -1,0 +1,295 @@
+.superwide{ // custom wide classes (ignore the sidebar part)
+  @extend .wide; // extend the existing wide class
+
+  .page { // override page styles
+    width: 100%;
+    padding-inline-start: 7%;
+    padding-inline-end: 7%;
+  }
+
+  .archive { // override archive styles
+    width: 100%;
+    padding-inline-start: 7%;
+    padding-inline-end: 7%;
+  }
+}
+
+.feature__wrapper{ // Setting for overall feature row margin bottom
+  margin-bottom: 1em;;
+}
+
+.feature__wrapper .archive__item-teaser{ // Setting for overall feature row items pictures
+  margin-bottom: 0em; // Change margin
+  img { // Add padding and change rendering
+    image-rendering: pixelated;
+  }
+}
+
+.feature__wrapper .feature__item--feature{ // feature row style
+  @extend.feature__item--center; // extend the existing feature__item class
+
+  background-color: mix(transparent, #000, 90%);
+  margin-bottom: 1em;
+  border-radius: 8px;
+
+  margin-bottom: 0; // Disable margin bottom in feature item
+
+  // archive base style
+  .archive__item {
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // hover animation
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .archive__item-title { // override the title setting
+    font-size: $type-size-5; // set font size
+  }
+
+  .archive__item-teaser { // Set teaser image to be full width
+    width: 100%;
+  }
+}
+  
+.feature__wrapper .feature__item--project{ // project row style
+  @extend.feature__item; // extend the existing feature__item class
+
+  background-color: mix(transparent, #000, 90%);
+  margin-bottom: 1em;
+  border-radius: 8px;
+
+  text-align: center; // Center all text in project item
+  position: relative; //relarive position for button to be absolute positioned
+
+  // archive base style
+  .archive__item {
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // hover animation
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .archive__item-body { // override the body setting
+    flex: auto; 
+  }
+
+  .archive__item-title { // override the title setting
+    font-size: $type-size-5; // set font size
+  }
+
+  .btn--light-outline{ // full card size transparent button
+    color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.btn--light-outline{ // override color styles
+  color: $text-color; // text color
+  border: 1px solid $text-color; // border color
+  &:visited {
+    color: $text-color; // visited color
+  }
+  &:hover {
+    color: $text-color // hover color
+  }
+}
+
+.sidebar{ // override sidebar text margin and font size
+  h3{
+    font-size: $type-size-6;
+  }
+  p{
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    font-size: $type-size-7;
+  }
+}
+
+.supergrid-list .grid__item { // custom supergrid-list classes (card like list)
+
+  // Overall grid item setting
+  background-color: mix(transparent, #000, 90%);
+  margin-bottom: 2em;
+  width: 100%;
+  clear: both;
+  margin-inline-start: 0;
+  border-radius: 8px;
+
+  // hover animation
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  // archive base style
+  .archive__item {
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 1rem;
+
+    @include breakpoint($medium) {
+      display: grid;
+      grid-auto-columns: minmax(0, 1fr) 320px; // Second column will always be 250px wide
+    }
+  }
+
+  // archive title base style
+  .archive__item-title {
+    display: block;
+    margin: 0.25rem 0 0 0;
+    font-size: $type-size-4;
+
+    @include breakpoint($medium) {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      font-size: $type-size-5;
+    }
+  }
+
+  // archive exceprt base style
+  .archive__item-excerpt {
+    display: block;
+    margin: 0.25rem 0 0 0;
+    font-size: $type-size-5;
+
+    @include breakpoint($medium) {
+      grid-column-start: 1;
+      grid-row-start: 2;
+      font-size: $type-size-6;
+    }
+  }
+
+  // archive teaser base style => disable
+  .archive__item-teaser {
+    display: none;
+    width: 100%;
+    max-height: 180px;
+    border-radius: 8px;
+
+    @include breakpoint($medium) {
+      display: block;
+      grid-column-start: 2;
+      grid-row-start: span 3;
+    }
+  }
+}
+
+.supergrid-card .grid__item { // custom supergrid-card classes (project card)
+
+  // Overall grid item setting
+  background-color: mix(transparent, #000, 90%);
+  margin-bottom: 1em;
+  border-radius: 8px;
+
+  @include breakpoint($small) {
+
+    float: inline-start;
+    width: span(5 of 10);
+
+    &:nth-child(2n + 1) {
+      clear: both;
+      margin-inline-start: 0;
+    }
+
+    &:nth-child(2n + 2) {
+      clear: none;  
+      margin-inline-start: gutter(of 10);
+    }
+  }
+
+  @include breakpoint($medium) {
+
+    margin-inline: 0; /* override margin*/
+    width: span(4 of 12);
+
+    &:nth-child(2n + 1) {
+      clear: none;
+    }
+
+    &:nth-child(3n + 1) {
+      clear: both;
+      margin-inline-start: 0;
+    }
+
+    &:nth-child(3n + 2) {
+      clear: none;
+      margin-inline-start: gutter(1 of 12);
+    }
+
+    &:nth-child(3n + 3) {
+      clear: none;
+      margin-inline-start: gutter(1 of 12);
+    }
+  }
+
+  // archive base style
+  .archive__item {
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // hover animation
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  // archive title base style
+  .archive__item-title {
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+  }
+
+  // archive exceprt base style
+  .archive__item-excerpt {
+    display: block; // fix to always show
+    margin: 0.25rem 0 0 ;
+    text-align: center;
+    flex: 1;
+  }
+
+  // archive teaser base style
+  .archive__item-teaser {
+    width: 100%;
+    border-radius: 8px;
+
+    @include breakpoint($medium) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      max-height: 180px;
+
+      img {
+        object-fit: contain; 
+      }
+    }
+  }
+}
