@@ -4,7 +4,7 @@ title: "Vocabutory #1"
 excerpt: >
    The new game about vocabulary factory I am currently working on.
 published: true 
-time: 2025-07-07
+time: 2025-07-06
 
 ---
 
