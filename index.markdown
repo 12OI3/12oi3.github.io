@@ -59,7 +59,7 @@ devlogs:
     <br>
     <br>
     <br>
-    Latest devlog: [Vocabutory #1](/devlog/2025-07-06-Vocabutory-Devlog%231)
+    Latest devlog: [Vocabutory #1](/devlog/2025-07-06-Vocabutory-Devlog%231/)
   url: "/devlogs.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
