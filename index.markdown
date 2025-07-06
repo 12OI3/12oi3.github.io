@@ -59,7 +59,7 @@ devlogs:
     <br>
     <br>
     <br>
-    Latest devlog: [CreSpiritTalker #2](/devlog/2025-06-28-CreSpiritTalker-Devlog%232)
+    Latest devlog: [Vocabutory #1](/devlog/2025-07-07-Vocabutory-Devlog#231)
   url: "/devlogs.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
