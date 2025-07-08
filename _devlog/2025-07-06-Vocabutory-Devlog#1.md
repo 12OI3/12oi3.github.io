@@ -2,7 +2,7 @@
 
 title: "Vocabutory #1"
 excerpt: >
-   The new game about vocabulary factory I am currently working on.
+   The new prototype game about vocabulary factory I am recently testing.
 published: true 
 time: 2025-07-06
 
@@ -53,9 +53,10 @@ But as I experimented with different mechanics, I began to wonder:
 <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/fi80rl9pz80?controls=0" frameborder="0" allowfullscreen></iframe>
 <b></b>
 
-So I built a third prototype, this time exploring the idea as an **idle** game. My solution was simple. Instead of punishing the player for failing to meet a goal, you just keep scoring points. Your word placement doesn’t cause you to lose, but precise placement helps you score faster. I also made the map unlimited, since the small board in the earlier versions could get frustrating. Now, you can place words wherever you like and watch them generate points, just like a farmer watching his crops grow.
-The scale of the game is now smaller compared to the original concept, but I believe there’s still plenty of room to uncover interesting systems. Next, I’ll need to figure out how to add synergy systems and how to make the visuals more engaging and satisfying.
+So I built a third prototype, this time exploring the idea as an **incremental** game. My solution was simple. Instead of punishing the player for failing to meet a goal, you just keep scoring points. Your word placement doesn’t cause you to lose, but precise placement helps you score faster. I also made the map unlimited, since the small board in the earlier versions could get frustrating. Now, you can place words wherever you like and watch them generate points, just like a farmer watching his crops grow.
 
-My goal is to finish a playable prototype by the end of July, and launch a Steam page in August to showcase the game. It’s a bit of a rush, but also an exciting challenge.
+However, after I research about incremental games, I realize an important fact. How the gameplay of incremental game will attract players, and what makes incremental game fun is its numerical design. After several tests through, I believe that the concept of messing around with words is probably the least interesting idea as an incremental game. During this month of development, I realize that I didn't truly decide what is the core experience needed to be, and I keep changing the basic core design. This definitely not a good sign, and I think that I should give up the idea.
 
-Well, time to get back to work. See you next time with my new game “**Vocabutory.**” 
+Still, I make the last version of playable prototype. There is still some time for me to make a new game, and I'm still not going to give up yet!
+
+[Take Me To Project Page](/project/2025-7-Vocabutory/)
