@@ -63,5 +63,5 @@ An incremental prototype game about vocabulary factory, spelling words to gain n
 The game is currently in development and will continue to receive updates. Stay tuned if you're interested in the project—and feel free to share your thoughts and feedback!
 
 ## Devlogs:
-* [#1](/devlog/2025-07-06-Vocabutory-Devlog%231)
-* [#2](/devlog/2025-07-25-Vocabutory-Devlog%232)
+* [#1](/devlog/2025-07-06-Vocabutory-Devlog1)
+* [#2](/devlog/2025-07-25-Vocabutory-Devlog2)

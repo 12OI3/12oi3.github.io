@@ -84,5 +84,5 @@ The game features many unique mechanics. Feel free to check out [this page](http
 Unfortunately, the demo didn’t meet our expectations, so we decided to rework the entire game. In the future, we will show our new Project Fusion eventually, allowing players worldwide to fuse artifacts freely and create the ultimate party of their own!
 
 ## Devlogs:
-* [#1](/devlog/2023-11-09-ProjectFusion-Devlog%231)
-* [#2](/devlog/2024-11-20-ProjectFusion-Devlog%232)
+* [#1](/devlog/2023-11-09-ProjectFusion-Devlog1)
+* [#2](/devlog/2024-11-20-ProjectFusion-Devlog2)

@@ -79,5 +79,5 @@ Unfortunately, since this is a commissioned outsourcing project, I’m not able 
 However, if you’re curious to learn more, feel free to check out the devlogs!
 
 ## Devlogs:
-* [#1](/devlog/2024-11-15-CreSpiritTalker-Devlog%231)
-* [#2](/devlog/2025-06-28-CreSpiritTalker-Devlog%232)
+* [#1](/devlog/2024-11-15-CreSpiritTalker-Devlog1)
+* [#2](/devlog/2025-06-28-CreSpiritTalker-Devlog2)
