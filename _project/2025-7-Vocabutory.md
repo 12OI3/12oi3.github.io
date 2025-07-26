@@ -26,13 +26,13 @@ gallery:
 sidebar:
   - title: Vocabutory
     text: > 
-      An incremental prototype game about vocabulary factory, crossing word to gain numbers.
+      An incremental prototype game about vocabulary factory, spelling words to gain numbers.
   - title: Tags
     text: > 
       #Incremental #Prototype #Unity
   - title: Develop Date
     text: > 
-      2025/6 ~ 2025/7
+      2025/6 ~ PRESENT
   - title: Team size
     text: > 
       1
@@ -48,19 +48,20 @@ sidebar:
 
 ---
 
-An incremental prototype game about vocabulary factory, crossing word to gain numbers.
+An incremental prototype game about vocabulary factory, spelling words to gain numbers.
 
 {% include gallery %}
 
 ## Feature
 
-* Unique Crossword mechanic combined with incremental system.
+* Spelling word mechanics combined with incremental system.
 
 ## Description
 
-《Vocabutory》is a testing prototype. The player needs to fill the game with words in the inventory, occupying a special tile to gain a point multiplier. With more stack characters on the screen, the more points you will gain.
+《Vocabutory》is an experimental prototype where players operate factories to generate words. Use upgrades and perks to boost your efficiency and produce more characters per second!
 
-After testing several different approaches, I believe that the current state of the game makes it difficult to continue developing in the future, so I have decided to release the latest testing version of the game and won't update it in the future.
+The game is currently in development and will continue to receive updates. Stay tuned if you're interested in the project—and feel free to share your thoughts and feedback!
 
 ## Devlogs:
 * [#1](/devlog/2025-07-06-Vocabutory-Devlog%231)
+* [#2](/devlog/2025-07-25-Vocabutory-Devlog%232)
