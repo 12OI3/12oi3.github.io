@@ -58,9 +58,6 @@ minimal_mistakes_skin: "rob" # "air", "aqua", "contrast", "dark", "default", "di
 # Site Footer
 footer:
   links:
-    - label: Twitter
-      icon: fab fa-fw fa-twitter-square
-      url: &twitterUrl https://x.com/ROBsayYes" target="_blank
     - label: LinkedIn
       icon: fab fa-fw fa-linkedin
       url: &linkedinUrl https://www.linkedin.com/in/kuan-yen-huang-267079294/" target="_blank
