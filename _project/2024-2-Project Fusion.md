@@ -71,7 +71,7 @@ A unique turn based boss rush combat with special order timeline mechanic and ar
 
 ## Feature
 
-* Unique Order Timeline Combat,More actions per turn, more risks you faced, only careful planning lead to victory.
+* Unique Order Timeline Combat - More actions per turn, more risks you faced, only careful planning lead to victory.
 * Exposed, Break and Combo - Delay your position on the timeline to expose your enemy, hitting them to break them and combo them with everything you got.
 * Fuse The Artifacts - Fuse every artifacts and inherit skills from the materials freely, and craft the most powerful artifact to destroy your enemy. 
 

@@ -83,7 +83,7 @@ A survivor game made with Unity, where you must defeat monsters, collect ingredi
 * An abundance of stunning visual effects paired with highly satisfying action combat.
 * Six different bios with diverse weather effects.
 * A total of 144 dishes to create by gathering ingredients.
-* Stacking dish to make skill stonger. Let Him Cook!!!
+* Stacking dish to make skill stronger. Let Him Cook!!!
 
 ## Description
 
