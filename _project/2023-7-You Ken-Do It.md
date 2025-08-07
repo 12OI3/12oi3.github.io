@@ -64,7 +64,7 @@ sidebar:
       <br>
       - User interface program.
       <br>
-      - ug hotfix and some of the sub features.
+      - Bug hotfix and some of the sub features.
 
 ---
 
