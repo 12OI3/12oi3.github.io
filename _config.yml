@@ -69,7 +69,7 @@ footer:
       url: &itch https://intoxicat-studio.itch.io/" target="_blank
     - label: Resume
       icon: fas fa-fw fa-user
-      url: &resume /assets/resume.pdf" target="_blank
+      url: &resume /assets/Huang_KuanYen_Resume.pdf" target="_blank
     - label: Email
       icon: fas fa-fw fa-envelope-square
       url: mailto:benbook90@gmail.com

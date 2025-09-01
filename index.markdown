@@ -14,7 +14,7 @@ intro:
     Over the past several years, I’ve worked on a variety of small to mid-scale game projects, often wearing multiple hats—including <span style="color: gold;">**programmer**</span> , <span style="color: gold;">**designer**</span>, and <span style="color: gold;">**producer**</span>. These diverse roles have enabled me to contribute effectively both as a collaborative team member and as an independent developer.
     <br>
     <br>
-    [Resume](/assets/resume.pdf){: .btn .btn--light-outline .btn--large}  [Contact](mailto:benbook90@gmail.com){: .btn .btn--light-outline .btn--large}
+    [Resume](/assets/Huang_KuanYen_Resume.pdf){: .btn .btn--light-outline .btn--large}  [Contact](mailto:benbook90@gmail.com){: .btn .btn--light-outline .btn--large}
 
 features:
 - image_path: /favicon.ico # Special feature image
