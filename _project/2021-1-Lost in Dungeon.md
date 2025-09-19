@@ -8,6 +8,7 @@ excerpt: >
 published: true 
 classes: wide
 time: 2021-1
+number: 0
 
 header:
   teaser: /assets/images/projects/Lost in Dungeon/teaser.jpg

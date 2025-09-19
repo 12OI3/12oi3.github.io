@@ -8,6 +8,7 @@ excerpt: >
 published: true 
 classes: wide
 time: 2019-4
+number: 0
 
 header:
   teaser: /assets/images/projects/duRNGeon/teaser.jpg

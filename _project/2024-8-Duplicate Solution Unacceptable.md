@@ -8,6 +8,7 @@ excerpt: >
 published: true 
 classes: wide
 time: 2024-8
+number: 0
 
 header:
   teaser: /assets/images/projects/Duplicate Solution Unacceptable/teaser.jpg
