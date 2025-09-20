@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2025-6
-number: 3
 
 header:
   teaser: /assets/images/projects/CreSpiritTalker/teaser.png

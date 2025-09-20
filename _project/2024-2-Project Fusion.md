@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2024-2
-number: 0
 
 header:
   teaser: /assets/images/projects/Project Fusion/teaser.jpg

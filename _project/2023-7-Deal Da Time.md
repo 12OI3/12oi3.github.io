@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2023-7b
-number: 0
 
 header:
   teaser: /assets/images/projects/Deal Da Time/teaser.jpg

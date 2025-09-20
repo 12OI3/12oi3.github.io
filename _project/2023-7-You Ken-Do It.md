@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2023-7a
-number: 2
 
 header:
   teaser: /assets/images/projects/You Ken-Do It/teaser.jpg

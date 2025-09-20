@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2025-7
-number: 0
 
 header:
   teaser: /assets/images/projects/Vocabutory/teaser.jpg

@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2023-1
-number: 1
 
 header:
   teaser: /assets/images/projects/Survivor For The Feast/teaser.jpg

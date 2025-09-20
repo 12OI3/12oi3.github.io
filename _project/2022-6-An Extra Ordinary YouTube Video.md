@@ -8,7 +8,6 @@ excerpt: >
 published: true 
 classes: wide
 time: 2022-6
-number: 0
 
 header:
   teaser: /assets/images/projects/An Extra Ordinary YouTube Video/teaser.jpg
