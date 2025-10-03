@@ -11,7 +11,10 @@ intro:
     An average game programmer / designer / enjoyer.
     <br>
     <br>
-    Carnegie Mellon University graduate student with 7 years of game development experience. Experienced in diverse projects across multiple roles—including <span style="color: gold;">**programmer**</span>, <span style="color: gold;">**designer**</span>, and <span style="color: gold;">**producer**</span>—demonstrating the ability to contribute effectively both as a collaborative team member and as an independent developer.
+    Carnegie Mellon University graduate student with 7 years of game development experience, specializing in <span style="color: gold;">**gameplay
+    programming**</span>, <span style="color: gold;">**tool creation**</span>, and <span style="color: gold;">**system design**</span>. Experienced across diverse projects in roles including <span style="color: gold;">**programmer**</span>,
+    <span style="color: gold;">**designer**</span>, and <span style="color: gold;">**producer**</span>, with a proven ability to deliver impactful results both as a collaborative team member and as an
+    independent developer.
     <br>
     <br>
     [Resume](/assets/Huang_KuanYen_Resume.pdf){: .btn .btn--light-outline .btn--large}  [Contact](mailto:benbook90@gmail.com){: .btn .btn--light-outline .btn--large}
