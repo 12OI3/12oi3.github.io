@@ -7,7 +7,7 @@ excerpt: >
   #VR #Action #Sport #Unity
 published: true 
 classes: wide
-time: 2023-7a
+time: 2023-07a
 
 header:
   teaser: /assets/images/projects/You Ken-Do It/teaser.jpg

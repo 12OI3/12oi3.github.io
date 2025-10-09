@@ -59,4 +59,4 @@ However, after I research about incremental games, I realize an important fact. 
 
 Still, I make the last version of playable prototype. There is still some time for me to make a new game, and I'm still not going to give up yet!
 
-[Take Me To Project Page](/project/2025-7-Vocabutory/)
+[Take Me To Project Page](/project/2025-07-Vocabutory/)

@@ -7,7 +7,7 @@ excerpt: >
   #GameJam #Puzzle #Godot
 published: true 
 classes: wide
-time: 2024-8
+time: 2024-08
 
 header:
   teaser: /assets/images/projects/Duplicate Solution Unacceptable/teaser.jpg

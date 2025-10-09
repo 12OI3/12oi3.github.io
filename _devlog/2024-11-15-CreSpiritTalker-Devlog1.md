@@ -36,4 +36,4 @@ In addition, users can insert text commands to add effects during dialogues and 
 
 The basic structure of the tool was finished. I will continue to add default functions like custom buttons, vocal & sfx & bgm settings, sprites controller...
 
-[Take Me To Project Page](/project/2025-6-CreSpiritTalker/)
+[Take Me To Project Page](/project/2025-06-CreSpiritTalker/)

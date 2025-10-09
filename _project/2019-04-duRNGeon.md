@@ -7,7 +7,7 @@ excerpt: >
   #RougeLike #AutoBattler #Unity 
 published: true 
 classes: wide
-time: 2019-4
+time: 2019-04
 
 header:
   teaser: /assets/images/projects/duRNGeon/teaser.jpg

@@ -7,7 +7,7 @@ excerpt: >
   #GameJam #Puzzle #Platform #Unity
 published: true 
 classes: wide
-time: 2023-7b
+time: 2023-07b
 
 header:
   teaser: /assets/images/projects/Deal Da Time/teaser.jpg

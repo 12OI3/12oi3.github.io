@@ -49,4 +49,4 @@ That said, there are still major challenges ahead. Incremental games thrive on s
 
 There’s still a long road ahead, but based on the latest testing results, I’m excited to keep going. I’ll continue experimenting with mechanics and working toward a unique, eye-catching art style that can make Vocabutory stand out.
 
-[Take Me To Project Page](/project/2025-7-Vocabutory/)
+[Take Me To Project Page](/project/2025-07-Vocabutory/)

@@ -72,4 +72,4 @@ The setbacks we experienced with Project Fusion have taught us valuable lessons 
 Someday, we hope to return to Project Fusion and complete it, as it remains a game we deeply care about and aspire to bring to life. 
 Until then, we look forward to embarking on new adventures.
 
-[Take Me To Project Page](/project/2024-2-Project Fusion/)
+[Take Me To Project Page](/project/2024-02-Project Fusion/)

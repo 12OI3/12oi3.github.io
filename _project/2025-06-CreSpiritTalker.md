@@ -7,7 +7,7 @@ excerpt: >
   #Plugin #VisualNovel #Unity
 published: true 
 classes: wide
-time: 2025-6
+time: 2025-06
 
 header:
   teaser: /assets/images/projects/CreSpiritTalker/teaser.png

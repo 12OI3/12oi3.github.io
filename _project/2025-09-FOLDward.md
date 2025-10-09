@@ -7,7 +7,7 @@ excerpt: >
   #ETC-BVW #AdaptiveController
 published: true 
 classes: wide
-time: 2025-9
+time: 2025-09
 
 header:
   teaser: /assets/images/projects/FOLDward/teaser.jpg

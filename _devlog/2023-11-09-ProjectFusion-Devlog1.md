@@ -98,4 +98,4 @@ In the future, we plan to release a more polished version of the demo early next
 
 If you have a strong interest in this project, feel free to follow our Itch.io account to receive notifications when we have updates. Once again, we appreciate all the players who have provided us with feedback. Thank you! 
 
-[Take Me To Project Page](/project/2024-2-Project Fusion/)
+[Take Me To Project Page](/project/2024-02-Project Fusion/)

@@ -34,21 +34,21 @@ projects:
   title: "CreSpiritTalker"
   excerpt: >
     #Plugin #VisualNovel #Unity
-  url: "/project/2025-6-CreSpiritTalker/"
+  url: "/project/2025-06-CreSpiritTalker/"
   btn_label: "More"
   btn_class: "btn--light-outline"
 - image_path: /assets/images/projects/Survivor For The Feast/teaser.jpg
   title: "Survivor For The Feast"
   excerpt: >
     #Action #SurvivorLike #Cooking #Unity
-  url: "/project/2023-1-Survivor For The Feast/"
+  url: "/project/2023-01-Survivor For The Feast/"
   btn_label: "More"
   btn_class: "btn--light-outline"
 - image_path: /assets/images/projects/You Ken-Do It/teaser.jpg
   title: "You Ken-Do It"
   excerpt: >
     #VR #Action #Sport #Unity
-  url: "/project/2023-7-You Ken-Do It/"
+  url: "/project/2023-07-You Ken-Do It/"
   btn_label: "More"
   btn_class: "btn--light-outline"
 

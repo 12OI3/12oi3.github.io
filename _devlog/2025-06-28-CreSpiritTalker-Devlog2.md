@@ -57,4 +57,4 @@ Many new helper functions and commands have been added for easier integration an
 Version 0.6.5 marks a temporarily complete milestone for CreSpiritTalker. While I may continue to make minor updates as needed, most of the core features are now in place.
 This has been my first experience developing a Unity plugin tool—and I’ve learned so much through this experence.
 
-[Take Me To Project Page](/project/2025-6-CreSpiritTalker/)
+[Take Me To Project Page](/project/2025-06-CreSpiritTalker/)

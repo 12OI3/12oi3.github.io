@@ -7,7 +7,7 @@ excerpt: >
   #BulletHell #Action #Cocos
 published: true 
 classes: wide
-time: 2022-6
+time: 2022-06
 
 header:
   teaser: /assets/images/projects/An Extra Ordinary YouTube Video/teaser.jpg

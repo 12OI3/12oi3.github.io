@@ -7,7 +7,7 @@ excerpt: >
   #TurnBaseCombat #Unity #Prototype
 published: true 
 classes: wide
-time: 2024-2
+time: 2024-02
 
 header:
   teaser: /assets/images/projects/Project Fusion/teaser.jpg
