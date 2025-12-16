@@ -35,7 +35,7 @@ gallery:
 sidebar:
   - title: BEAT-Shojo
     text: > 
-      A Smash-like fighting game featuring players shouting at microphone to launch attacks.
+      A Smash-like fighting game where players shout into a microphone to launch attacks.
   - title: Tags
     text: > 
       #ETC-BVW #Fighting #Microphone
@@ -67,16 +67,16 @@ sidebar:
 
 ---
 
-A Smash-like fighting game featuring players shouting at microphone to launch attacks.
+A Smash-like fighting game where players shout into a microphone to launch attacks.
 
 {% include gallery %}
 
 ## Feature
 
 * Created during Carnegie Mellon University Entertainment Technology Center’s signature course, Building Virtual Worlds.
-* Giving task of making a game for the festival, we try to design a game that can attract guests with loudness, make them want to try and replay.
-* Developed using Unity, we made a detailed fighting game system plus a well crafted hit-stop feeling.
-* At the end, we implmented three unique characters, special rule and cool UI.
+* Given the task of creating a game for a festival setting, we designed an fighting game that attracts guests through loud and make them want to try and replay.
+* Developed using Unity, featuring a detailed fighting game system plus impactful combat feedback.
+* Implemented three unique playable characters, special match rules, and a stylish UI.
 
 <b></b>
 <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/iG5ZljUus-E?controls=0" frameborder="0" allowfullscreen></iframe>
@@ -84,6 +84,6 @@ A Smash-like fighting game featuring players shouting at microphone to launch at
 
 ## Description
 
-Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. The last round of the class asked us to make a game that could be present in the Festival, and we focus on how to make guests being attracted, want to try, and want to replay. We decided to implment microphone mechanics, let guests yell at microphone to attack, using loudness to attract people. We also made a well crafted fighting game that is easy to understand, thus letting guests want to try by themself. The competitive aspect of the game will make players want to replay the game, and realize that the game has some advanced movements.
+Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. In the final round of the course, we were asked to develop a game suitable for presentation at a public festival. Our primary design goal was to create an experience that would immediately draw attention, encourage guests to try it, and motivate them to replay. To achieve this, we implemented microphone-based mechanics that allow players to shout into a microphone to trigger attacks, using sound and excitement to attract nearby audiences. At the same time, we designed the Smash-like fighting game system that is easy to understand at a glance, lowering the barrier for first-time players. As players spend more time with the game, its competitive nature and deeper mechanics become apparent, encouraging repeated play and mastery of advanced movement and combat techniques.
 
 [Watch our festival presentation](https://www.youtube.com/watch?v=P1I1-MPE_Ww&t=7028s)
