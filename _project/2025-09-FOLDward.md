@@ -53,11 +53,13 @@ sidebar:
     text: >
       Programmer:
       <br>
-      - Overall gameplay system
+      - Main structure and overall gameplay system.
       <br>
       Designer:
       <br>
-      - Detail game mechanics and QoL, level design, part of UIs
+      - Participated Core Gameplay Design.
+      <br>
+      - Detail game mechanics and QoL, level design, part of UIs.
 
 ---
 
@@ -77,6 +79,6 @@ A game that 2 players collbaorate to fold different types of paper planes to sho
 
 ## Description
 
-Carnegie Mellon University Entertaiment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. Out prompt is "Fold paper in shapes," and we quicklly came up with a cooperative game in which two players fold different paper planes to pop balloons. In this round, we were also required to integrate the Xbox Adaptive Controller into our project. To achieve this, we built two custom button machines that serve as the game’s interface.  
+Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. Out prompt is "Fold paper in shapes," and we quicklly came up with a cooperative game in which two players fold different paper planes to pop balloons. In this round, we were also required to integrate the Xbox Adaptive Controller into our project. To achieve this, we built two custom button machines that serve as the game’s interface.  
 
 [Watch our final day presentation](https://www.youtube.com/watch?v=r4fR_0VXqPI&t=9000s)

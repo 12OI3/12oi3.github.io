@@ -7,7 +7,7 @@ excerpt: >
   #ETC-BVW #VR
 published: true 
 classes: wide
-time: 2025-10
+time: 2025-10a
 
 header:
   teaser: /assets/images/projects/MICDROP/teaser.jpg
@@ -58,11 +58,14 @@ sidebar:
       Programmer:
       <br>
       - Implemented overall gameplay system.
+      <br>
       - Constructed players' VR input and refine the experience.
       <br>
       Designer:
       <br>
-      - Designed detail game mechanics and story.
+      - Participated Core Gameplay Design.
+      <br>
+      - Designed detail game mechanics, QoL, level design and story.
 
 ---
 
@@ -83,6 +86,6 @@ A VR game you played as the legend singer - MIKE, and this is your last concert.
 
 ## Description
 
-Carnegie Mellon University Entertaiment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. Out prompt is "Wave to a crowd," and we quicklly came up with a VR experience where you played as the legend singer MIKE during your last concert. In this round, we were also required to integrate Meta Quest 3 into our project, designing an indirect control system to ensure that even first-time VR users could experience our game intuitively and without confusion. To achieve this, we experimented with various mechanics and conducted extensive playtesting. Ultimately, we decided to initially limit player options to help them become familiar with the rules, and then gradually grant them more freedom to explore the world. At last, they will encounter in an impactful ending.
+Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. Out prompt is "Wave to a crowd," and we quicklly came up with a VR experience where you played as the legend singer MIKE during your last concert. In this round, we were also required to integrate Meta Quest 3 into our project, designing an indirect control system to ensure that even first-time VR users could experience our game intuitively and without confusion. To achieve this, we experimented with various mechanics and conducted extensive playtesting. Ultimately, we decided to initially limit player options to help them become familiar with the rules, and then gradually grant them more freedom to explore the world. At last, they will encounter in an impactful ending.
 
 [Watch our final day presentation](https://www.youtube.com/watch?v=r4fR_0VXqPI&t=9000s)
