@@ -4,7 +4,7 @@ title: "Building Virtual World"
 excerpt: >
    My crazy first semester in CMU ETC
 published: true 
-time: 2025-12-15
+time: 2025-12-16
 
 ---
 
