@@ -103,6 +103,7 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      comments: true
   # _devlogs
   - scope:
       path: ""
@@ -112,6 +113,7 @@ defaults:
       author_profile: false
       classes: superwide
       share: false
+      comments: true
   # _articles
   - scope:
       path: ""
@@ -121,3 +123,9 @@ defaults:
       author_profile: false
       classes: superwide
       share: false
+      comments: true
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "12oi3"
