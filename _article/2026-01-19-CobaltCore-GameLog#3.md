@@ -1,6 +1,6 @@
 ---
 
-title: "Cobalt Core - How To Make Players Close a Rogue-like Game?"
+title: "Cobalt Core - How To Make Players Close a Rogue-like Game Properly?"
 excerpt: >
   The best word I can describe the ending of Cobalt Core is beautiful.
 published: true
