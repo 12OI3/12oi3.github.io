@@ -10,10 +10,7 @@ header:
 
 ---
 
-<b></b>
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/VkmG4ozEh1s?controls=0" frameborder="0" allowfullscreen></iframe>
-<b></b>
-
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/ss_ec95a283483f0438be40d033f08b9d956e748d54.1920x1080.jpg?t=1729097431)](https://store.steampowered.com/app/753640/Outer_Wilds/)
 # Spoiler Alert! This Is My Favorite Indie Game So Far.
 
 I’ve played countless indie games, and choosing a favorite has always been difficult for me.
@@ -24,6 +21,7 @@ Of course, I want to recommend Outer Wilds to everyone and share the feelings it
 Thus, if you have even the slightest interest in sci-fi, space, unknown, secrets, and mystery, close the browser right now and give Outer Wilds a try.
 I’d rather you not read this essay than spoil the game for you since you might want to try it someday.
 
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/ss_fe4a6504c49efa6e7cb9ecda7aeddb6f7451a2cc.1920x1080.jpg?t=1729097431)](https://store.steampowered.com/app/753640/Outer_Wilds/)
 # The Best Space Adventure of My Life
 
 What I experienced in Outer Wilds was the most thrilling and surprising space adventure of my life.
@@ -58,6 +56,8 @@ The music ends.
 And I know it is time to go on.
 I touch the singularity, witness a new Big Bang, and become its first explorer.
 
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/ss_09f0fa8d9b8d7da1408cf4e03303d896cbd9be18.1920x1080.jpg?t=1729097431)](https://store.steampowered.com/app/753640/Outer_Wilds/)
+{: .text-center}
 # A Connection to My Heart Of Curiosity
 
 It’s all so improbable — yet it feels like fate.

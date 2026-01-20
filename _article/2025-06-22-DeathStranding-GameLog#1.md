@@ -10,10 +10,8 @@ header:
 
 ---
 
-<b></b>
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/Ghk1RFr51xo?controls=0" frameborder="0" allowfullscreen></iframe>
-<b></b>
-
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.1920x1080.jpg?t=1764081491)](https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/)
+{: .text-center}
 # What Kind of Game Do You Want to Make?
 
 As someone who aspires to become a game developer, one of the most common questions I get asked is:
@@ -28,6 +26,8 @@ So I kept asking myself, again and again:
 
 Eventually, Death Stranding gave me the answer.
 
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/ss_4b6d7d010d1701b2b57bf8ef1b4975a04b3d632f.1920x1080.jpg?t=1764081491)](https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/)
+{: .text-center}
 # Death Stranding Is a Perfect Game
 
 I love Death Stranding.
@@ -52,6 +52,8 @@ A perfect game lives in the hearts of certain players, and I’m grateful to be 
 Once a game becomes perfect for someone, it will leave a deep and lasting impact.
 Death Stranding do change my life.
 
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/ss_87653eb3d360766a994adccd82767b34961b37a5.1920x1080.jpg?t=1764081491)](https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/)
+{: .text-center}
 # Death Stranding Connected Me and Hideo Kojima
 
 The impact of Death Stranding grew gradually over time.
