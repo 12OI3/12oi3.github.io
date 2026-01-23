@@ -62,7 +62,7 @@ devlogs:
     <br>
     <br>
     <br>
-    Latest devlog: [Vocabutory #2](/devlog/2025-07-25-Vocabutory-Devlog2/)
+    Latest devlog: [Building Virtual World](/devlog/2025-12-16-BuildingVirtualWorld-Devlog/)
   url: "/devlogs.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
@@ -78,7 +78,7 @@ articles:
     <br>
     <br>
     <br>
-    Latest article: [Outer Wilds - My Heart Of Curiosity](/article/2025-06-23-OuterWilds-GameLog%232/)
+    Latest article: [Cobalt Core - How To Let Players End a Rogue-like Game Properly?](/article/2026-01-19-CobaltCore-GameLog%233/)
   url: "/articles.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
