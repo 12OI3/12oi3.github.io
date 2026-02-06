@@ -103,7 +103,6 @@ defaults:
       layout: single
       author_profile: false
       share: false
-      read_time: true
       comments: true
   # _devlogs
   - scope:
