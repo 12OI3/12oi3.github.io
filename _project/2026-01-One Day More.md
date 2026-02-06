@@ -4,10 +4,10 @@
 
 title: "One Day More"
 excerpt: >
-  #GameJam #Puzzle #Unity
+  #GameJam #Narrative #Unity
 published: true 
 classes: wide
-time: 2026-01
+time: 2026-01a
 
 header:
   teaser: /assets/images/projects/One Day More/teaser.jpg
