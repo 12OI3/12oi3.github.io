@@ -78,7 +78,7 @@ articles:
     <br>
     <br>
     <br>
-    Latest article: [Cobalt Core - How To Let Players End a Rogue-like Game Properly?](/article/2026-01-19-CobaltCore-GameLog%233/)
+    Latest article: [Persona 5 Royal - What Are JRPGs Missing Nowadays?](/article/2026-02-17-Persona5Royal-GameLog#5%235/)
   url: "/articles.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
