@@ -10,12 +10,14 @@ header:
 
 ---
 
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/ss_38d09e40dd56df43a1bb083dc94e27cb1360b526.1920x1080.jpg?t=1763530018)](https://store.steampowered.com/app/1687950/Persona_5_Royal/)
+{: .text-center}
+
 # JRPGs Need a Strong Hook at the Start
 
 One of the biggest problems JRPGs face nowadays is how to keep players engaged until the “fun part” begins. I love the JRPG genre, but I also admit that many titles have a slow start. The first ten hours can feel like a drag. As players become more and more impatient, I believe modern JRPGs truly need a strong hook right at the beginning, a hook to let players continue playing the game.
 
-[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/ss_38d09e40dd56df43a1bb083dc94e27cb1360b526.1920x1080.jpg?t=1763530018)](https://store.steampowered.com/app/1687950/Persona_5_Royal/)
-{: .text-center}
+![](/assets/images/articles/GameLog5/7.jpg)
 
 Persona 5 Royal is a great example of a JRPG with a powerful opening hook. I absolutely love this game. I have nearly 300 hours of playtime across three full playthroughs, and I’ve collected every in-game achievement. While most players may not be as obsessive as I am, there’s no doubt that Persona 5 Royal is one of the best and most influential JRPGs in recent years. It’s almost unbelievable how mainstream a JRPG can become—and I believe its incredible opening plays a huge role in that success.
 
@@ -38,6 +40,7 @@ With the amazing soundtrack performed by Lyn and composed by Shōji Meguro, the 
 You parkour across the ceiling, only to encounter a group of enemies. Another cutscene plays—the enemies transform into grotesque creatures. Yet your character shows no fear.
 
 ![](/assets/images/articles/GameLog5/3.jpg)
+
 “Take ’em down, Joker!”
 
 You launch into a flashy combat sequence, and the battle begins.
