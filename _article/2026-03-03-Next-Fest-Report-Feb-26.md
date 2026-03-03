@@ -194,4 +194,4 @@ Stunning pixel art, lighting, and cinematography. Combat aims for a SIFU-like fe
 
 ## Lost and Found Co.
 This demo wasn’t released during this Next Fest, but I have to mention it. The drawings are adorable and detailed, and the environments are colorful and lively. There are already tons of interactive objects and events in a single area — and you’re telling me there are five environments in the demo? That’s impressive.
-](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2101390/ss_6e32893870ec6fe95a619884e26ad23ab7831ac2.1920x1080.jpg?t=1769806878)](https://store.steampowered.com/app/2101390/Lost_and_Found_Co/)
+[![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2101390/ss_6e32893870ec6fe95a619884e26ad23ab7831ac2.1920x1080.jpg?t=1769806878)](https://store.steampowered.com/app/2101390/Lost_and_Found_Co/)
