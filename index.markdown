@@ -78,7 +78,7 @@ articles:
     <br>
     <br>
     <br>
-    Latest article: [Öoo - A Gate That Is Not Locked, Yet Locked](/article/2026-03-03-Öoo-GameLog#6%235/)
+    Latest article: [Öoo - A Gate That Is Not Locked, Yet Locked](/article/2026-03-04-Öoo-GameLog%236/)
   url: "/articles.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
