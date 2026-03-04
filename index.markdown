@@ -78,7 +78,7 @@ articles:
     <br>
     <br>
     <br>
-    Latest article: [Persona 5 Royal - What Are JRPGs Missing Nowadays?](/article/2026-02-17-Persona5Royal-GameLog#5%235/)
+    Latest article: [Öoo - A Gate That Is Not Locked, Yet Locked](/article/2026-03-03-Öoo-GameLog#6%235/)
   url: "/articles.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
