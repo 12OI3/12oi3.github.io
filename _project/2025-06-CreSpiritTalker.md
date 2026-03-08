@@ -51,9 +51,9 @@ A Unity editor tool designed to help users create visual novel scenes, also a co
 
 ## Feature
 
-* A highly customizable Unity editor tool featuring its own dedicated editor window.
-* Designed for creating both visual novel-style games and general in-game dialogue interfaces.
-* Supports embedding text commands directly into dialogues, with full support for developer-defined custom commands.
+* Created a customizable Unity editor tool featuring its own editor window for comprehensive settings and databases.
+* Developed a system for embedding text commands with support for developer-defined custom commands.
+* Fixed issues related to saveing in new versions, implemented a system to safely migrate old save data to new versions
 
 ## Description
 
