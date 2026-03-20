@@ -59,7 +59,7 @@ devlogs:
     <br>
     <br>
     <br>
-    Latest devlog: [Building Virtual World](/devlog/2025-12-16-BuildingVirtualWorld-Devlog/)
+    Latest devlog: [GDC 2026](/devlog/2026-03-20-GDC-Devlog/)
   url: "/devlogs.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
