@@ -45,7 +45,7 @@ These lines perfectly capture his characterm -->
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1364780/ss_449d488d2edbe785c4e6010fede1c3b8dae8e388.1920x1080.jpg?t=1773812087)](https://store.steampowered.com/app/1364780/Street_Fighter_6/)
 
-Still, I often feel a bit disappointed that I rarely get to enjoy the full track during a match.
+I often feel a bit disappointed that I rarely get to enjoy the full track during a match.
 As a player, I love character themes.
 But as a developer, I’ve started questioning their necessity.
 If the game rarely gives players the chance to hear them fully, should we spent time to make them great?
