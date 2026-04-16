@@ -61,6 +61,7 @@ This is Ed, a Psycho Power–wielding youth rapidly aged through Shadaloo’s ex
 
 His theme, [König oder Feigling (“King or Coward”)](https://www.youtube.com/watch?v=_2Y3UBG1oOs), is one of my favorite tracks in SF6.
 It’s a German rap piece that strongly reflects his identity.
+Please listen to it first so that you may understand my explanation later.
 
 The theme itself is excellent—but what I want to highlight is how Capcom integrates it into gameplay.
 
