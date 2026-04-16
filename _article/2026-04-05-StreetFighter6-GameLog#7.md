@@ -26,9 +26,9 @@ For example, in Guilty Gear -Strive-, players can defeat their opponent in less 
 My point is: it’s hard to truly enjoy character themes in fighting games because matches are so short.
 
 Still, character themes are something I’m deeply obsessed with.
-Creators use them to express a character’s personality and motivation.
+Creators use them to express a character’s personality and motivation, and I believe this is why some players are so obsessed with fighting game character themes.
 
-[![](/assets/images/articles/GameLog7/HC.jpg)](https://www.youtube.com/watch?v=uq67Oi5CRLI)
+<!-- [![](/assets/images/articles/GameLog7/HC.jpg)](https://www.youtube.com/watch?v=uq67Oi5CRLI)
 {: .text-center}
 
 For example, Happy Chaos is the main villain in GGST’s story. He constantly introduces randomness into the narrative and seems to enjoy spreading chaos everywhere.
@@ -41,14 +41,14 @@ These are the opening lines of his theme,[Drift](https://www.youtube.com/watch?v
 <br>
 *That's about it.*
 
-These lines perfectly capture his characterm, and I believe this is why some players are so obsessed with fighting game character themes.
+These lines perfectly capture his characterm -->
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1364780/ss_449d488d2edbe785c4e6010fede1c3b8dae8e388.1920x1080.jpg?t=1773812087)](https://store.steampowered.com/app/1364780/Street_Fighter_6/)
 
 Still, I often feel a bit disappointed that I rarely get to enjoy the full track during a match.
 As a player, I love character themes.
 But as a developer, I’ve started questioning their necessity.
-If the game rarely gives players the chance to hear them fully… should they still be made?
+If the game rarely gives players the chance to hear them fully, should we spent time to make them great?
 
 That question answered when I played Street Fighter 6.
 
@@ -57,7 +57,7 @@ That question answered when I played Street Fighter 6.
 [![](https://www.streetfighter.com/6/assets/images/character/ed/ed_ss01.jpg)](https://www.streetfighter.com/6/character/ed)
 {: .text-center}
 
-This is Ed—a Psycho Power–wielding youth rapidly aged through Shadaloo’s experiments, now on a journey to free others like him.
+This is Ed, a Psycho Power–wielding youth rapidly aged through Shadaloo’s experiments, now on a journey to free others like him.
 
 His theme, [König oder Feigling (“King or Coward”)](https://www.youtube.com/watch?v=_2Y3UBG1oOs), is one of my favorite tracks in SF6.
 It’s a German rap piece that strongly reflects his identity.
@@ -123,7 +123,7 @@ Tension builds with each round, and focus sharpens as players approach the final
 
 I highly recommend listening to the full tracks and comparing them to actual matches since every SF6 theme follows this structure.
 
-# I Think Dynamic Music Is Really Powerful.
+# I Think Dynamic/Adaptive Music Is Really Powerful.
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/921570/ss_fe9f05cf35e6b4d561c5be76a8b93726ab6be517.1920x1080.jpg?t=1775027150)](https://store.steampowered.com/app/921570/OCTOPATH_TRAVELER/)
 
@@ -139,7 +139,7 @@ Devil May Cry 5 dynamically adjusts music based on the player’s style rank.
 Death Stranding 2 also showcases dynamic music, which movement affects the soundtrack — drums intensify while traveling and piano fade when leaving the path.
 This was introduced by Kojima himself during a [game premiere event](https://www.youtube.com/watch?v=gOV2Rx-ncxM&t=2258).
 
-There are more and more examples of this design, but still not enough in my opinion.
+There tons examples of dynamic music design, but still not enough in my opinion.
 I believe this is because dynamic music is difficult to implement.
 It not only requires composers who deeply understand the game but also demands systems that allow seamless transitions and dynamic changes which create challenges for both designers and programmers.
 
