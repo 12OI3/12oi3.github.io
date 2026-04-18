@@ -65,8 +65,11 @@ footer:
       icon: fab fa-fw fa-github
       url: &githubUrl https://github.com/12OI3" target="_blank
     - label: Itch.io
-      icon: fas fa-fw fa-gamepad
+      icon: fas fa-fw fa-wrench
       url: &itch https://intoxicat-studio.itch.io/" target="_blank
+    - label: Steam
+      icon: fa fa-fw fa-gamepad
+      url: &steam https://steamcommunity.com/profiles/76561198395541214/" target="_blank
     - label: Resume
       icon: fas fa-fw fa-user
       url: &resume /assets/Huang_KuanYen_Resume.pdf" target="_blank
