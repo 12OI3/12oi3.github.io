@@ -2,7 +2,7 @@
 
 title: "Forestrike - You Really Don’t Need Your Game To Be Roguelike."
 excerpt: >
-  Should I Make A Roguelike Game?
+  Should I make a roguelike game? (NO.)
 published: true
 time: 2026-04-20
 header:
