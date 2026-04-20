@@ -35,7 +35,7 @@ For those unfamiliar with the genre, roguelikes usually have two defining charac
 
 Procedural generation ensures that each run feels unique, while permanent death forces players to learn from failure rather than memorize layouts. That’s exactly what makes roguelikes fun. You learn the game, not the map, and keep improving until you succeed. 
 
-I’m a big roguelike/roguelite fan myself and have played nearly a hundred games in the genre, and I love roguelikes.
+I’m a big roguelike/roguelite fan myself and have played nearly a hundred games in the genre.
 
 However, should you make your game a roguelike?
 
