@@ -10,9 +10,9 @@ header:
 
 ---
 
-# I Love Character Theme In Fighting Game
-
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1384160/ss_0f29aebacb81b972782382dbf4c0079f0d37b330.1920x1080.jpg?t=1774423106)](https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/)
+
+# I Love Character Theme In Fighting Game
 
 The maximum length of a fighting game match is usually 99 seconds × 3 rounds, plus some transition time—around 5 minutes total.
 However, due to the fast pace of fighting games, rounds can end extremely quickly.
