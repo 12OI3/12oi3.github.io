@@ -4,7 +4,7 @@
 
 title: "Bodega Budget"
 excerpt: > 
-  #Financial Literacy #ETC-Semester Project #Unity
+  #Financial Literacy #ETC-Project #Unity
 published: true 
 classes: wide
 time: 2026-05
