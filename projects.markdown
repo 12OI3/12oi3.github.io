@@ -8,6 +8,6 @@ sort_order: reverse
 sort_by: time
 ---
 
-I have been developing games as 'IntoxiCAT Game Studio.'
+Making game is hard, but fun.
 <br>
 Feel free to check out my projects here.
