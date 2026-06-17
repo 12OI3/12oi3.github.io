@@ -65,3 +65,5 @@ The game is currently in development and will continue to receive updates. Stay 
 ## Devlogs:
 * [#1](/devlog/2025-07-06-Vocabutory-Devlog1)
 * [#2](/devlog/2025-07-25-Vocabutory-Devlog2)
+* [#3](/devlog/2026-06-12-Vocabutory-Devlog3)
+
