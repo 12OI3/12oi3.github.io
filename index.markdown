@@ -59,7 +59,7 @@ devlogs:
     <br>
     <br>
     <br>
-    Latest devlog: [GDC 2026](/devlog/2026-03-20-GDC-Devlog/)
+    Latest devlog: [Vocabutory #3](/devlog/2026-06-12-Vocabutory-Devlog3/)
   url: "/devlogs.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
@@ -75,7 +75,7 @@ articles:
     <br>
     <br>
     <br>
-    Latest article: [Öoo - A Gate That Is Not Locked, Yet Locked](/article/2026-03-04-Öoo-GameLog%236/)
+    Latest article: [Next Fest Report: Jun 2026](/article/2026-07-02-Next-Fest-Report-Jun-26/)
   url: "/articles.html"
   btn_label: "More"
   btn_class: "btn--light-outline"
