@@ -8,10 +8,10 @@ intro:
 - image_path: favicon.png 
   title: "ROB / KUANYEN HUANG"
   excerpt: >
-    An average game programmer / designer / enjoyer.
+    An average game enjoyer.
     <br>
     <br>
-    Carnegie Mellon University graduate student with 8 years of game development experience, specializing in <span style="color: gold;">**gameplay programming**</span>, <span style="color: gold;">**system design**</span>, and <span style="color: gold;">**UI/UX**</span>. Experienced across diverse projects in roles including <span style="color: gold;">**programmer**</span>, <span style="color: gold;">**designer**</span>, and <span style="color: gold;">**producer**</span>, with a proven ability to deliver impactful results both as a collaborative team member and as an independent developer.
+    Carnegie Mellon University graduate student with 8 years of game development experience as a <span style="color: gold;">**technical game designer**</span>, specializing in <span style="color: gold;">rapid prototyping</span>, <span style="color: gold;">design tools making</span>, and <span style="color: gold;">UI/UX</span>. With experience across diverse projects, I bridge design and programming to explore mechanics, refine player experiences, and collaborate effectively with multidisciplinary teams throughout development.
     <br>
     <br>
     [Resume](/assets/Huang_KuanYen_Resume.pdf){: .btn .btn--light-outline .btn--large}  [Contact](mailto:benbook90@gmail.com){: .btn .btn--light-outline .btn--large}
