@@ -1,0 +1,28 @@
+title: ROB / KuanYen Huang
+name: ROB
+url: https://12oi3.github.io
+navigation:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects.html
+  - title: Devlogs
+    url: /devlogs.html
+  - title: Articles
+    url: /articles.html
+footer:
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/kuan-yen-huang-267079294/
+  - label: GitHub
+    url: https://github.com/12OI3
+  - label: Itch.io
+    url: https://intoxicat-studio.itch.io/
+  - label: Steam
+    url: https://steamcommunity.com/profiles/76561198395541214/
+  - label: Resume
+    url: /assets/Huang_KuanYen_Resume.pdf
+  - label: Email
+    url: mailto:benbook90@gmail.com
+comments:
+  provider: disqus
+  shortname: 12oi3

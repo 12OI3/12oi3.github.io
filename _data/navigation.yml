@@ -1,9 +1,0 @@
-main:
-  - title: "Home"
-    url: /
-  - title: "Projects"
-    url: /projects.html
-  - title: "Devlogs"
-    url: /devlogs.html
-  - title: "Articles"
-    url: /articles.html

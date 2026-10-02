@@ -1,6 +1,12 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-node_modules
-.vscode
+# Dependencies and local package cache
+node_modules/
+.pnpm-store/
+
+# Generated previews
+artifacts/
+
+# Local editor settings and environment
+.vscode/
+.env
+.env.*
+!.env.example
