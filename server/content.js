@@ -14,7 +14,7 @@ export function parseDocument(source, filename = '') {
   return { data, body: source.slice(match[0].length) };
 }
 
-// Read on every request: adding or editing Markdown requires no build or restart.
+// Shared by the live development server and the GitHub Pages build.
 export async function loadContent(contentRoot = path.join(root, 'content')) {
   const site = yaml.load(await readFile(path.join(contentRoot, 'site.yml'), 'utf8'), { schema: yaml.JSON_SCHEMA });
   const pages = {};

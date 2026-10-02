@@ -4,6 +4,7 @@ node_modules/
 
 # Generated previews
 artifacts/
+dist/
 
 # Local editor settings and environment
 .vscode/

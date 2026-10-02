@@ -1,6 +1,6 @@
 # ROB portfolio
 
-A Node.js website rendered on the server from Markdown, with projects, devlogs, articles, and standalone pages. No static-site build step is required.
+A Markdown website published at https://12oi3.github.io using GitHub Pages, without Jekyll. A small Node.js build generates HTML with the same templates used by the local preview. Browser interactions, including image galleries and mobile navigation, work on the published site.
 
 ## Run locally
 
@@ -11,9 +11,18 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open http://127.0.0.1:3000. For normal operation use `pnpm start`. You can also use `npm install` and `npm start`, but pnpm uses the checked-in lockfile for reproducible installs.
+Open http://127.0.0.1:3000. You can also use `pnpm start` without automatic code restarts. Use pnpm so installs follow the checked-in lockfile.
 
-Markdown is read on every request. Save a content file and refresh the page; no build or server restart is needed. `pnpm dev` additionally restarts the server when application code changes.
+The development server reads Markdown on every request. Save a content file and refresh the page; no build or server restart is needed locally. `pnpm dev` additionally restarts the server when application code changes. The public GitHub Pages website updates after you push and its build finishes.
+
+To preview the actual files that GitHub Pages publishes:
+
+```sh
+pnpm build
+pnpm preview
+```
+
+Open http://127.0.0.1:4173. Rebuild after changing content to update this static preview.
 
 ## Structure
 
@@ -27,9 +36,11 @@ content/
 assets/           Original images and résumé
 public/           Browser CSS and JavaScript
   icons/          Site icons and homepage illustrations
-server/           Content loader, Markdown renderer, page layouts, HTTP server
+server/           Shared content loader, renderer, layouts, development server
 test/             Route, content-rendering, and live-update checks
-scripts/          Current-content audit
+scripts/          Content audit, static build, static preview
+.github/workflows/pages.yml  Build, test, and publish to GitHub Pages
+dist/             Generated website (ignored by Git; recreated by each build)
 ```
 
 ## Add a project, devlog, or article
@@ -91,32 +102,32 @@ Raw HTML is enabled to preserve the original embedded videos and formatting. Mar
 
 Edit `content/pages/home.md` for the introduction, featured projects, and latest devlog/article links. These selections remain manually curated, as on the original site. Its `:::feature name type` components refer to arrays in the same file's front matter.
 
-Edit `projects.md`, `devlogs.md`, or `articles.md` in `content/pages/` for collection introductions. Add a new file such as `content/pages/about.md` with `title` front matter to create `/about.html` immediately. Add a navigation entry in `content/site.yml` if desired.
+Edit `projects.md`, `devlogs.md`, or `articles.md` in `content/pages/` for collection introductions. Add a new file such as `content/pages/about.md` with `title` front matter to create `/about.html` on the next build (immediately in the development preview). Add a navigation entry in `content/site.yml` if desired.
 
 Links between projects and devlogs are still normal Markdown links. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
 
 ## Deployment
 
-This application needs a running Node.js server. GitHub Pages cannot host it because Pages only serves static files. Deploy the repository to a Node.js service or your own server:
+The workflow in `.github/workflows/pages.yml` tests and builds the site, then publishes only `dist/` to **https://12oi3.github.io/**. It runs automatically when you push to **`Develop(Codex)`**. Pull requests targeting that branch run checks without publishing. Jekyll is not used and the README is never included in the deployment.
 
-```sh
-pnpm install --frozen-lockfile --prod
-HOST=0.0.0.0 PORT=3000 NODE_ENV=production pnpm start
-```
+One-time repository setup:
 
-On Windows PowerShell, set environment variables with `$env:HOST = '0.0.0.0'` and `$env:PORT = '3000'` before `pnpm start`. For public hosting, configure HTTPS with the hosting provider or reverse proxy.
+1. Open [Settings → Pages](https://github.com/12OI3/12oi3.github.io/settings/pages).
+2. Under **Build and deployment → Source**, select **GitHub Actions**, replacing “Deploy from a branch.”
+3. If the `github-pages` environment restricts deployment branches, allow `Develop(Codex)` in **Settings → Environments → github-pages**.
+4. Commit and push these changes to `Develop(Codex)`. Check the **Deploy website to GitHub Pages** run in the repository's Actions tab.
 
-An optional Dockerfile is included (`docker build -t rob-portfolio .`, then `docker run -p 3000:3000 rob-portfolio`). `/healthz` is the health-check endpoint. Application errors are logged server-side.
+For future updates, edit Markdown or assets, commit, and push to `Develop(Codex)`. No manual HTML editing or committing `dist/` is needed. The build copies browser files to `/ui/`, media to `/assets/`, and preserves existing page and icon URLs, including filenames containing spaces, Unicode, or `#`. It also supplies a custom `404.html` and `.nojekyll` marker.
 
-Environment variables:
+GitHub Pages serves generated files; it does not run the development server. Node.js is used only during the build and local development. The existing Dockerfile remains available as an optional way to run the live Markdown server outside GitHub Pages.
+
+Local development environment variables:
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `PORT` | `3000` | Listening port |
-| `HOST` | `127.0.0.1` | Bind address; use `0.0.0.0` in containers/hosted services |
-| `SITE_URL` | `url` in `content/site.yml` | Public canonical URL for the new deployment |
-
-Content in a deployed repository updates when that repository is redeployed. For updates without deployment, mount a persistent `content/` directory and edit files there. The server reads those files immediately; it does not write content itself.
+| `PORT` | `3000` (`4173` for static preview) | Listening port |
+| `HOST` | `127.0.0.1` | Preview bind address |
+| `SITE_URL` | `url` in `content/site.yml` | Canonical URL override; leave unset for the existing GitHub Pages address |
 
 The existing Disqus shortname and original URL/identifier are retained so comment threads can be reused. Visitors click **Load comments** to load Disqus. The original `url` in `content/site.yml` stays the comment-thread base URL even when `SITE_URL` changes. Actual thread continuity depends on Disqus's existing records and must be checked on the deployed domain.
 
@@ -125,9 +136,10 @@ The existing Disqus shortname and original URL/identifier are retained so commen
 ```sh
 pnpm test
 pnpm check:content
+pnpm build
 ```
 
-The tests cover all 42 collection pages, galleries, embedded-video URLs, homepage/listing routes, filenames, missing pages, draft exclusion, new standalone pages, and content edits without restarting.
+The tests cover all 42 collection pages, galleries, embedded-video URLs, homepage/listing routes, filenames, missing pages, draft exclusion, new standalone pages, and local content edits without restarting. They also build the static output and check its page links, assets, journal listings, custom 404, removal of stale output, and exclusion of source files.
 
 `check:content` audits the current rendered pages, including local navigation links, thumbnails, galleries, sidebar links, icons, and browser assets. Run it after editing content to check for broken references or unrendered template markup.
 
