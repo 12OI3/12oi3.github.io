@@ -2,10 +2,8 @@
 intro:
 - image_path: favicon.png 
   title: "ROB / KUANYEN HUANG"
+  tagline: "An average game enjoyer."
   excerpt: >
-    An average game enjoyer.
-    <br>
-    <br>
     Carnegie Mellon University graduate student with 8 years of game development experience as a <span style="color: gold;">**technical game designer**</span>, specializing in <span style="color: gold;">rapid prototyping</span>, <span style="color: gold;">design tools making</span>, and <span style="color: gold;">UI/UX</span>. With experience across diverse projects, I bridge design and programming to explore mechanics, refine player experiences, and collaborate effectively with multidisciplinary teams throughout development.
     <br>
     <br>
@@ -44,13 +42,11 @@ projects:
 devlogs:
 - image_path: devlog.png
   title: "DEVLOGS"
-  excerpt: >
+  excerpt: |
     Posting the devlogs of my developing stuffs. 
     <br>
     Sharing progress, ideas, and lessons learned along the way.
-    <br>
-    <br>
-    <br>
+
     Latest devlog: [Vocabutory #3](/devlog/2026-06-12-Vocabutory-Devlog3/)
   url: "/devlogs.html"
   btn_label: "More"
@@ -59,13 +55,11 @@ devlogs:
 articles:
 - image_path: article.png
   title: "ARTICLES"
-  excerpt: >
+  excerpt: |
     Every game I play is a unique experience.
     <br>
     I will review some of the most memorable ones here.
-    <br>
-    <br>
-    <br>
+
     Latest article: [Next Fest Report: Jun 2026](/article/2026-07-02-Next-Fest-Report-Jun-26/)
   url: "/articles.html"
   btn_label: "More"
@@ -73,8 +67,6 @@ articles:
 
 :::feature intro center
 :::
-.
-{.text-center}
 
 <h1>PROJECTS</h1>
 {.text-center}
@@ -94,6 +86,3 @@ articles:
 :::
 
 </div>
-
-.
-{.text-center}

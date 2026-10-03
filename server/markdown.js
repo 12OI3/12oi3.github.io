@@ -42,6 +42,16 @@ function gallery(data, name, layout) {
 
 function feature(data, name, type) {
   if (!Array.isArray(data[name])) throw new Error(`Unknown feature row: ${name}`);
+  if (name === 'intro') {
+    return `<section class="feature-row feature-center">${data[name].map(item => `
+      <article class="feature-item">
+        <header class="intro-header">
+          ${item.image_path ? `<img class="feature-image" src="${escapeHtml(localUrl(item.image_path.startsWith('/') ? item.image_path : '/' + item.image_path))}" alt="${escapeHtml(item.alt)}" fetchpriority="high">` : ''}
+          <div class="intro-identity"><h1>${escapeHtml(item.title)}</h1>${renderMarkdown(item.tagline || '', data)}</div>
+        </header>
+        <div class="feature-copy">${renderMarkdown(item.excerpt || '', data)}</div>
+      </article>`).join('')}</section>`;
+  }
   return `<section class="feature-row feature-${escapeHtml(type)}">${data[name].map(item => `
     <article class="feature-item">
       ${item.image_path ? `<img class="feature-image" src="${escapeHtml(localUrl(item.image_path.startsWith('/') ? item.image_path : '/' + item.image_path))}" alt="${escapeHtml(item.alt)}" ${name === 'intro' ? 'fetchpriority="high"' : 'loading="lazy"'}>` : ''}

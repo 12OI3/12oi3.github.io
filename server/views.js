@@ -17,7 +17,7 @@ function layout(content, { site, title, active = '/', description = '', url = '/
 </head><body class="${e(bodyClass)}">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead"><div class="nav-shell">
-<a class="brand" href="/" aria-label="${e(site.title)} home"><img src="/favicon.png" alt="" width="36" height="36"><span>${e(site.name)}<span class="brand-dot">.</span></span></a>
+<a class="brand" href="/" aria-label="${e(site.title)} home"><span>${e(site.title.toUpperCase())}</span></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
 <nav id="navigation" aria-label="Main navigation">${site.navigation.map(link => `<a href="${e(link.url)}"${active === link.url ? ' aria-current="page"' : ''}>${e(link.title)}</a>`).join('')}</nav>
 </div></header>
@@ -32,15 +32,19 @@ function layout(content, { site, title, active = '/', description = '', url = '/
 export function homePage(state) {
   const page = state.pages.home;
   return layout(`<div class="home-content">${renderMarkdown(page.body, page.data)}</div>`, {
-    site: state.site, bodyClass: 'home', description: plainText(page.data.intro?.[0]?.excerpt || ''),
+    site: state.site, bodyClass: 'home', description: plainText([page.data.intro?.[0]?.tagline, page.data.intro?.[0]?.excerpt].filter(Boolean).join(' ')),
   });
+}
+
+function displayDate(value) {
+  return String(value ?? '').replace(/^(\d{4}-\d{2}(?:-\d{2})?)[a-z]+$/i, '$1');
 }
 
 function entryCard(doc, index) {
   const image = doc.data.header?.teaser;
   return `<article class="entry-card ${image ? 'has-image' : 'text-only'}">
     ${image ? `<a class="entry-image" href="${e(doc.url)}" tabindex="-1" aria-hidden="true"><img src="${e(localUrl(image))}" alt="" ${index < 3 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></a>` : ''}
-    <div class="entry-copy"><span class="entry-date">${e(doc.data.time)}</span><h2><a href="${e(doc.url)}">${e(doc.data.title)}</a></h2>
+    <div class="entry-copy"><span class="entry-date">${e(displayDate(doc.data.time))}</span><h2><a href="${e(doc.url)}">${e(doc.data.title)}</a></h2>
     <div class="entry-excerpt">${renderMarkdown(doc.data.excerpt || '')}</div></div></article>`;
 }
 
@@ -56,7 +60,7 @@ function journalEntries(entries) {
     <section class="journal-year-group" aria-labelledby="journal-year-${e(year)}">
       <h2 class="journal-year" id="journal-year-${e(year)}">${e(year)}</h2>
       ${docs.map(doc => {
-        const rawDate = String(doc.data.time);
+        const rawDate = displayDate(doc.data.time);
         const date = /^\d{4}-\d{2}-\d{2}$/.test(rawDate) ? new Date(`${rawDate}T00:00:00Z`) : null;
         const dateLabel = date && !Number.isNaN(date.getTime()) ? dateFormat.format(date) : rawDate;
         return `<article class="journal-entry">
@@ -89,7 +93,7 @@ export function documentPage(state, doc) {
   const commentUrl = new URL(doc.url, state.site.url).href;
   const commentsHtml = comments?.provider === 'disqus' && doc.data.comments !== false ? `
     <section class="comments" aria-label="Comments"><h2>Comments</h2><div id="disqus_thread" data-shortname="${e(comments.shortname)}" data-url="${e(commentUrl)}" data-identifier="${e(`/${doc.type}/${doc.slug}`)}"><button class="button load-comments" type="button">Load comments</button></div></section>` : '';
-  return layout(`<div class="document-top"><a class="back-link" href="/${name}.html">← ${e(title)}</a><span class="eyebrow">${e(doc.data.time)}${doc.type !== 'project' ? ` · ${readingTime} min read` : ''}</span></div>
+  return layout(`<div class="document-top"><a class="back-link" href="/${name}.html">← ${e(title)}</a><span class="eyebrow">${e(displayDate(doc.data.time))}${doc.type !== 'project' ? ` · ${readingTime} min read` : ''}</span></div>
     <div class="document-layout ${sidebar ? 'with-sidebar' : ''}">
     <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1></header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${commentsHtml}</article>
     ${sidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}</aside>` : ''}
