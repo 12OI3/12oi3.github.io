@@ -1,4 +1,5 @@
 ---
+project: "2024-02-Project Fusion"
 title: "ProjectFusion #2"
 excerpt: >
    The failure, the rework, and the break off.

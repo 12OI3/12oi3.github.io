@@ -1,7 +1,6 @@
 ---
 title: "An Extra Ordinary YouTube Video"
-excerpt: >
-  #BulletHell #Action #Cocos
+tags: ["BulletHell","Action","Cocos"]
 published: true 
 time: 2022-06
 

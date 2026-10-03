@@ -1,7 +1,6 @@
 ---
 title: "Survivor For The Feast"
-excerpt: >
-  #Action #SurvivorLike #Cooking #Unity
+tags: ["Action","SurvivorLike","Cooking","Unity"]
 published: true 
 time: 2023-01
 

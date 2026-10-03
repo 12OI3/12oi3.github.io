@@ -1,4 +1,5 @@
 ---
+project: "2025-06-CreSpiritTalker"
 title: "CreSpiritTalker #1"
 excerpt: >
    Showcase of the outsourcing viusal novel tool.

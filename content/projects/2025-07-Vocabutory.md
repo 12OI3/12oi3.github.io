@@ -1,7 +1,6 @@
 ---
 title: "Vocabutory"
-excerpt: >
-  #Incremental #Prototype #Unity
+tags: ["Incremental","Prototype","Unity"]
 published: true 
 time: 2025-07
 
@@ -56,9 +55,3 @@ An incremental prototype game about vocabulary factory, spelling words to gain n
 《Vocabutory》is an experimental prototype where players operate factories to generate words. Use upgrades and perks to boost your efficiency and produce more characters per second!
 
 The game is currently in development and will continue to receive updates. Stay tuned if you're interested in the project—and feel free to share your thoughts and feedback!
-
-## Devlogs:
-* [#1](/devlog/2025-07-06-Vocabutory-Devlog1)
-* [#2](/devlog/2025-07-25-Vocabutory-Devlog2)
-* [#3](/devlog/2026-06-12-Vocabutory-Devlog3)
-

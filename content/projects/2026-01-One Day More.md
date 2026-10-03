@@ -1,7 +1,6 @@
 ---
 title: "One Day More"
-excerpt: >
-  #GameJam #Narrative #Unity
+tags: ["GameJam","Narrative","Unity"]
 published: true 
 time: 2026-01a
 

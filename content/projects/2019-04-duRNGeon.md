@@ -1,7 +1,6 @@
 ---
 title: "duRNGeon"
-excerpt: >
-  #RougeLike #AutoBattler #Unity 
+tags: ["RougeLike","AutoBattler","Unity"]
 published: true 
 time: 2019-04
 

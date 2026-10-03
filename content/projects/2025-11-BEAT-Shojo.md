@@ -1,7 +1,6 @@
 ---
 title: "BEAT-Shojo"
-excerpt: >
-  #ETC-BVW #Fighting #Microphone
+tags: ["ETC-BVW","Fighting","Microphone"]
 published: true 
 time: 2025-11
 

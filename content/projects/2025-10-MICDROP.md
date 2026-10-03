@@ -1,7 +1,6 @@
 ---
 title: "MICDROP"
-excerpt: >
-  #ETC-BVW #VR
+tags: ["ETC-BVW","VR"]
 published: true 
 time: 2025-10a
 

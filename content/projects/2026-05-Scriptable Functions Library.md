@@ -1,7 +1,6 @@
 ---
 title: "Scriptable Functions Library"
-excerpt: > 
-  #Plugin #Database #Unity
+tags: ["Plugin","Database","Unity"]
 published: true 
 time: 2026-05b
 

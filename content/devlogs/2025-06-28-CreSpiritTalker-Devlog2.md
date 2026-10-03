@@ -1,4 +1,5 @@
 ---
+project: "2025-06-CreSpiritTalker"
 title: "CreSpiritTalker #2"
 excerpt: >
    Updating More and More Important Features

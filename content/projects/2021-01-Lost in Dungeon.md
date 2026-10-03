@@ -1,7 +1,6 @@
 ---
 title: "Lost in Dungeon"
-excerpt: >
-  #GameJam #Action #Unity
+tags: ["GameJam","Action","Unity"]
 published: true 
 time: 2021-01
 

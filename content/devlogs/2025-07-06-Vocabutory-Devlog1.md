@@ -1,4 +1,5 @@
 ---
+project: "2025-07-Vocabutory"
 title: "Vocabutory #1"
 excerpt: >
    The new prototype game about vocabulary factory I am recently testing.

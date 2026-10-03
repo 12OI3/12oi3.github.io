@@ -1,7 +1,6 @@
 ---
 title: "Deal Da Time"
-excerpt: >
-  #GameJam #Puzzle #Platform #Unity
+tags: ["GameJam","Puzzle","Platform","Unity"]
 published: true 
 time: 2023-07b
 

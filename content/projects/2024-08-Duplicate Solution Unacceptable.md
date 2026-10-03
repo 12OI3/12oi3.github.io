@@ -1,7 +1,6 @@
 ---
 title: "Duplicate Solution Unacceptable"
-excerpt: >
-  #GameJam #Puzzle #Godot
+tags: ["GameJam","Puzzle","Godot"]
 published: true 
 time: 2024-08
 

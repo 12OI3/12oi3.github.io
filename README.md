@@ -51,6 +51,7 @@ Add a `.md` file to the appropriate content directory. Filename stems determine 
 ---
 title: "My Project"
 excerpt: "A short description."
+tags: [GameJam, Puzzle, Unity]
 time: "2026-10"
 published: true
 header:
@@ -63,6 +64,27 @@ Write the page here with normal Markdown.
 `title` and `time` are required for collection documents. The three listing pages automatically include new published files. `time` is an ordering string, sorted newest first; existing values such as `2023-07a` and `2023-07b` retain their ordering. Use consistent, zero-padded values (`YYYY-MM` for projects and `YYYY-MM-DD` for articles/devlogs).
 
 `published: false` keeps a document off both the listing and its direct URL. `hidden: true` hides it from the listing while keeping the URL accessible. Omit `header.teaser` if no thumbnail is needed. `comments: false` disables comments for an individual page.
+
+## Project tags and filtering
+
+Add a `tags` list to a project's front matter. These tags appear on its card and in the Projects page filter dropdown:
+
+```yaml
+tags:
+  - GameJam
+  - Puzzle
+  - Financial Literacy
+```
+
+Use plain tag names without `#`. Multiword names are supported. Matching ignores capitalization, surrounding whitespace, and an optional leading `#`; duplicates within a project are removed. Use consistent spelling for display. Omit `tags` or use `tags: []` for an untagged project, which appears under **All projects**. `excerpt` is optional descriptive text separate from the tags. Existing detail-page sidebar text stays independently editable.
+
+Choose which tags appear as shortcut buttons in `content/pages/projects.md`:
+
+```yaml
+pinned_tags: [GameJam, Plugin, ETC-BVW, Prototype, VR]
+```
+
+Buttons follow this order. Tags without any listed projects are omitted. Use `pinned_tags: []` to keep only the All projects button and dropdown. Both controls select one tag at a time, show matching counts, and preserve chronological project order. The filter is shareable through `projects.html?tag=GameJam`, and browser Back/Forward restores it. Draft and hidden projects never contribute tags or counts. Filtering runs in the browser on GitHub Pages; all projects remain readable with JavaScript disabled.
 
 ## Project details and galleries
 
@@ -104,7 +126,24 @@ Edit `content/pages/home.md` for the introduction, featured projects, and latest
 
 Edit `projects.md`, `devlogs.md`, or `articles.md` in `content/pages/` for collection introductions. Add a new file such as `content/pages/about.md` with `title` front matter to create `/about.html` on the next build (immediately in the development preview). Add a navigation entry in `content/site.yml` if desired.
 
-Links between projects and devlogs are still normal Markdown links. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
+## Link devlogs to a project
+
+Set `project` in a devlog's YAML front matter to the project's exact filename without `.md`:
+
+```yaml
+---
+title: "Vocabutory #4"
+time: "2026-10-03"
+project: "2025-07-Vocabutory"
+published: true
+---
+```
+
+This example links to `content/projects/2025-07-Vocabutory.md`. Choose one project per devlog. Omit `project` for general posts, or leave it empty. The project must exist and be published; a typo or a reference to a draft project produces a build error naming the devlog to fix.
+
+Each project page automatically lists its linked devlogs at the end of the project sidebar, newest first. A sidebar is created for the list even if the project has no other sidebar metadata. Each linked devlog shows a link back to its project beneath the title. You only maintain the relationship in the devlog: no list or duplicate metadata is needed in project Markdown. Projects with no linked devlogs show no section. Drafts and `hidden: true` devlogs are excluded from generated lists; hidden devlogs still show their project link at their direct URL.
+
+Changing or removing `project` moves or removes the entry automatically on the next local request or Pages build. The existing handwritten project lists have been replaced with these generated lists. Ordinary links within prose still work. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
 
 ## Deployment
 

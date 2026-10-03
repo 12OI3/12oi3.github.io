@@ -42,10 +42,36 @@ function displayDate(value) {
 
 function entryCard(doc, index) {
   const image = doc.data.header?.teaser;
-  return `<article class="entry-card ${image ? 'has-image' : 'text-only'}">
+  return `<article class="entry-card ${image ? 'has-image' : 'text-only'}" data-project-tags="${e(JSON.stringify(doc.data.tags || []))}">
     ${image ? `<a class="entry-image" href="${e(doc.url)}" tabindex="-1" aria-hidden="true"><img src="${e(localUrl(image))}" alt="" ${index < 3 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></a>` : ''}
     <div class="entry-copy"><span class="entry-date">${e(displayDate(doc.data.time))}</span><h2><a href="${e(doc.url)}">${e(doc.data.title)}</a></h2>
-    <div class="entry-excerpt">${renderMarkdown(doc.data.excerpt || '')}</div></div></article>`;
+    ${doc.data.excerpt ? `<div class="entry-excerpt">${renderMarkdown(doc.data.excerpt)}</div>` : ''}
+    <ul class="project-tags" aria-label="Tags">${(doc.data.tags || []).map(tag => `<li>#${e(tag)}</li>`).join('')}</ul></div></article>`;
+}
+
+function projectEntries(entries, pinnedTags = [], heading = '') {
+  const tags = new Map();
+  for (const doc of entries) for (const tag of doc.data.tags || []) {
+    const key = tag.toLowerCase();
+    const item = tags.get(key) || { name: tag, count: 0 };
+    item.count++;
+    tags.set(key, item);
+  }
+  const pinned = pinnedTags.map(tag => tags.get(tag.toLowerCase())).filter(Boolean);
+  return `<section class="project-browser" aria-label="Browse projects">
+    <div class="project-overview">${heading}
+    <div class="project-filters" hidden>
+      <div class="project-filter-row"><div class="tag-select"><label for="project-tag">Filter by tag</label><select id="project-tag" aria-controls="project-results">
+        <option value="">All tags</option>${[...tags.values()].sort((a, b) => a.name.localeCompare(b.name)).map(tag => `<option value="${e(tag.name)}">${e(tag.name)} (${tag.count})</option>`).join('')}
+      </select></div><div class="pinned-tags" role="group" aria-label="Pinned tags">
+        <button type="button" class="tag-filter" data-tag="" aria-pressed="true">All projects <span>${entries.length}</span></button>
+        ${pinned.map(tag => `<button type="button" class="tag-filter" data-tag="${e(tag.name)}" aria-pressed="false">${e(tag.name)} <span>${tag.count}</span></button>`).join('')}
+      </div></div>
+      <p class="project-count" role="status" aria-live="polite" aria-atomic="true">Showing all ${entries.length} projects</p>
+    </div></div>
+    <div id="project-results" class="entries project-grid">${entries.map(entryCard).join('')}</div>
+    <div class="project-empty" hidden><p>No projects match this tag.</p><button class="button" type="button" data-clear-tags>Show all projects</button></div>
+  </section>`;
 }
 
 function journalEntries(entries) {
@@ -77,29 +103,33 @@ export function collectionPage(state, type) {
   const page = state.pages[name];
   const entries = state.collections[type].filter(doc => doc.data.hidden !== true);
   const usesJournal = type === 'devlog' || type === 'article';
-  return layout(`<header class="page-heading"><span class="eyebrow">${e(state.site.name)} / ${e(page.data.title)}</span><h1>${e(page.data.title)}</h1><div class="page-intro">${renderMarkdown(page.body, page.data)}</div></header>
-    ${usesJournal ? journalEntries(entries) : `<div class="entries project-grid">${entries.map(entryCard).join('')}</div>`}`, {
+  const heading = `<header class="page-heading"><span class="eyebrow">${e(state.site.name)} / ${e(page.data.title)}</span><h1>${e(page.data.title)}</h1><div class="page-intro">${renderMarkdown(page.body, page.data)}</div></header>`;
+  return layout(usesJournal ? heading + journalEntries(entries) : projectEntries(entries, page.data.pinned_tags, heading), {
     site: state.site, title: page.data.title, active: `/${name}.html`, url: `/${name}.html`, description: plainText(page.body),
-    bodyClass: usesJournal ? 'journal-page' : '',
+    bodyClass: usesJournal ? 'journal-page' : 'projects-page',
   });
 }
 
 export function documentPage(state, doc) {
   const name = collectionNames[doc.type];
-  const sidebar = doc.data.sidebar;
+  const sidebar = doc.data.sidebar || [];
+  const hasSidebar = sidebar.length > 0 || doc.linkedDevlogs?.length > 0;
   const title = state.pages[name].data.title;
   const readingTime = Math.max(1, Math.floor(doc.body.split(/\s+/).length / 200));
   const comments = state.site.comments;
   const commentUrl = new URL(doc.url, state.site.url).href;
+  const linkedProjectHtml = doc.linkedProject ? `<p class="linked-project">Project: <a href="${e(doc.linkedProject.url)}">${e(doc.linkedProject.title)}</a></p>` : '';
+  const linkedDevlogsHtml = doc.linkedDevlogs?.length ? `<section class="linked-devlogs" aria-labelledby="linked-devlogs-heading">
+    <h2 id="linked-devlogs-heading">Devlogs</h2><ul>${doc.linkedDevlogs.map(devlog => `<li><a href="${e(devlog.url)}">${e(devlog.data.title)}</a></li>`).join('')}</ul></section>` : '';
   const commentsHtml = comments?.provider === 'disqus' && doc.data.comments !== false ? `
     <section class="comments" aria-label="Comments"><h2>Comments</h2><div id="disqus_thread" data-shortname="${e(comments.shortname)}" data-url="${e(commentUrl)}" data-identifier="${e(`/${doc.type}/${doc.slug}`)}"><button class="button load-comments" type="button">Load comments</button></div></section>` : '';
   return layout(`<div class="document-top"><a class="back-link" href="/${name}.html">← ${e(title)}</a><span class="eyebrow">${e(displayDate(doc.data.time))}${doc.type !== 'project' ? ` · ${readingTime} min read` : ''}</span></div>
-    <div class="document-layout ${sidebar ? 'with-sidebar' : ''}">
-    <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1></header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${commentsHtml}</article>
-    ${sidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}</aside>` : ''}
+    <div class="document-layout ${hasSidebar ? 'with-sidebar' : ''}">
+    <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1>${linkedProjectHtml}</header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${commentsHtml}</article>
+    ${hasSidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}${linkedDevlogsHtml}</aside>` : ''}
     </div>`, {
     site: state.site, title: doc.data.title, active: `/${name}.html`, url: doc.url,
-    description: plainText(doc.data.excerpt || ''), bodyClass: `detail ${doc.type}-detail`,
+    description: plainText(doc.data.excerpt || (doc.data.tags || []).map(tag => `#${tag}`).join(' ')), bodyClass: `detail ${doc.type}-detail`,
   });
 }
 

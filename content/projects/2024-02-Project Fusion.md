@@ -1,7 +1,6 @@
 ---
 title: "Project Fusion"
-excerpt: >
-  #TurnBaseCombat #Unity #Prototype
+tags: ["TurnBaseCombat","Unity","Prototype"]
 published: true 
 time: 2024-02
 
@@ -78,7 +77,3 @@ Project Fusion is a unique turn-based boss rush combat game featuring a special 
 The game features many unique mechanics. Feel free to check out [this page](https://intoxicat-studio.itch.io/project-fusion/devlog/632943/project-fusion-devlog-1-reveal-and-introduce-ench) for more details.
 
 Unfortunately, the demo didn’t meet our expectations, so we decided to rework the entire game. In the future, we will show our new Project Fusion eventually, allowing players worldwide to fuse artifacts freely and create the ultimate party of their own!
-
-## Devlogs:
-* [#1](/devlog/2023-11-09-ProjectFusion-Devlog1)
-* [#2](/devlog/2024-11-20-ProjectFusion-Devlog2)

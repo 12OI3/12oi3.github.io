@@ -1,4 +1,5 @@
 ---
+project: "2025-07-Vocabutory"
 title: "Vocabutory #2"
 excerpt: >
    Guess what? I am back!

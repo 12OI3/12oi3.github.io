@@ -1,7 +1,6 @@
 ---
 title: "MASK.exe"
-excerpt: >
-  #GameJam #Puzzle #Unity
+tags: ["GameJam","Puzzle","Unity"]
 published: true 
 time: 2026-01b
 

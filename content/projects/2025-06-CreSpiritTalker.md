@@ -1,7 +1,6 @@
 ---
 title: "CreSpiritTalker"
-excerpt: >
-  #Plugin #VisualNovel #Unity
+tags: ["Plugin","VisualNovel","Unity"]
 published: true 
 time: 2025-06
 
@@ -72,7 +71,3 @@ This is especially powerful for implementing unique or complex behaviors.
 
 Unfortunately, since this is a commissioned outsourcing project, I’m not able to release it publicly.
 However, if you’re curious to learn more, feel free to check out the devlogs!
-
-## Devlogs:
-* [#1](/devlog/2024-11-15-CreSpiritTalker-Devlog1)
-* [#2](/devlog/2025-06-28-CreSpiritTalker-Devlog2)

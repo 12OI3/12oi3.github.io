@@ -1,4 +1,5 @@
 ---
+project: "2024-02-Project Fusion"
 title: "ProjectFusion #1"
 excerpt: >
    The prototype of our new Boss-rush turn-based combat-"Project Fusion" 

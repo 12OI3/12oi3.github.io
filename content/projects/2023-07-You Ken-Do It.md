@@ -1,7 +1,6 @@
 ---
 title: "You Ken-Do It"
-excerpt: >
-  #VR #Action #Sport #Unity
+tags: ["VR","Action","Sport","Unity"]
 published: true 
 time: 2023-07a
 

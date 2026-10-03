@@ -1,7 +1,6 @@
 ---
 title: "This Planet Sucks"
-excerpt: >
-  #ETC-BVW #EyeTracker
+tags: ["ETC-BVW","EyeTracker"]
 published: true 
 time: 2025-10b
 

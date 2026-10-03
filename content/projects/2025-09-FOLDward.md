@@ -1,7 +1,6 @@
 ---
 title: "FOLDward"
-excerpt: >
-  #ETC-BVW #AdaptiveController
+tags: ["ETC-BVW","AdaptiveController"]
 published: true 
 time: 2025-09
 
