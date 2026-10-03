@@ -4,7 +4,7 @@ intro:
   title: "ROB / KUANYEN HUANG"
   tagline: "An average game enjoyer."
   excerpt: >
-    Carnegie Mellon University graduate student with 8 years of game development experience as a <span style="color: gold;">**technical game designer**</span>, specializing in <span style="color: gold;">rapid prototyping</span>, <span style="color: gold;">design tools making</span>, and <span style="color: gold;">UI/UX</span>. With experience across diverse projects, I bridge design and programming to explore mechanics, refine player experiences, and collaborate effectively with multidisciplinary teams throughout development.
+    Carnegie Mellon University graduate student with 8 years of game development experience as a <span style="color: gold;">**technical game designer**</span>, specializing in <span style="color: gold;">prototyping</span>, <span style="color: gold;">design tools</span>, and <span style="color: gold;">UI/UX</span>. With experience across diverse projects, I bridge design and programming to explore mechanics, refine player experiences, and collaborate effectively with multidisciplinary teams throughout development.
     <br>
     <br>
     [Resume](/assets/Huang_KuanYen_Resume.pdf){.btn .btn--light-outline .btn--large}  [Contact](mailto:benbook90@gmail.com){.btn .btn--light-outline .btn--large}
