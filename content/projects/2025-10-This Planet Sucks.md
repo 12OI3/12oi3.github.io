@@ -1,6 +1,7 @@
 ---
 title: "This Planet Sucks"
 tags: ["ETC-BVW","EyeTracker"]
+skills: ["Technical Game Design","UI/UX"]
 published: true 
 time: 2025-10b
 

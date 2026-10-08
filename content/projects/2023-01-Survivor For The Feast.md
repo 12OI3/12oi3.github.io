@@ -1,7 +1,9 @@
 ---
 title: "Survivor For The Feast"
 tags: ["Action","SurvivorLike","Cooking","Unity"]
+skills: ["Technical Game Design","UI/UX"]
 published: true 
+featured: true
 time: 2023-01
 
 header:

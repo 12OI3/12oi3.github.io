@@ -1,4 +1,5 @@
 ---
+highlight: false
 title: "GDC 2026"
 excerpt: >
    Sigh.

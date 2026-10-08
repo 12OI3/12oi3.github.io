@@ -1,7 +1,9 @@
 ---
 title: "Vocabutory"
 tags: ["Incremental","Prototype","Unity"]
+skills: ["Technical Game Design","Tools","UI/UX"]
 published: true 
+featured: true
 time: 2025-07
 
 header:

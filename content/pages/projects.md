@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-pinned_tags: [GameJam, Plugin, ETC-BVW, Prototype, VR]
+pinned_tags: [Technical Game Design, Tools, UI/UX]
 ---
 
 Making game is hard, but fun.

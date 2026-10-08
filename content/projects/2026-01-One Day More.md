@@ -1,6 +1,7 @@
 ---
 title: "One Day More"
 tags: ["GameJam","Narrative","Unity"]
+skills: ["Technical Game Design","Tools"]
 published: true 
 time: 2026-01a
 

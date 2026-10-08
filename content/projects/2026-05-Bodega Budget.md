@@ -1,6 +1,7 @@
 ---
 title: "Bodega Budget"
 tags: ["Financial Literacy","ETC-Project","Unity"]
+skills: ["Technical Game Design","Tools","UI/UX"]
 published: true 
 time: 2026-05a
 

@@ -1,6 +1,7 @@
 ---
 title: "duRNGeon"
 tags: ["RougeLike","AutoBattler","Unity"]
+skills: ["Technical Game Design"]
 published: true 
 time: 2019-04
 

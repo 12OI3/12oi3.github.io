@@ -1,4 +1,10 @@
 ---
+highlight: true
+projects:
+   - 2025-09-FOLDward
+   - 2025-10-MICDROP
+   - 2025-10-This Planet Sucks
+   - 2025-11-BEAT-Shojo
 title: "Building Virtual World"
 excerpt: >
    My crazy first semester in CMU ETC

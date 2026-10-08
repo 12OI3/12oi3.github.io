@@ -1,6 +1,7 @@
 ---
 title: "Lost in Dungeon"
 tags: ["GameJam","Action","Unity"]
+skills: []
 published: true 
 time: 2021-01
 

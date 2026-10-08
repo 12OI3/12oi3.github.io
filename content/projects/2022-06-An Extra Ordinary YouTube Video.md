@@ -1,6 +1,7 @@
 ---
 title: "An Extra Ordinary YouTube Video"
 tags: ["BulletHell","Action","Cocos"]
+skills: ["Technical Game Design","Tools"]
 published: true 
 time: 2022-06
 

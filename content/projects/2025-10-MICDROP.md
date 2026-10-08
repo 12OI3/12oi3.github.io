@@ -1,6 +1,7 @@
 ---
 title: "MICDROP"
 tags: ["ETC-BVW","VR"]
+skills: ["Technical Game Design"]
 published: true 
 time: 2025-10a
 

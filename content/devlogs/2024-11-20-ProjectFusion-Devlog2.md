@@ -1,4 +1,5 @@
 ---
+highlight: true
 project: "2024-02-Project Fusion"
 title: "ProjectFusion #2"
 excerpt: >

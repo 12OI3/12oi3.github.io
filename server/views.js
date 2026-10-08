@@ -1,5 +1,6 @@
 import { escapeHtml as e, localUrl, renderMarkdown, plainText } from './markdown.js';
-import { collectionNames } from './content.js';
+import { collectionNames, projectFilterTags } from './content.js';
+import { icon } from './icons.js';
 
 function layout(content, { site, title, active = '/', description = '', url = '/', bodyClass = '' }) {
   const canonical = new URL(url, process.env.SITE_URL || site.url).href;
@@ -14,7 +15,7 @@ function layout(content, { site, title, active = '/', description = '', url = '/
 <meta property="og:type" content="website"><meta property="og:url" content="${e(canonical)}">
 <link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/ui/site.css?v=journal">
 <script src="/ui/site.js" defer></script>
-</head><body class="${e(bodyClass)}">
+</head><body id="top" class="${e(bodyClass)}">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="masthead"><div class="nav-shell">
 <a class="brand" href="/" aria-label="${e(site.title)} home"><span>${e(site.title.toUpperCase())}</span></a>
@@ -22,8 +23,8 @@ function layout(content, { site, title, active = '/', description = '', url = '/
 <nav id="navigation" aria-label="Main navigation">${site.navigation.map(link => `<a href="${e(link.url)}"${active === link.url ? ' aria-current="page"' : ''}>${e(link.title)}</a>`).join('')}</nav>
 </div></header>
 <main id="main" class="shell">${content}</main>
-<footer class="site-footer"><div class="shell"><div class="footer-top"><a class="footer-name" href="/">${e(site.title)}</a><a href="#main" class="back-top">Back to top ↑</a></div>
-<nav aria-label="Social links">${site.footer.map(link => `<a href="${e(localUrl(link.url))}"${/^https?:/.test(link.url) ? ' target="_blank" rel="noopener noreferrer"' : ''}>${e(link.label)}<span aria-hidden="true"> ↗</span></a>`).join('')}</nav>
+<footer class="site-footer"><div class="shell"><div class="footer-top"><a class="footer-name" href="#top" data-back-top aria-label="${e(site.title)} — Back to top">${e(site.title)}</a></div>
+<nav aria-label="Social links">${site.footer.map(link => `<a href="${e(localUrl(link.url))}"${/^https?:/.test(link.url) ? ' target="_blank" rel="noopener noreferrer"' : ''}>${icon(link.label)}<span>${e(link.label)}</span></a>`).join('')}</nav>
 <p class="copyright">© ${new Date().getFullYear()} ${e(site.title)}.</p></div></footer>
 <dialog class="lightbox" aria-label="Image viewer"><button class="lightbox-close" autofocus aria-label="Close image">Close ×</button><img alt=""></dialog>
 </body></html>`;
@@ -31,8 +32,17 @@ function layout(content, { site, title, active = '/', description = '', url = '/
 
 export function homePage(state) {
   const page = state.pages.home;
-  return layout(`<div class="home-content">${renderMarkdown(page.body, page.data)}</div>`, {
-    site: state.site, bodyClass: 'home', description: plainText([page.data.intro?.[0]?.tagline, page.data.intro?.[0]?.excerpt].filter(Boolean).join(' ')),
+  const groups = state.homeProjectGroups;
+  const selectedGroup = (groups.find(group => group.tag === 'Technical Game Design') || groups[0])?.tag;
+  const card = (doc, group) => {
+    const devlog = doc.linkedDevlogs?.find(item => item.data.highlight === true);
+    return { title: doc.data.title, url: doc.url, image_path: doc.data.header?.teaser, tags: doc.data.tags, group,
+      latestDevlog: devlog ? { title: devlog.data.title, url: devlog.url } : null };
+  };
+  const projects = groups.flatMap(group => group.projects.map(doc => card(doc, group.tag)));
+  const intro = page.data.intro.map(item => ({ ...item, specialties: groups.map(group => group.tag) }));
+  return layout(`<div class="home-content">${renderMarkdown(page.body, { ...page.data, intro, projects, selectedGroup })}</div>`, {
+    site: state.site, bodyClass: 'home', description: plainText([page.data.intro?.[0]?.role, page.data.intro?.[0]?.excerpt].filter(Boolean).join(' ')),
   });
 }
 
@@ -42,29 +52,28 @@ function displayDate(value) {
 
 function entryCard(doc, index) {
   const image = doc.data.header?.teaser;
-  return `<article class="entry-card ${image ? 'has-image' : 'text-only'}" data-project-tags="${e(JSON.stringify(doc.data.tags || []))}">
+  return `<article class="entry-card ${image ? 'has-image' : 'text-only'}${doc.data.featured === true ? ' is-featured' : ''}" data-project-tags="${e(JSON.stringify(projectFilterTags(doc.data)))}">
     ${image ? `<a class="entry-image" href="${e(doc.url)}" tabindex="-1" aria-hidden="true"><img src="${e(localUrl(image))}" alt="" ${index < 3 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async"></a>` : ''}
-    <div class="entry-copy"><span class="entry-date">${e(displayDate(doc.data.time))}</span><h2><a href="${e(doc.url)}">${e(doc.data.title)}</a></h2>
+    <div class="entry-copy"><div class="entry-meta"><span class="entry-date">${e(displayDate(doc.data.time))}</span>${doc.data.featured === true ? `<span class="project-featured-badge" role="img" aria-label="Featured project" title="Featured project">${icon('star')}</span>` : ''}</div><h2><a href="${e(doc.url)}">${e(doc.data.title)}</a></h2>
     ${doc.data.excerpt ? `<div class="entry-excerpt">${renderMarkdown(doc.data.excerpt)}</div>` : ''}
-    <ul class="project-tags" aria-label="Tags">${(doc.data.tags || []).map(tag => `<li>#${e(tag)}</li>`).join('')}</ul></div></article>`;
+    <ul class="project-tags" aria-label="Tags">${(doc.data.tags || []).slice(0, 3).map(tag => `<li>#${e(tag)}</li>`).join('')}</ul></div></article>`;
 }
 
 function projectEntries(entries, pinnedTags = [], heading = '') {
-  const tags = new Map();
-  for (const doc of entries) for (const tag of doc.data.tags || []) {
+  const tags = new Map([['featured', { name: 'Featured', count: 0 }]]);
+  for (const doc of entries) for (const tag of projectFilterTags(doc.data)) {
     const key = tag.toLowerCase();
     const item = tags.get(key) || { name: tag, count: 0 };
     item.count++;
     tags.set(key, item);
   }
-  const pinned = pinnedTags.map(tag => tags.get(tag.toLowerCase())).filter(Boolean);
+  const pinned = pinnedTags.filter(tag => tag.toLowerCase() !== 'featured').map(tag => tags.get(tag.toLowerCase())).filter(Boolean);
   return `<section class="project-browser" aria-label="Browse projects">
     <div class="project-overview">${heading}
     <div class="project-filters" hidden>
-      <div class="project-filter-row"><div class="tag-select"><label for="project-tag">Filter by tag</label><select id="project-tag" aria-controls="project-results">
-        <option value="">All tags</option>${[...tags.values()].sort((a, b) => a.name.localeCompare(b.name)).map(tag => `<option value="${e(tag.name)}">${e(tag.name)} (${tag.count})</option>`).join('')}
-      </select></div><div class="pinned-tags" role="group" aria-label="Pinned tags">
-        <button type="button" class="tag-filter" data-tag="" aria-pressed="true">All projects <span>${entries.length}</span></button>
+      <div class="project-filter-row"><div class="project-filter-top"><button type="button" class="tag-filter" data-tag="Featured" aria-pressed="false">Featured <span>${tags.get('featured').count}</span></button><div class="tag-select"><label for="project-tag">Filter by tag</label><select id="project-tag" aria-controls="project-results">
+        <option value="">All tags</option>${[...tags.values()].sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)).map(tag => `<option value="${e(tag.name)}">${e(tag.name)} (${tag.count})</option>`).join('')}
+      </select></div></div><div class="pinned-tags" role="group" aria-label="Pinned tags">
         ${pinned.map(tag => `<button type="button" class="tag-filter" data-tag="${e(tag.name)}" aria-pressed="false">${e(tag.name)} <span>${tag.count}</span></button>`).join('')}
       </div></div>
       <p class="project-count" role="status" aria-live="polite" aria-atomic="true">Showing all ${entries.length} projects</p>
@@ -118,12 +127,19 @@ export function documentPage(state, doc) {
   const readingTime = Math.max(1, Math.floor(doc.body.split(/\s+/).length / 200));
   const comments = state.site.comments;
   const commentUrl = new URL(doc.url, state.site.url).href;
-  const linkedProjectHtml = doc.linkedProject ? `<p class="linked-project">Project: <a href="${e(doc.linkedProject.url)}">${e(doc.linkedProject.title)}</a></p>` : '';
+  const linkedProjectHtml = doc.linkedProjects?.length ? `<p class="linked-project">${doc.linkedProjects.length === 1 ? 'Project' : 'Projects'}: ${doc.linkedProjects.map(project => `<a href="${e(project.url)}">${e(project.title)}</a>`).join(' <span aria-hidden="true">·</span> ')}</p>` : '';
+  const featuredDevlog = doc.type === 'project' ? doc.linkedDevlogs?.find(devlog => devlog.data.highlight === true) : null;
+  const featuredDevlogHtml = featuredDevlog ? `<section class="project-headline-devlog" aria-labelledby="headline-devlog-title">
+    <div><p class="eyebrow">Featured devlog</p><h2 id="headline-devlog-title"><a href="${e(localUrl(featuredDevlog.url))}">${e(featuredDevlog.data.title)}</a></h2>
+    ${featuredDevlog.data.excerpt ? `<p class="headline-devlog-excerpt">${e(plainText(featuredDevlog.data.excerpt))}</p>` : ''}</div>
+    <span class="headline-devlog-cta" aria-hidden="true">Read devlog <span>↗</span></span>
+  </section>` : '';
   const linkedDevlogsHtml = doc.linkedDevlogs?.length ? `<section class="linked-devlogs" aria-labelledby="linked-devlogs-heading">
     <h2 id="linked-devlogs-heading">Devlogs</h2><ul>${doc.linkedDevlogs.map(devlog => `<li><a href="${e(devlog.url)}">${e(devlog.data.title)}</a></li>`).join('')}</ul></section>` : '';
   const commentsHtml = comments?.provider === 'disqus' && doc.data.comments !== false ? `
     <section class="comments" aria-label="Comments"><h2>Comments</h2><div id="disqus_thread" data-shortname="${e(comments.shortname)}" data-url="${e(commentUrl)}" data-identifier="${e(`/${doc.type}/${doc.slug}`)}"><button class="button load-comments" type="button">Load comments</button></div></section>` : '';
   return layout(`<div class="document-top"><a class="back-link" href="/${name}.html">← ${e(title)}</a><span class="eyebrow">${e(displayDate(doc.data.time))}${doc.type !== 'project' ? ` · ${readingTime} min read` : ''}</span></div>
+    ${featuredDevlogHtml}
     <div class="document-layout ${hasSidebar ? 'with-sidebar' : ''}">
     <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1>${linkedProjectHtml}</header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${commentsHtml}</article>
     ${hasSidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}${linkedDevlogsHtml}</aside>` : ''}

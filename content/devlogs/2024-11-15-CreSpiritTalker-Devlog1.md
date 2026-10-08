@@ -1,4 +1,5 @@
 ---
+highlight: false
 project: "2025-06-CreSpiritTalker"
 title: "CreSpiritTalker #1"
 excerpt: >

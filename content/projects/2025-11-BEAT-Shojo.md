@@ -1,7 +1,9 @@
 ---
 title: "BEAT-Shojo"
 tags: ["ETC-BVW","Fighting","Microphone"]
+skills: ["Technical Game Design","Tools","UI/UX"]
 published: true 
+featured: true
 time: 2025-11
 
 header:

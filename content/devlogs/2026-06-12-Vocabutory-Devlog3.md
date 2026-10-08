@@ -1,4 +1,5 @@
 ---
+highlight: true
 project: "2025-07-Vocabutory"
 title: "Vocabutory #3"
 excerpt: >

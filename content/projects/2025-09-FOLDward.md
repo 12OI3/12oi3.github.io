@@ -1,6 +1,7 @@
 ---
 title: "FOLDward"
 tags: ["ETC-BVW","AdaptiveController"]
+skills: ["Technical Game Design","UI/UX"]
 published: true 
 time: 2025-09
 

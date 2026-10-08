@@ -1,6 +1,7 @@
 ---
 title: "MASK.exe"
 tags: ["GameJam","Puzzle","Unity"]
+skills: ["Technical Game Design","Tools"]
 published: true 
 time: 2026-01b
 

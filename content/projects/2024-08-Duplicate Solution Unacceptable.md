@@ -1,7 +1,9 @@
 ---
 title: "Duplicate Solution Unacceptable"
 tags: ["GameJam","Puzzle","Godot"]
+skills: ["Technical Game Design"]
 published: true 
+featured: false
 time: 2024-08
 
 header:

@@ -25,7 +25,11 @@ test('every collection page renders its complete Markdown body and galleries', a
     assert.equal(response.headers.get('cache-control'), 'no-store');
     const $ = load(await response.text());
     assert.equal($('.document-heading h1').text(), doc.data.title);
-    assert.ok($('.prose').text().trim().length > 0, doc.slug);
+    // Projects may contain only front-matter sidebar details. Verify the actual
+    // saved body rather than requiring prose that the author has not written.
+    const expectedBody = load(renderMarkdown(doc.body, doc.data));
+    assert.equal($('.prose').length, 1, doc.slug);
+    assert.equal($('.prose').text().trim(), expectedBody('body').text().trim(), doc.slug);
     assert.doesNotMatch($('.prose').text(), /\{%|\{\{|:::gallery|\{\./);
     const expectedGalleryCount = [...doc.body.matchAll(/^:::gallery /gm)].length;
     assert.equal($('.gallery').length, expectedGalleryCount, doc.slug);
@@ -45,12 +49,12 @@ test('home, listings, navigation, assets, and error routes work', async t => {
   for (const route of ['/missing-page', '/content/site.yml', '/server/index.js', '/.git/config']) assert.equal((await fetch(base + route)).status, 404, route);
   const html = await (await fetch(base)).text();
   const $ = load(html);
-  assert.equal($('.feature-project .feature-item').length, 3);
-  assert.equal($('.feature-copy a[href^="/project/"]').length, 3);
+  const state = await loadContent();
+  const defaults = (state.homeProjectGroups.find(group => group.tag === 'Technical Game Design') || state.homeProjectGroups[0])?.projects || [];
+  assert.deepEqual($('.feature-project .feature-item:not([hidden]) h2').map((_, el) => $(el).text()).get(), defaults.map(doc => doc.data.title));
   assert.equal($('a[href="mailto:benbook90@gmail.com"]').length, 2);
   assert.doesNotMatch($('main').text(), /:::feature|\{\./);
   const list = load(await (await fetch(base + '/projects.html')).text());
-  const state = await loadContent();
   assert.equal(list('.entry-card').length, state.collections.project.filter(doc => doc.data.hidden !== true).length);
   const response = await fetch(base + '/%E0%A4%A');
   assert.equal(response.status, 400);

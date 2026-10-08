@@ -1,6 +1,7 @@
 ---
 title: "Deal Da Time"
 tags: ["GameJam","Puzzle","Platform","Unity"]
+skills: ["Technical Game Design"]
 published: true 
 time: 2023-07b
 

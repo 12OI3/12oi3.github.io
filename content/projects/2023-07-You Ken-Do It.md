@@ -1,7 +1,9 @@
 ---
 title: "You Ken-Do It"
 tags: ["VR","Action","Sport","Unity"]
+skills: ["UI/UX"]
 published: true 
+featured: true
 time: 2023-07a
 
 header:

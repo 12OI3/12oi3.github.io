@@ -1,7 +1,9 @@
 ---
 title: "CreSpiritTalker"
 tags: ["Plugin","VisualNovel","Unity"]
+skills: ["Tools","UI/UX"]
 published: true 
+featured: true
 time: 2025-06
 
 header:

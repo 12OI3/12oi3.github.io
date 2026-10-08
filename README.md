@@ -52,6 +52,8 @@ Add a `.md` file to the appropriate content directory. Filename stems determine 
 title: "My Project"
 excerpt: "A short description."
 tags: [GameJam, Puzzle, Unity]
+skills: [Technical Game Design, UI/UX]
+featured: false
 time: "2026-10"
 published: true
 header:
@@ -65,6 +67,9 @@ Write the page here with normal Markdown.
 
 `published: false` keeps a document off both the listing and its direct URL. `hidden: true` hides it from the listing while keeping the URL accessible. Omit `header.teaser` if no thumbnail is needed. `comments: false` disables comments for an individual page.
 
+
+Set `featured: true` in a project's front matter to give its Projects page card a gold border, subtle accent background, and a star-only badge with an accessible "Featured project" label. It defaults to `false`; use unquoted booleans. It also adds the project to the automatic Featured filter on the Projects page. The Featured button and dropdown option toggle the same single-tag filter as the other tags; clicking the active button clears it. Featured is derived from the boolean, so there is no need to add it to `tags` or `pinned_tags`. Card order and homepage selections remain unchanged. Devlog `highlight` remains a separate option for featuring linked posts.
+
 ## Project tags and filtering
 
 Add a `tags` list to a project's front matter. These tags appear on its card and in the Projects page filter dropdown:
@@ -76,7 +81,7 @@ tags:
   - Financial Literacy
 ```
 
-Use plain tag names without `#`. Multiword names are supported. Matching ignores capitalization, surrounding whitespace, and an optional leading `#`; duplicates within a project are removed. Use consistent spelling for display. Omit `tags` or use `tags: []` for an untagged project, which appears under **All projects**. `excerpt` is optional descriptive text separate from the tags. Existing detail-page sidebar text stays independently editable.
+Use plain tag names without `#`. Multiword names are supported. Matching ignores capitalization, surrounding whitespace, and an optional leading `#`; duplicates within a project are removed. Use consistent spelling for display. Omit `tags` or use `tags: []` for an untagged project, which appears when no filter is selected. `excerpt` is optional descriptive text separate from the tags. Existing detail-page sidebar text stays independently editable.
 
 Choose which tags appear as shortcut buttons in `content/pages/projects.md`:
 
@@ -84,7 +89,16 @@ Choose which tags appear as shortcut buttons in `content/pages/projects.md`:
 pinned_tags: [GameJam, Plugin, ETC-BVW, Prototype, VR]
 ```
 
-Buttons follow this order. Tags without any listed projects are omitted. Use `pinned_tags: []` to keep only the All projects button and dropdown. Both controls select one tag at a time, show matching counts, and preserve chronological project order. The filter is shareable through `projects.html?tag=GameJam`, and browser Back/Forward restores it. Draft and hidden projects never contribute tags or counts. Filtering runs in the browser on GitHub Pages; all projects remain readable with JavaScript disabled.
+Buttons follow this order. Tags without any listed projects are omitted. Use `pinned_tags: []` to keep only the dropdown. Both controls select one tag at a time, show matching counts, and preserve chronological project order. Clicking the selected pinned tag again clears the filter and shows all projects; selecting **All tags** in the dropdown does the same. The filter is shareable through `projects.html?tag=GameJam`, and browser Back/Forward restores it. Draft and hidden projects never contribute tags or counts. Filtering runs in the browser on GitHub Pages; all projects remain readable with JavaScript disabled.
+
+Skills use a separate `skills` list. The supported values are `Technical Game Design`, `Tools`, and `UI/UX`. For example:
+
+```yaml
+tags: [Plugin, VisualNovel, Unity]
+skills: [Tools, UI/UX]
+```
+
+Omit `skills` or use `skills: []` when none apply. Skill names normalize capitalization and whitespace; unsupported values or skill labels placed in `tags` produce a validation error. Cards show only the first three normal tags. The project dropdown and pinned buttons can filter by either normal tags or skills, with counts based on both lists. Homepage buttons still use the curated project lists in `home.md`; Technical Game Design starts selected, and exactly one skill stays active.
 
 ## Project details and galleries
 
@@ -122,28 +136,55 @@ Raw HTML is enabled to preserve the original embedded videos and formatting. Mar
 
 ## Homepage and standalone pages
 
-Edit `content/pages/home.md` for the introduction, featured projects, and latest devlog/article links. These selections remain manually curated, as on the original site. Its `:::feature name type` components refer to arrays in the same file's front matter.
+Edit `content/pages/home.md` for the introduction and homepage project selections. The `project_groups` mapping defines the tag buttons and an ordered list of project filenames (without `.md`) per tag. Lists can contain any number of projects:
+
+```yaml
+project_groups:
+  Technical Game Design:
+    - 2025-11-BEAT-Shojo
+    - 2025-07-Vocabutory
+    - 2023-01-Survivor For The Feast
+  Tools:
+    - 2026-05-Scriptable Functions Library
+    - 2025-06-CreSpiritTalker
+    - 2024-02-Project Fusion
+  UI/UX:
+    - 2023-07-You Ken-Do It
+    - 2025-06-CreSpiritTalker
+    - 2025-11-BEAT-Shojo
+```
+
+Technical Game Design is selected by default. Exactly one homepage skill stays selected: clicking the active button keeps it selected, and choosing another switches the displayed list. If Technical Game Design is removed from the configuration, the first group becomes the default. Each list appears in the exact order written. A project can belong to multiple lists. Use `[]` for an empty list; selecting it shows an empty state while keeping its button active. Missing, hidden, or unpublished project references cause a clear validation error. Cards read the current title, teaser image, tags, and URL from each project. Project selections do not use a highlight flag.
+
+The `:::feature intro center` and `:::feature projects project` components render the introduction and these selections. Changes appear on the next request with `pnpm dev`, or after rebuilding with `pnpm build` for the static preview and GitHub Pages.
 
 Edit `projects.md`, `devlogs.md`, or `articles.md` in `content/pages/` for collection introductions. Add a new file such as `content/pages/about.md` with `title` front matter to create `/about.html` on the next build (immediately in the development preview). Add a navigation entry in `content/site.yml` if desired.
 
-## Link devlogs to a project
+## Link devlogs to projects
 
-Set `project` in a devlog's YAML front matter to the project's exact filename without `.md`:
+Homepage project cards show a featured devlog link only for a linked devlog with `highlight: true` in its YAML front matter. Project detail pages also show that devlog in a full-width headline card above the project content and sidebar, including its title, excerpt, and link. This devlog-only boolean defaults to `false`; use unquoted `true` or `false`. If several linked devlogs are highlighted, the newest visible, published one is shown. No headline card appears when none qualify. The full devlog listing and project sidebar lists still include unhighlighted posts.
+
+Set `projects` in a devlog's YAML front matter to a list of exact project filenames without `.md`:
 
 ```yaml
 ---
 title: "Vocabutory #4"
 time: "2026-10-03"
-project: "2025-07-Vocabutory"
+projects:
+  - "2025-07-Vocabutory"
+  - "2026-09-You Hive My Word"
+highlight: true
 published: true
 ---
 ```
 
-This example links to `content/projects/2025-07-Vocabutory.md`. Choose one project per devlog. Omit `project` for general posts, or leave it empty. The project must exist and be published; a typo or a reference to a draft project produces a build error naming the devlog to fix.
+This example links the devlog to both projects. A highlighted devlog is eligible for the featured card on every linked project, and for those projects' homepage cards. Each project independently shows its newest highlighted devlog. Use `projects: []` or omit the field for general posts. Every referenced project must exist and be published; a typo or a reference to a draft project produces a build error naming the devlog to fix.
 
-Each project page automatically lists its linked devlogs at the end of the project sidebar, newest first. A sidebar is created for the list even if the project has no other sidebar metadata. Each linked devlog shows a link back to its project beneath the title. You only maintain the relationship in the devlog: no list or duplicate metadata is needed in project Markdown. Projects with no linked devlogs show no section. Drafts and `hidden: true` devlogs are excluded from generated lists; hidden devlogs still show their project link at their direct URL.
+Existing single-project syntax (`project: "2025-07-Vocabutory"`) still works. When changing to a list, replace `project` with `projects`. If both fields are present, their references are combined; repeated references produce only one link and one sidebar entry per project.
 
-Changing or removing `project` moves or removes the entry automatically on the next local request or Pages build. The existing handwritten project lists have been replaced with these generated lists. Ordinary links within prose still work. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
+Each project page automatically lists its linked devlogs at the end of the project sidebar, newest first. A sidebar is created for the list even if the project has no other sidebar metadata. Each linked devlog shows links back to all its projects beneath the title, in the configured order. You only maintain the relationship in the devlog: no list or duplicate metadata is needed in project Markdown. Projects with no linked devlogs show no section. Drafts and `hidden: true` devlogs are excluded from generated lists; hidden devlogs still show their project links at their direct URL.
+
+Changing or removing these references updates every project's list automatically on the next local request or Pages build. The existing handwritten project lists have been replaced with these generated lists. Ordinary links within prose still work. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
 
 ## Deployment
 

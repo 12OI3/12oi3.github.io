@@ -1,7 +1,9 @@
 ---
 title: "Scriptable Functions Library"
 tags: ["Plugin","Database","Unity"]
+skills: ["Tools"]
 published: true 
+featured: true
 time: 2026-05b
 
 header:
