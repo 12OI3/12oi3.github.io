@@ -1,3 +1,4 @@
+import { legacyIcons } from '../server/config.js';
 import { cp, lstat, mkdir, realpath, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -46,7 +47,7 @@ export async function buildSite() {
   }
   await cp(path.join(root, 'assets'), path.join(outputRoot, 'assets'), { recursive: true });
   await cp(path.join(root, 'public'), path.join(outputRoot, 'ui'), { recursive: true });
-  for (const filename of ['favicon.ico', 'favicon.png', 'article.ico', 'article.png', 'devlog.ico', 'devlog.png']) {
+  for (const filename of legacyIcons) {
     await cp(path.join(root, 'public', 'icons', filename), path.join(outputRoot, filename));
   }
   await writeFile(path.join(outputRoot, '.nojekyll'), '');

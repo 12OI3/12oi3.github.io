@@ -33,7 +33,7 @@ test('multiple project links support highlights, backlinks, reassignment, and va
     assert.equal(sharedLinks(state, ref).length, 1);
     const page = load(documentPage(state, getProject(state, ref)));
     assert.equal(page('.project-headline-devlog a').attr('href'), devlog.url);
-    assert.equal(page(`.linked-devlogs a[href="${devlog.url}"]`).length, 1);
+    assert.equal(page('.linked-devlogs').length, 0);
   }
   state.homeProjectGroups = [{ tag: 'Technical Game Design', projects: [getProject(state, first), getProject(state, second)] }];
   const home = load(homePage(state));
@@ -87,11 +87,11 @@ test('project headline features only the newest eligible highlighted linked devl
   const featured = state.collections.devlog.find(doc => doc.slug === '2099-01-02-Featured');
   const $ = load(documentPage(state, project));
   assert.equal($('.project-headline-devlog').length, 1);
-  assert.equal($('.project-headline-devlog').next().hasClass('document-layout'), true, 'Card sits above both project columns');
+  assert.equal($('.project-detail-layout').children().first().hasClass('project-headline-devlog'), true, 'Featured devlog leads the full-width project layout');
   assert.equal($('.project-headline-devlog a').attr('href'), featured.url);
   assert.equal($('.project-headline-devlog h2').text(), 'Design & <Iteration>');
   assert.equal($('.headline-devlog-excerpt').text(), 'A closer look at the design.');
-  assert.equal($('.linked-devlogs a').length, project.linkedDevlogs.length);
+  assert.equal($('.linked-devlogs').length, 0);
   assert.equal(load(documentPage(state, featured))('.project-headline-devlog').length, 0);
   for (const devlog of project.linkedDevlogs) devlog.data.highlight = false;
   assert.equal(load(documentPage(state, project))('.project-headline-devlog').length, 0);
@@ -99,7 +99,7 @@ test('project headline features only the newest eligible highlighted linked devl
   assert.equal(load(documentPage(state, project))('.project-headline-devlog').length, 0);
 });
 
-test('existing devlog relationships generate one list per project and backlinks', async () => {
+test('existing devlog relationships preserve backlinks without additional project lists', async () => {
   const state = await loadContent();
   for (const project of state.collections.project) {
     const expected = state.collections.devlog.filter(devlog => devlog.data.hidden !== true &&
@@ -112,10 +112,7 @@ test('existing devlog relationships generate one list per project and backlinks'
       assert.equal($('.linked-devlogs').length, 0);
       continue;
     }
-    assert.equal($('.linked-devlogs').length, 1);
-    assert.equal($('.project-sidebar > section:last-child').hasClass('linked-devlogs'), true);
-    assert.equal($('.document .linked-devlogs').length, 0);
-    assert.equal($('.linked-devlogs a').length, count);
+    assert.equal($('.linked-devlogs').length, 0);
     const dates = project.linkedDevlogs.map(doc => doc.data.time);
     assert.deepEqual(dates, [...dates].sort().reverse());
     for (const devlog of project.linkedDevlogs) {
@@ -149,7 +146,7 @@ test('new, reassigned, unlinked, hidden, and draft devlogs update project lists;
   state = await loadContent(directory);
   assert.equal(linked(state, first), false);
   assert.equal(linked(state, second), true);
-  assert.equal(load(documentPage(state, state.collections.project.find(doc => doc.slug === second)))('.project-sidebar .linked-devlogs').length, 1, 'Projects without sidebar metadata still display linked devlogs in a sidebar');
+  assert.equal(load(documentPage(state, state.collections.project.find(doc => doc.slug === second)))('.linked-devlogs').length, 0, 'Projects omit the additional devlog list');
   const devlog = state.collections.devlog.find(doc => doc.slug === slug);
   assert.equal(load(documentPage(state, devlog))('.linked-project a').attr('href'), `/project/${encodeURIComponent(second)}/`);
   for (const extra of ['hidden: true', 'published: false']) {

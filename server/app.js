@@ -1,3 +1,4 @@
+import { legacyIcons } from './config.js';
 import express from 'express';
 import path from 'node:path';
 import { root, loadContent, collectionNames } from './content.js';
@@ -13,7 +14,7 @@ export function createApp({ contentRoot = path.join(root, 'content') } = {}) {
   });
   app.use('/ui', express.static(path.join(root, 'public'), { maxAge: 0, dotfiles: 'deny' }));
   app.use('/assets', express.static(path.join(root, 'assets'), { maxAge: '1h', dotfiles: 'deny' }));
-  for (const filename of ['favicon.ico', 'favicon.png', 'article.ico', 'article.png', 'devlog.ico', 'devlog.png']) {
+  for (const filename of legacyIcons) {
     app.get(`/${filename}`, (req, res) => res.sendFile(path.join(root, 'public', 'icons', filename)));
   }
   app.get('/healthz', (req, res) => res.json({ status: 'ok' }));

@@ -4,8 +4,7 @@ excerpt: >
   Reviews of some demos I played during Next Fest: June 2024, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.
 published: true
 time: 2025-06-09
-header:
-  teaser: /assets/images/articles/NextFestReportJun25/teaser.jpg
+teaser: /assets/images/articles/NextFestReportJun25/teaser.jpg
 ---
 
 Reviews of some demos I played during Next Fest: June 2024, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.

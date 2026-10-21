@@ -1,48 +1,57 @@
 ---
-title: "Scriptable Functions Library"
-tags: ["Plugin","Database","Unity"]
-skills: ["Tools"]
-published: true 
-featured: true
+# Listing and publishing
 time: 2026-05b
 
-header:
-  teaser: /assets/images/projects/Scriptable Functions Library/teaser.jpg
+published: true
 
-sidebar:
-  - title: Scriptable Functions Library
-    text: > 
-      A Unity tool that generates a ScriptableObject used to register and manage callable functions via string IDs.
-  - title: Tags
-    text: > 
-      #Plugin #Database #Unity
-  - title: Develop Date
-    text: > 
-      2026/4 ~ 2026/4
-  - title: Team size
-    text: > 
-      1
-  - title: Download
-    text: > 
-      [Link](https://github.com/12OI3/Scriptable-Functions-Library)
-  - title: Role & Responsibility
-    text: >
-      Solo Development: 
-      <br>
-      - Everything.
+featured: 2
+
+teaser: /assets/images/projects/Scriptable Functions Library/teaser.jpg
+
+# Main content
+title: Scriptable Functions Library
+
+tags:
+  - Plugin
+  - Database
+
+hook: >
+  A Unity tool that generates a ScriptableObject used to register and manage callable functions via
+  string IDs.
+
+roles: |-
+  ### Solo Development
+
+# Sidebar
+skills:
+  - Tools
+
+development_date: 2026/4 ~ 2026/4
+
+tech_stack:
+  - Unity
+  - C#
+
+team: 1 person
+
+links:
+  - label: GitHub
+    url: https://github.com/12OI3/Scriptable-Functions-Library
+
+# Extra content below this front matter appears after Roles.
 ---
 
-A Unity tool that generates a ScriptableObject used to register and manage callable functions via string IDs.
-
-[Git Hub Link](https://github.com/12OI3/Scriptable-Functions-Library)
-
-## Introduction
 Scriptable Functions Library provides a lightweight way to organize and invoke functions using string ID. It is flexible enough to support various use cases. This tool is particularly suitable for technical designers or developers comfortable with minor code integration, as some parameters must still be defined in code. This system is also designed primarily for prototyping. It may not scale efficiently for large production systems.
 
 That said, it helps:
 - Avoid large switch-case statements
 - Centralize function management
 - Improve iteration speed during development
+
+
+
+
+**I should put these under devlog instead**
 
 ## Basic Utilities
 
@@ -133,7 +142,6 @@ public class Three : NumberFunction
 {
     public override int Number => 3;
 }
-
 
 ```
 

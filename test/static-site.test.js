@@ -5,7 +5,8 @@ import path from 'node:path';
 import express from 'express';
 import { load } from 'cheerio';
 import { buildSite, outputRoot, staticPages } from '../scripts/build-site.js';
-import { loadContent } from '../server/content.js';
+import { loadContent, root } from '../server/content.js';
+import { browserAssets } from '../scripts/browser-assets.js';
 
 test('GitHub Pages output serves every page and local asset without the Markdown server', async t => {
   // Deleted/unpublished content must not survive a subsequent build.
@@ -22,6 +23,13 @@ test('GitHub Pages output serves every page and local asset without the Markdown
   t.after(() => new Promise(resolve => { server.closeAllConnections(); server.close(resolve); }));
   const base = `http://127.0.0.1:${server.address().port}`;
   const urls = new Set(['/']);
+  for (const [filename, source] of await browserAssets(path.join(root, 'public'))) {
+    const response = await fetch(base + '/ui/' + filename);
+    assert.equal(response.status, 200, filename);
+    assert.deepEqual(Buffer.from(await response.arrayBuffer()), source, filename);
+    if (filename.endsWith('.js')) assert.match(response.headers.get('content-type'), /javascript/, filename);
+    if (filename.endsWith('.css')) assert.match(response.headers.get('content-type'), /css/, filename);
+  }
   for (const [filename, expected] of pages) {
     const url = '/' + filename.split('/').map(encodeURIComponent).join('/');
     assert.equal(await (await fetch(base + url)).text(), expected, filename);

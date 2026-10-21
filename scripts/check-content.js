@@ -1,3 +1,5 @@
+import { browserAssets } from './browser-assets.js';
+import { legacyIcons, collectionNames } from '../server/config.js';
 import { access } from 'node:fs/promises';
 import { load } from 'cheerio';
 import path from 'node:path';
@@ -7,7 +9,7 @@ import { homePage, collectionPage, documentPage, standalonePage } from '../serve
 // Validate rendered pages and their local references.
 const state = await loadContent();
 const documents = Object.values(state.collections).flat();
-const collectionPages = ['projects', 'devlogs', 'articles'];
+const collectionPages = Object.values(collectionNames);
 const standalonePages = Object.keys(state.pages).filter(name => !['home', ...collectionPages].includes(name));
 const normalize = pathname => pathname.replace(/\/$/, '') || '/';
 const knownPages = new Set([
@@ -16,7 +18,7 @@ const knownPages = new Set([
   ...standalonePages.flatMap(name => [`/${name}`, `/${name}.html`]),
   ...documents.map(doc => normalize(decodeURIComponent(doc.url))),
 ]);
-const icons = new Set(['favicon.ico', 'favicon.png', 'article.ico', 'article.png', 'devlog.ico', 'devlog.png']);
+const icons = new Set(legacyIcons);
 const pages = [
   { name: 'content/pages/home.md', html: homePage(state) },
   ...Object.keys(state.collections).map(type => ({ name: `${type} listing`, html: collectionPage(state, type) })),
@@ -24,6 +26,8 @@ const pages = [
   ...standalonePages.map(name => ({ name: `content/pages/${name}.md`, html: standalonePage(state, name) })),
 ];
 const issues = [];
+try { await browserAssets(path.join(root, 'public')); }
+catch (error) { issues.push(error.message); }
 const checkedFiles = new Map();
 for (const page of pages) {
   const $ = load(page.html);

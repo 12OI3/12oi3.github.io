@@ -34,45 +34,77 @@ content/
   devlogs/        Development log Markdown
   articles/       Article Markdown
 assets/           Original images and résumé
-public/           Browser CSS and JavaScript
-  icons/          Site icons and homepage illustrations
-server/           Shared content loader, renderer, layouts, development server
+public/
+  site.js         Browser entry point (native ES modules)
+  behaviors/      Navigation, cat scrolling, filters, galleries, comments
+  site.css        Ordered stylesheet imports
+  styles/         Base, layout, home, projects, journals, document, cat
+  icons/          Site icons and cat illustrations
+server/
+  config.js       Shared collection names, skills, and icon URLs
+  content.js      Content loading entry point
+  content/        Validation, taxonomy, relationships, homepage selections
+  views.js        Page rendering entry point
+  views/          Layout and page-specific templates
+  markdown.js     Markdown parser and component directives
+  components/     Shared cat, gallery, and feature rendering
+  html.js         HTML escaping and local URL encoding
+  app.js          Development HTTP routes
 test/             Route, content-rendering, and live-update checks
 scripts/          Content audit, static build, static preview
 .github/workflows/pages.yml  Build, test, and publish to GitHub Pages
 dist/             Generated website (ignored by Git; recreated by each build)
 ```
 
+See [docs/architecture.md](docs/architecture.md) for the rendering flow and where to add features.
+
 ## Add a project, devlog, or article
+
+Start with the copy-ready [Project](content/projects/template.md),
+[Devlog](content/devlogs/template.md), or [Article](content/articles/template.md)
+template. See [template instructions](docs/content-templates.md) for destinations,
+dates, media, and publishing. Each template lives in its collection folder with
+`published: false`, keeping it off listings and direct URLs.
 
 Add a `.md` file to the appropriate content directory. Filename stems determine URLs; keep published filenames stable. For example, `content/projects/2026-10-My Project.md` is served at `/project/2026-10-My%20Project/`.
 
 ```markdown
 ---
 title: "My Project"
-excerpt: "A short description."
-tags: [GameJam, Puzzle, Unity]
+hook: >-
+  A short hook.
+tags: [GameJam, Puzzle]
+tech_stack: [Unity, C#]
 skills: [Technical Game Design, UI/UX]
-featured: false
+featured: 0
 time: "2026-10"
 published: true
-header:
-  teaser: /assets/images/projects/My Project/teaser.jpg
+teaser: /assets/images/projects/My Project/teaser.jpg
+development_date: "2026/08 ~ PRESENT"
+team: "3 people"
+links:
+  - label: itch.io
+    url: https://example.itch.io/my-project
+roles: |-
+  ### Game designer
+  - Designed the core mechanics and levels.
 ---
 
-Write the page here with normal Markdown.
+Extra content here appears after Roles.
 ```
 
 `title` and `time` are required for collection documents. The three listing pages automatically include new published files. `time` is an ordering string, sorted newest first; existing values such as `2023-07a` and `2023-07b` retain their ordering. Use consistent, zero-padded values (`YYYY-MM` for projects and `YYYY-MM-DD` for articles/devlogs).
 
-`published: false` keeps a document off both the listing and its direct URL. `hidden: true` hides it from the listing while keeping the URL accessible. Omit `header.teaser` if no thumbnail is needed. `comments: false` disables comments for an individual page.
+`published: false` keeps a document off both the listing and its direct URL. `hidden: true` hides it from the listing while keeping the URL accessible. Omit `teaser` if no thumbnail is needed. `comments: false` disables comments for an individual page.
 
 
-Set `featured: true` in a project's front matter to give its Projects page card a gold border, subtle accent background, and a star-only badge with an accessible "Featured project" label. It defaults to `false`; use unquoted booleans. It also adds the project to the automatic Featured filter on the Projects page. The Featured button and dropdown option toggle the same single-tag filter as the other tags; clicking the active button clears it. Featured is derived from the boolean, so there is no need to add it to `tags` or `pinned_tags`. Card order and homepage selections remain unchanged. Devlog `highlight` remains a separate option for featuring linked posts.
+Set `featured` to an integer priority in a project's front matter (default `0`, without quotes). Positive values add the project to the automatic Featured filter and give its Projects page card an accent background and gold star badge. Higher values appear first when Featured is selected; equal priorities keep their normal order. Zero and negative values are not featured. The Featured button and dropdown option toggle the same filter; clearing it restores normal card order. There is no need to add Featured to `tags` or `pinned_tags`. Homepage selections remain unchanged. Devlog `highlight` remains a separate boolean.
 
 ## Project tags and filtering
 
-Add a `tags` list to a project's front matter. These tags appear on its card and in the Projects page filter dropdown:
+Project cards on the homepage and Projects page show the title, clickable project tags, and the `hook`. Each tag links to its Projects page filter. The `hook` also supplies the blockquote on the project detail page, so editing it once updates all three places. Markdown formatting is supported. Devlogs and articles continue to use `excerpt`.
+
+Add a `tags` list to a project's front matter. These tags remain available in the Projects page filter dropdown:
 
 ```yaml
 tags:
@@ -81,7 +113,7 @@ tags:
   - Financial Literacy
 ```
 
-Use plain tag names without `#`. Multiword names are supported. Matching ignores capitalization, surrounding whitespace, and an optional leading `#`; duplicates within a project are removed. Use consistent spelling for display. Omit `tags` or use `tags: []` for an untagged project, which appears when no filter is selected. `excerpt` is optional descriptive text separate from the tags. Existing detail-page sidebar text stays independently editable.
+Use plain tag names without `#`. Multiword names are supported. Matching ignores capitalization, surrounding whitespace, and an optional leading `#`; duplicates within a project are removed. Use consistent spelling for display. Omit `tags` or use `tags: []` for an untagged project, which appears when no filter is selected. Put engines, languages, SDKs, and libraries in `tech_stack`, for example `tech_stack: [Unity, C#, FMOD]`. These entries appear in the Tech Stack sidebar and in the same Projects filter dropdown and pinned controls as regular tags and skills. Filter counts deduplicate names across all three lists. Each detail-page tag links to its filter, including names with `#` or `+`.
 
 Choose which tags appear as shortcut buttons in `content/pages/projects.md`:
 
@@ -89,34 +121,46 @@ Choose which tags appear as shortcut buttons in `content/pages/projects.md`:
 pinned_tags: [GameJam, Plugin, ETC-BVW, Prototype, VR]
 ```
 
-Buttons follow this order. Tags without any listed projects are omitted. Use `pinned_tags: []` to keep only the dropdown. Both controls select one tag at a time, show matching counts, and preserve chronological project order. Clicking the selected pinned tag again clears the filter and shows all projects; selecting **All tags** in the dropdown does the same. The filter is shareable through `projects.html?tag=GameJam`, and browser Back/Forward restores it. Draft and hidden projects never contribute tags or counts. Filtering runs in the browser on GitHub Pages; all projects remain readable with JavaScript disabled.
+Buttons follow this order. Tags without any listed projects are omitted. Use `pinned_tags: []` to keep only the automatic Featured button beside the dropdown. Both controls select one tag at a time, show matching counts, and preserve chronological project order. Clicking the selected pinned tag again clears the filter and shows all projects; selecting **All tags** in the dropdown does the same. The filter is shareable through `projects.html?tag=GameJam`, and browser Back/Forward restores it. Draft and hidden projects never contribute tags or counts. Filtering runs in the browser on GitHub Pages; all projects remain readable with JavaScript disabled.
 
 Skills use a separate `skills` list. The supported values are `Technical Game Design`, `Tools`, and `UI/UX`. For example:
 
 ```yaml
-tags: [Plugin, VisualNovel, Unity]
+tags: [Plugin, VisualNovel]
+tech_stack: [Unity]
 skills: [Tools, UI/UX]
 ```
 
-Omit `skills` or use `skills: []` when none apply. Skill names normalize capitalization and whitespace; unsupported values or skill labels placed in `tags` produce a validation error. Cards show only the first three normal tags. The project dropdown and pinned buttons can filter by either normal tags or skills, with counts based on both lists. Homepage buttons still use the curated project lists in `home.md`; Technical Game Design starts selected, and exactly one skill stays active.
+Omit `skills` or use `skills: []` when none apply. Skill names normalize capitalization and whitespace; unsupported values or skill labels placed in `tags` produce a validation error. Detail pages show project tags below the title and skill tags at the top of the sidebar; cards show the project hook. The project dropdown and pinned buttons can filter by tags, skills, or Tech Stack. Homepage buttons still use the curated project lists in `home.md`; Technical Game Design starts selected, and exactly one skill stays active.
 
 ## Project details and galleries
 
-Optional sidebar metadata stays in front matter:
+Project detail order is fixed by the template: **featured devlog (full width) → title → trailer → hook quote → gallery → roles → Markdown content**. The sidebar contains **Tags → Skills → Development date → Tech Stack → Team → Links**. Skills and tags are omitted when empty. On mobile, the sidebar sits after the title and before the trailer. Missing trailers and galleries are omitted. Missing sidebar values and roles display a neutral availability label; existing author placeholders are preserved.
+
+Use structured front matter for these sections; project `sidebar` arrays are rejected to prevent layout drift:
 
 ```yaml
-sidebar:
-  - title: Team size
-    text: "3"
-  - title: Role & Responsibility
-    text: "Designer and programmer."
+development_date: "2026/01 ~ 2026/04"
+tech_stack: [Unity, C#]
+team: "3 people"
+links:
+  - label: GitHub
+    url: https://github.com/example/my-project
+trailer: https://www.youtube-nocookie.com/embed/VIDEO_ID
+roles: |-
+  ### Designer and programmer
+  - Designed and implemented the core gameplay.
 gallery:
   - url: /assets/images/projects/My Project/1.jpg
     image_path: /assets/images/projects/My Project/1.jpg
     alt: "Gameplay screenshot"
 ```
 
-Place this component where the gallery should appear in the Markdown body:
+The project `gallery` array renders automatically between the hook and Roles. Do not repeat its directive in the project body. `trailer` takes an HTTPS embed URL. `links: []` displays “Not available” without an empty hyperlink. Markdown is supported in `roles`, `team`, and `development_date`.
+
+Use `hook` for the short card text and quote below the trailer. Write detailed descriptions in the Markdown body after the closing `---`, followed by features, tutorials, notes, and supporting media. This content appears after Roles. The featured devlog appears at the top across the full page width; project pages omit the additional devlog list and comments.
+
+Other documents, or additional galleries in extra content, can still place a gallery using:
 
 ```markdown
 :::gallery gallery
@@ -154,7 +198,7 @@ project_groups:
     - 2025-11-BEAT-Shojo
 ```
 
-Technical Game Design is selected by default. Exactly one homepage skill stays selected: clicking the active button keeps it selected, and choosing another switches the displayed list. If Technical Game Design is removed from the configuration, the first group becomes the default. Each list appears in the exact order written. A project can belong to multiple lists. Use `[]` for an empty list; selecting it shows an empty state while keeping its button active. Missing, hidden, or unpublished project references cause a clear validation error. Cards read the current title, teaser image, tags, and URL from each project. Project selections do not use a highlight flag.
+Technical Game Design is selected by default. Exactly one homepage skill stays selected: clicking the active button keeps it selected, and choosing another switches the displayed list. If Technical Game Design is removed from the configuration, the first group becomes the default. Each list appears in the exact order written. A project can belong to multiple lists. Use `[]` for an empty list; selecting it shows an empty state while keeping its button active. Missing, hidden, or unpublished project references cause a clear validation error. Cards read the current title, teaser image, hook, and URL from each project. Project selections do not use a highlight flag.
 
 The `:::feature intro center` and `:::feature projects project` components render the introduction and these selections. Changes appear on the next request with `pnpm dev`, or after rebuilding with `pnpm build` for the static preview and GitHub Pages.
 
@@ -162,7 +206,7 @@ Edit `projects.md`, `devlogs.md`, or `articles.md` in `content/pages/` for colle
 
 ## Link devlogs to projects
 
-Homepage project cards show a featured devlog link only for a linked devlog with `highlight: true` in its YAML front matter. Project detail pages also show that devlog in a full-width headline card above the project content and sidebar, including its title, excerpt, and link. This devlog-only boolean defaults to `false`; use unquoted `true` or `false`. If several linked devlogs are highlighted, the newest visible, published one is shown. No headline card appears when none qualify. The full devlog listing and project sidebar lists still include unhighlighted posts.
+Homepage project cards show a featured devlog link only for a linked devlog with `highlight: true` in its YAML front matter. Project detail pages show that devlog in a card after Roles and any extra body content, including its title, excerpt, and link. This devlog-only boolean defaults to `false`; use unquoted `true` or `false`. If several linked devlogs are highlighted, the newest visible, published one is shown. No card appears when none qualify. The full devlog listing and project devlog lists still include unhighlighted posts.
 
 Set `projects` in a devlog's YAML front matter to a list of exact project filenames without `.md`:
 
@@ -180,9 +224,9 @@ published: true
 
 This example links the devlog to both projects. A highlighted devlog is eligible for the featured card on every linked project, and for those projects' homepage cards. Each project independently shows its newest highlighted devlog. Use `projects: []` or omit the field for general posts. Every referenced project must exist and be published; a typo or a reference to a draft project produces a build error naming the devlog to fix.
 
-Existing single-project syntax (`project: "2025-07-Vocabutory"`) still works. When changing to a list, replace `project` with `projects`. If both fields are present, their references are combined; repeated references produce only one link and one sidebar entry per project.
+Existing single-project syntax (`project: "2025-07-Vocabutory"`) still works. When changing to a list, replace `project` with `projects`. If both fields are present, their references are combined; repeated references produce only one link and one list entry per project.
 
-Each project page automatically lists its linked devlogs at the end of the project sidebar, newest first. A sidebar is created for the list even if the project has no other sidebar metadata. Each linked devlog shows links back to all its projects beneath the title, in the configured order. You only maintain the relationship in the devlog: no list or duplicate metadata is needed in project Markdown. Projects with no linked devlogs show no section. Drafts and `hidden: true` devlogs are excluded from generated lists; hidden devlogs still show their project links at their direct URL.
+Each project page automatically lists its linked devlogs after Roles, extra content, and the featured devlog card, newest first. Each linked devlog shows links back to all its projects beneath the title, in the configured order. You only maintain the relationship in the devlog: no list or duplicate metadata is needed in project Markdown. Projects with no linked devlogs show no section. Drafts and `hidden: true` devlogs are excluded from generated lists; hidden devlogs still show their project links at their direct URL.
 
 Changing or removing these references updates every project's list automatically on the next local request or Pages build. The existing handwritten project lists have been replaced with these generated lists. Ordinary links within prose still work. Original URLs containing spaces, Unicode, and `#` in filenames are supported; the renderer encodes these characters correctly.
 
@@ -219,10 +263,11 @@ pnpm check:content
 pnpm build
 ```
 
-The tests cover all 42 collection pages, galleries, embedded-video URLs, homepage/listing routes, filenames, missing pages, draft exclusion, new standalone pages, and local content edits without restarting. They also build the static output and check its page links, assets, journal listings, custom 404, removal of stale output, and exclusion of source files.
+The tests cover every published collection page, galleries, embedded-video URLs, homepage/listing routes, filenames, missing pages, draft exclusion, new standalone pages, and local content edits without restarting. They also build the static output and check its page links, assets, journal listings, custom 404, removal of stale output, and exclusion of source files.
 
-`check:content` audits the current rendered pages, including local navigation links, thumbnails, galleries, sidebar links, icons, and browser assets. Run it after editing content to check for broken references or unrendered template markup.
+`check:content` audits the current rendered pages, including local navigation links, thumbnails, galleries, sidebar links, icons, and browser assets. It also follows imported browser JavaScript and CSS files, catching missing nested assets before publishing. Run it after editing content or modules to check for broken references or unrendered template markup.
 
 Generated screenshots live in ignored `artifacts/`, which is not used by the application or included in the Docker image.
 
 Site icons are organized under `public/icons/`; compatibility routes keep their original URLs, such as `/favicon.png` and `/devlog.png`.
+

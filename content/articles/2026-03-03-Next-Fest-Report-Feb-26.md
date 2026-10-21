@@ -4,8 +4,7 @@ excerpt: >
   I wrote short comments for all 31 demos I played, including Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.
 published: true
 time: 2026-03-03
-header:
-  teaser: /assets/images/articles/NextFestReportFeb26/teaser.jpg
+teaser: /assets/images/articles/NextFestReportFeb26/teaser.jpg
 ---
 
 This time, I planned to try something different. I wrote short comments for all 31 demos I played. However, I’ll still highlight a few that are especially worth checking out at the beginning: Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.

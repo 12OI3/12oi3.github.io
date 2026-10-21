@@ -4,8 +4,7 @@ excerpt: >
   I played 26 demos during this Next Fest, and I'll share some of the good ones, including Map Map, Batomon Showdown, IRON NEST, and STUNTBOOST.
 published: true
 time: 2026-07-02
-header:
-  teaser: /assets/images/articles/NextFestReportJun26/teaser.jpg
+teaser: /assets/images/articles/NextFestReportJun26/teaser.jpg
 ---
 
 I originally planned to play 56 demos, but I only got through some of them. Here is the list of what I played, and I'll introduce some of the good ones below.

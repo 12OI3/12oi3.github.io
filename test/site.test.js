@@ -25,16 +25,15 @@ test('every collection page renders its complete Markdown body and galleries', a
     assert.equal(response.headers.get('cache-control'), 'no-store');
     const $ = load(await response.text());
     assert.equal($('.document-heading h1').text(), doc.data.title);
-    // Projects may contain only front-matter sidebar details. Verify the actual
-    // saved body rather than requiring prose that the author has not written.
+    // Project bodies now hold extra content after the structured sections.
     const expectedBody = load(renderMarkdown(doc.body, doc.data));
     assert.equal($('.prose').length, 1, doc.slug);
-    assert.equal($('.prose').text().trim(), expectedBody('body').text().trim(), doc.slug);
+    assert.equal($(doc.type === 'project' ? '.project-extra' : '.prose').text().trim(), expectedBody('body').text().trim(), doc.slug);
     assert.doesNotMatch($('.prose').text(), /\{%|\{\{|:::gallery|\{\./);
-    const expectedGalleryCount = [...doc.body.matchAll(/^:::gallery /gm)].length;
-    assert.equal($('.gallery').length, expectedGalleryCount, doc.slug);
-    const expectedVideos = [...doc.body.matchAll(/<iframe /g)].length;
-    assert.equal($('.prose iframe').length, expectedVideos, doc.slug);
+    const expectedGalleryCount = [...doc.body.matchAll(/^:::gallery /gm)].length + (doc.type === 'project' && (doc.data.gallery?.length || doc.data.trailer) ? 1 : 0);
+    assert.equal($('.gallery, .project-gallery').length, expectedGalleryCount, doc.slug);
+    const expectedVideos = [...doc.body.matchAll(/<iframe /g)].length + (doc.type === 'project' && doc.data.trailer ? 1 : 0);
+    assert.equal($('.prose iframe, .project-gallery iframe').length, expectedVideos, doc.slug);
     for (const match of doc.body.matchAll(/<iframe[^>]+src="([^"]+)"/g)) {
       assert.ok($('.prose iframe').toArray().some(el => $(el).attr('src') === match[1]), `Missing video in ${doc.slug}`);
     }

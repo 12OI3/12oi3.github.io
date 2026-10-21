@@ -1,78 +1,66 @@
 ---
-title: "FOLDward"
-tags: ["ETC-BVW","AdaptiveController"]
-skills: ["Technical Game Design","UI/UX"]
-published: true 
+# Listing and publishing
 time: 2025-09
 
-header:
-  teaser: /assets/images/projects/FOLDward/teaser.jpg
+published: true
+
+teaser: /assets/images/projects/FOLDward/teaser.jpg
+
+# Main content
+title: FOLDward
+
+tags:
+  - ETC-BVW
+  - AdaptiveController
+
+trailer: https://www.youtube-nocookie.com/embed/4sm9BxIdIe8?controls=0
+
+hook: |
+  A game that 2 players collbaorate to fold different types of paper planes to shoot balloons
 
 gallery:
   - url: /assets/images/projects/FOLDward/6.jpg
     image_path: /assets/images/projects/FOLDward/6.jpg
-    alt: "Screen Shot F"
+    alt: Screen Shot F
   - url: /assets/images/projects/FOLDward/1.jpg
     image_path: /assets/images/projects/FOLDward/1.jpg
-    alt: "Screen Shot A"
+    alt: Screen Shot A
   - url: /assets/images/projects/FOLDward/2.jpg
     image_path: /assets/images/projects/FOLDward/2.jpg
-    alt: "Screen Shot B"
+    alt: Screen Shot B
   - url: /assets/images/projects/FOLDward/3.jpg
     image_path: /assets/images/projects/FOLDward/3.jpg
-    alt: "Screen Shot C"
+    alt: Screen Shot C
   - url: /assets/images/projects/FOLDward/4.jpg
     image_path: /assets/images/projects/FOLDward/4.jpg
-    alt: "Screen Shot D"
+    alt: Screen Shot D
   - url: /assets/images/projects/FOLDward/5.jpg
     image_path: /assets/images/projects/FOLDward/5.jpg
-    alt: "Screen Shot E"
+    alt: Screen Shot E
 
-sidebar:
-  - title: FOLDward
-    text: > 
-      A game that 2 players collbaorate to fold different types of paper planes to shoot balloons
-  - title: Tags
-    text: > 
-      #ETC-BVW #AdaptiveController
-  - title: Develop Date
-    text: > 
-      2025/9 ~ 2025/9
-  - title: Team size
-    text: > 
-      5
-  - title: Download
-    text: > 
-      [Not Available]()
-  - title: Role & Responsibility
-    text: >
-      Programmer:
-      <br>
-      - Main structure and overall gameplay system.
-      <br>
-      Designer:
-      <br>
-      - Participated Core Gameplay Design.
-      <br>
-      - Detail game mechanics and QoL, level design, part of UIs.
+roles: |-
+  ### Programmer
+  - Main structure and overall gameplay system.
+
+  ### Designer
+  - Participated Core Gameplay Design.
+  - Detail game mechanics and QoL, level design, part of UIs.
+
+# Sidebar
+skills:
+  - Technical Game Design
+  - UI/UX
+
+development_date: 2025/9 ~ 2025/9
+
+tech_stack: []
+
+team: 5 people
+
+links: []
+
+# Extra content below this front matter appears after Roles.
 ---
-
-A game that 2 players collbaorate to fold different types of paper planes to shoot balloons
-
-:::gallery gallery
-:::
-
-## Feature
-
-* Created during Carnegie Mellon University Entertainment Technology Center’s signature course, Building Virtual Worlds.  
-* Prompted by “Fold paper in shapes”, we designed a collaborative game where two players fold paper planes to shoot balloons.  
-* Integrated the Xbox Adaptive Controller into custom two-button machines as the main interface.
-
-<b></b>
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/4sm9BxIdIe8?controls=0" frameborder="0" allowfullscreen></iframe>
-<b></b>
-
-## Description
 
 Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. Out prompt is "Fold paper in shapes," and we quicklly came up with a cooperative game in which two players fold different paper planes to pop balloons. In this round, we were also required to integrate the Xbox Adaptive Controller into our project. To achieve this, we built two custom button machines that serve as the game’s interface.  
 

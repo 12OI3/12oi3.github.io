@@ -4,8 +4,7 @@ excerpt: >
   Through a series of coincidences and fated decisions, my journey of Outer Wilds led to this moment.
 published: true
 time: 2025-06-23
-header:
-  teaser: /assets/images/articles/GameLog2/teaser.jpg
+teaser: /assets/images/articles/GameLog2/teaser.jpg
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/ss_ec95a283483f0438be40d033f08b9d956e748d54.1920x1080.jpg?t=1729097431)](https://store.steampowered.com/app/753640/Outer_Wilds/)

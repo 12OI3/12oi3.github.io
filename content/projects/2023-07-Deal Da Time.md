@@ -1,67 +1,62 @@
 ---
-title: "Deal Da Time"
-tags: ["GameJam","Puzzle","Platform","Unity"]
-skills: ["Technical Game Design"]
-published: true 
+# Listing and publishing
 time: 2023-07b
 
-header:
-  teaser: /assets/images/projects/Deal Da Time/teaser.jpg
+published: true
+
+teaser: /assets/images/projects/Deal Da Time/teaser.jpg
+
+# Main content
+title: Deal Da Time
+
+tags:
+  - GameJam
+  - Puzzle
+  - Platform
+
+hook: |
+  A platformer game, but you are the timer?
 
 gallery:
   - url: /assets/images/projects/Deal Da Time/1.jpg
     image_path: /assets/images/projects/Deal Da Time/1.jpg
-    alt: "Screen Shot A"
+    alt: Screen Shot A
   - url: /assets/images/projects/Deal Da Time/2.jpg
     image_path: /assets/images/projects/Deal Da Time/2.jpg
-    alt: "Screen Shot B"
+    alt: Screen Shot B
   - url: /assets/images/projects/Deal Da Time/3.jpg
     image_path: /assets/images/projects/Deal Da Time/3.jpg
-    alt: "Screen Shot C"
+    alt: Screen Shot C
 
-sidebar:
-  - title: Deal Da Time
-    text: > 
-      A platformer game, but you are the timer?
-  - title: Tags
-    text: > 
-      #GameJam #Puzzle #Platform #Unity
-  - title: Develop Date
-    text: > 
-      2023/7
-  - title: Team size
-    text: > 
-      4
-  - title: Download
-    text: > 
-      [Link](https://intoxicat-studio.itch.io/deal-da-time)
-  - title: Role & Responsibility
-    text: >
-      Project Manager:
-      <br>
-      - Manage the project's production schedule and task distribution.
-      <br>
-      Designer:
-      <br>
-      - Design most mechanics of the game.
-      <br>
-      - Level design.
-      <br>
-      Programmer:
-      <br>
-      - Menu system.
+roles: |-
+
+  ### Designer
+  - Design the core mechanics of the game.
+  - Level design.
+
+  ### Programmer
+  - Main menu system.
+  
+  ### Producer
+  - Manage the project's production schedule and task distribution.
+
+# Sidebar
+skills:
+  - Technical Game Design
+
+development_date: 2023/7
+
+tech_stack:
+  - Unity
+
+team: 4 people
+
+links:
+  - label: itch.io
+    url: https://intoxicat-studio.itch.io/deal-da-time
+
+# Extra content below this front matter appears after Roles.
 ---
-
-A platformer game, but you are the timer?
-
-:::gallery gallery
-:::
-
-## Feature
-
-* Controlling the speed of timer to help little bot reach the goal.
-
-## Description
 
 Deal Da Time is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Role Reversed."
 
@@ -69,4 +64,4 @@ In our game, you need to adjust the timer to help a stupid little bot reach the 
 
 At the start of each level, you will have several blocks. A yellow block means the timer will double in speed, while an orange block means the timer will run at half speed. After placing all the blocks on the action bar, you can click the machine to see how the bot executes its actions. If the bot reaches the diamond, you win.
 
-This game offers an intriguing gameplay concept where players must adjust the timer to control the bot's movements. Analyzing the bot's actions and strategically placing the blocks will be key to achieving success in the puzzles. 
+This game offers an intriguing gameplay concept where players must adjust the timer to control the bot's movements. Analyzing the bot's actions and strategically placing the blocks will be key to achieving success in the puzzles.

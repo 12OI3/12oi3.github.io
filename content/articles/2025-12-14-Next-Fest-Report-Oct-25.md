@@ -4,8 +4,7 @@ excerpt: >
   Reviews of some demos I played during Next Fest: October 2024, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.
 published: true
 time: 2025-12-14
-header:
-  teaser: /assets/images/articles/NextFestReportOct25/teaser.jpg
+teaser: /assets/images/articles/NextFestReportOct25/teaser.jpg
 ---
 
 Reviews of some demos I played during Next Fest: October 2024, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.

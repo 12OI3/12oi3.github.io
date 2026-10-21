@@ -51,7 +51,7 @@ test('project filters derive counts and pinned buttons from visible projects, sa
   const $ = load(collectionPage(state, 'project'));
   assert.deepEqual($('.entry-card h2').map((_, el) => $(el).text()).get(), ['First', 'Second', 'Untagged', 'Escaped']);
   assert.deepEqual($('.tag-filter').map((_, el) => $(el).attr('data-tag')).get(), ['Featured', 'Puzzle', 'C++']);
-  assert.equal($('.tag-filter[aria-pressed="true"]').length, 0);
+  assert.equal($('.tag-filter[aria-pressed="true"]:not([hidden])').length, 0);
   assert.equal($('.tag-filter[data-tag="Puzzle"] span').text(), '2');
   assert.equal($('#project-tag option[value="Unused"]').length, 0);
   assert.equal($('#project-tag option').filter((_, el) => $(el).attr('value') === '<tag> " &').length, 1);
@@ -61,13 +61,13 @@ test('project filters derive counts and pinned buttons from visible projects, sa
   assert.equal($('.entry-date').first().text(), '2026-05');
 });
 
-test('Featured is derived from the flag and has one automatic toggle with visible counts', async () => {
-  assert.deepEqual(projectFilterTags({ tags: ['Puzzle', 'Featured'], featured: false }), ['Puzzle']);
-  assert.deepEqual(projectFilterTags({ tags: ['Puzzle', 'featured'], featured: true }), ['Puzzle', 'Featured']);
+test('Featured is derived from the priority and has one automatic toggle with visible counts', async () => {
+  assert.deepEqual(projectFilterTags({ tags: ['Puzzle', 'Featured'], featured: 0 }), ['Puzzle']);
+  assert.deepEqual(projectFilterTags({ tags: ['Puzzle', 'featured'], featured: 1 }), ['Puzzle', 'Featured']);
   const state = await loadContent();
   state.pages.projects.data.pinned_tags = ['Featured', 'FEATURED', 'Puzzle'];
   const doc = (title, featured, hidden = false) => ({ data: { title, featured, hidden, tags: ['Puzzle'], time: '2026-01' }, url: '/project/' + title + '/' });
-  state.collections.project = [doc('Featured', true), doc('Normal', false), doc('Hidden', true, true)];
+  state.collections.project = [doc('Featured', 5), doc('Normal', 0), doc('Hidden', 3, true)];
   const $ = load(collectionPage(state, 'project'));
   assert.equal($('.tag-filter[data-tag="Featured"]').length, 1);
   assert.equal($('.tag-filter[data-tag="Featured"] span').text(), '1');
@@ -77,7 +77,7 @@ test('Featured is derived from the flag and has one automatic toggle with visibl
   assert.equal(badge.text(), '');
   assert.equal(badge.attr('aria-label'), 'Featured project');
   assert.equal(badge.find('svg').length, 1);
-  state.collections.project = [doc('Normal', false)];
+  state.collections.project = [doc('Normal', 0)];
   const empty = load(collectionPage(state, 'project'));
   assert.equal(empty('.tag-filter[data-tag="Featured"] span').text(), '0');
   assert.equal(empty('#project-tag option[value="Featured"]').text(), 'Featured (0)');

@@ -4,8 +4,7 @@ excerpt: >
   Should I make a roguelike game? (NO.)
 published: true
 time: 2026-04-20
-header:
-  teaser: /assets/images/articles/GameLog8/teaser.jpg
+teaser: /assets/images/articles/GameLog8/teaser.jpg
 roguelikes:
   - url: https://store.steampowered.com/app/646570/Slay_the_Spire/
     image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/ss_01aa3e7759e457bfbf2422f31c325d7b3ba8a6eb.1920x1080.jpg?t=1774015376

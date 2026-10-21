@@ -1,70 +1,62 @@
 ---
-title: "One Day More"
-tags: ["GameJam","Narrative","Unity"]
-skills: ["Technical Game Design","Tools"]
-published: true 
+# Listing and publishing
 time: 2026-01a
 
-header:
-  teaser: /assets/images/projects/One Day More/teaser.jpg
+published: true
+
+teaser: /assets/images/projects/One Day More/teaser.jpg
+
+# Main content
+title: One Day More
+
+tags:
+  - GameJam
+  - Narrative
+
+trailer: https://www.youtube-nocookie.com/embed/JlRxX7L-hp4?controls=0
+
+hook: >
+  A narritive puzzle game with no text, you are a ghost that try to help a little girl by possessing
+  items.
 
 gallery:
   - url: /assets/images/projects/One Day More/1.jpg
     image_path: /assets/images/projects/One Day More/1.jpg
-    alt: "Screen Shot A"
+    alt: Screen Shot A
   - url: /assets/images/projects/One Day More/2.jpg
     image_path: /assets/images/projects/One Day More/2.jpg
-    alt: "Screen Shot B"
+    alt: Screen Shot B
   - url: /assets/images/projects/One Day More/3.jpg
     image_path: /assets/images/projects/One Day More/3.jpg
-    alt: "Screen Shot C"
+    alt: Screen Shot C
 
-sidebar:
-  - title: One Day More
-    text: > 
-      A narritive puzzle game with no text, you are a ghost that try to help a little girl by possessing items.
-  - title: Tags
-    text: > 
-      #GameJam #Narrative #Unity
-  - title: Develop Date
-    text: > 
-      2025/12 ~ 2026/1
-  - title: Team size
-    text: > 
-      5
-  - title: Download
-    text: > 
-      [Link](https://austinszema.itch.io/one-day-more)
-  - title: Role & Responsibility
-    text: >
-      Designer:
-      <br>
-      - Design level progression
-      <br>
-      Programmer:
-      <br>
-      - Level progression system
-      <br>
-      - Possessing system
-      <br>
-      - Events bus system
+roles: |-
+  ### Designer
+  - Design level progression
+
+  ### Programmer
+  - Level progression system
+  - Possessing system
+  - Events bus system
+
+# Sidebar
+skills:
+  - Technical Game Design
+  - Tools
+
+development_date: 2025/12 ~ 2026/1
+
+tech_stack:
+  - Unity
+
+team: 5 people
+
+links:
+  - label: itch.io
+    url: https://austinszema.itch.io/one-day-more
+
+# Extra content below this front matter appears after Roles.
 ---
-
-A narritive puzzle game with no text, you are a ghost that try to help a little girl by possessing items.
-
-:::gallery gallery
-:::
-
-## Feature
-
-* There is no text in the game, we tell the story only using visual.
-* The games contain four beautiful scenes that players can dig the story behing them.
-
-<b></b>
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/JlRxX7L-hp4?controls=0" frameborder="0" allowfullscreen></iframe>
-<b></b>
-
-## Description
 
 One Day More is a narritive puzzle game that was created during thatgamejam #01, with the theme of below picture.
 

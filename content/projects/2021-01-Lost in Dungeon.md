@@ -1,55 +1,49 @@
 ---
-title: "Lost in Dungeon"
-tags: ["GameJam","Action","Unity"]
-skills: []
-published: true 
+# Listing and publishing
 time: 2021-01
 
-header:
-  teaser: /assets/images/projects/Lost in Dungeon/teaser.jpg
+published: true
+
+teaser: /assets/images/projects/Lost in Dungeon/teaser.jpg
+
+# Main content
+title: Lost in Dungeon
+
+tags:
+  - GameJam
+  - Action
+
+hook: >
+  Created during Global Game Jam 2021, with the theme of ”Lost and Found”.
 
 gallery:
   - url: /assets/images/projects/Lost in Dungeon/1.jpg
     image_path: /assets/images/projects/Lost in Dungeon/1.jpg
-    alt: "Screen Shot A"
+    alt: Screen Shot A
 
-sidebar:
-  - title: Lost in Dungeon
-    text: > 
-      A dungeon crawling action game made by Unity created during Global Game Jam 2021, with the theme of ”Lost and Found”.
-  - title: Tags
-    text: > 
-      #GameJam #Action #Unity
-  - title: Develop Date
-    text: > 
-      2021/1
-  - title: Team size
-    text: > 
-      6
-  - title: Download
-    text: > 
-      [Not Available]()
-  - title: Role & Responsibility
-    text: >
-      Designer:
-      <br>
-      - Core gameplay idea, texts
-      <br>
-      Programmer:
-      <br>
-      - Random map generator
+roles: |-
+  ### Designer
+  - Core gameplay idea
+  - Text contents
+
+  ### Programmer
+  - Map generate system
+
+# Sidebar
+skills:
+  - Technical Game Design
+
+development_date: 2021/1
+
+tech_stack:
+  - Unity
+
+team: 6 people
+
+links: []
+
+# Extra content below this front matter appears after Roles.
 ---
-
-A dungeon crawling action game made by Unity created during Global Game Jam 2021, with the theme of ”Lost and Found”.
-
-:::gallery gallery
-:::
-
-## Feature
-
-* Clearing the game require you to know the meaning of lost.
-
-## Description
 
 This game is about getting lost in a dungeon due to your addiction to collecting more items, just like everyone does when playing Diablo-like games. You need to try to find your way out.
 

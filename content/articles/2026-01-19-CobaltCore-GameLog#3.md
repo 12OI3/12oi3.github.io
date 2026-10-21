@@ -4,8 +4,7 @@ excerpt: >
   The best word I can describe the ending of Cobalt Core is beautiful.
 published: true
 time: 2026-01-19
-header:
-  teaser: /assets/images/articles/GameLog3/teaser.jpg
+teaser: /assets/images/articles/GameLog3/teaser.jpg
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2179850/ss_61d8442fc974476e7d4f5d521cb61a577995315f.1920x1080.jpg?t=1753747411)](https://store.steampowered.com/app/2179850/Cobalt_Core/)

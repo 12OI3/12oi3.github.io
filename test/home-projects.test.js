@@ -6,7 +6,7 @@ import path from 'node:path';
 import yaml from 'js-yaml';
 import { load } from 'cheerio';
 import { loadContent, root } from '../server/content.js';
-import { homePage, collectionPage } from '../server/views.js';
+import { homePage, collectionPage, documentPage } from '../server/views.js';
 import { staticPages } from '../scripts/build-site.js';
 
 async function fixture(t) {
@@ -36,7 +36,8 @@ test('homepage defaults to Technical Game Design and preserves project order', a
   assert.deepEqual($('.specialty-button').map((_, el) => $(el).text()).get(), ['Tools', 'Technical Game Design', 'UI/UX']);
   assert.equal($('.specialty-button[aria-pressed="true"]').text(), 'Technical Game Design');
   assert.equal($('.home-content a[href="/projects.html"]').length, 0);
-  assert.ok($('#home-projects .project-tags li').length > 0);
+  assert.ok($('#home-projects .project-description').length > 0);
+  assert.ok($('#home-projects .project-card-tags').length > 0);
   assert.equal(staticPages(updated).get('index.html'), html);
   await save({ Tools: [] });
   const empty = load(homePage(await loadContent(directory)));
@@ -65,7 +66,7 @@ test('homepage selections reject malformed lists, duplicates, missing, draft, an
   }
 });
 
-test('home cards show three tags and the newest highlighted visible devlog, with a separate project link', async t => {
+test('home cards show descriptions and the newest highlighted visible devlog, with a separate project link', async t => {
   const { directory, state, save } = await fixture(t);
   const [project, withoutDevlogs] = state.collections.project.filter(doc => !doc.linkedDevlogs.length);
   await save({ Tools: [project.slug, withoutDevlogs.slug] });
@@ -78,7 +79,8 @@ test('home cards show three tags and the newest highlighted visible devlog, with
   assert.equal(card.find('.feature-project-link').attr('href'), project.url);
   assert.equal(card.find('.feature-devlog a').text(), 'Latest & best ↗');
   assert.equal(card.find('.feature-devlog a').attr('href'), '/devlog/2099-01-01-Test/');
-  assert.deepEqual(card.find('.project-tags li').map((_, el) => $(el).text()).get(), project.data.tags.slice(0, 3).map(tag => `#${tag}`));
+  assert.equal(card.find('.project-description').text().trim(), project.data.hook.trim());
+  assert.deepEqual(card.find('.project-card-tags a').map((_, el) => $(el).text()).get(), project.data.tags);
   assert.equal($('#home-projects article').filter((_, el) => $(el).find('.feature-project-link').attr('href') === withoutDevlogs.url).find('.feature-devlog').length, 0);
   for (const devlog of updated.collections.devlog) devlog.data.highlight = false;
   assert.equal(load(homePage(updated))('.feature-devlog').length, 0);
@@ -98,10 +100,10 @@ test('devlog highlight defaults to false and accepts only YAML booleans', async 
   }
 });
 
-test('project featured flag validates booleans and styles only Projects page cards', async t => {
+test('project featured priority validates integers and styles only Projects page cards', async t => {
   const { directory, save } = await fixture(t);
   const filename = path.join(directory, 'projects/2099-Featured.md');
-  for (const [value, expected] of [[undefined, false], ['true', true], ['false', false]]) {
+  for (const [value, expected] of [[undefined, 0], ['0', 0], ['1', 1], ['10', 10], ['-1', -1]]) {
     await writeFile(filename, `---\ntitle: Featured test\ntime: 2099\ntags: [Puzzle]\n${value === undefined ? '' : `featured: ${value}\n`}---\nBody`);
     await save({ 'Technical Game Design': ['2099-Featured'] });
     const state = await loadContent(directory);
@@ -111,14 +113,39 @@ test('project featured flag validates booleans and styles only Projects page car
       const $ = load(html);
       const card = $(selector).filter((_, el) => $(el).find('h2 a').attr('href') === project.url);
       assert.equal(card.length, 1);
-      const showFeatured = selector === '.entry-card' && expected;
+      const showFeatured = selector === '.entry-card' && expected > 0;
       assert.equal(card.hasClass('is-featured'), showFeatured);
       assert.equal(card.find('.project-featured-badge').length, showFeatured ? 1 : 0);
-      assert.deepEqual(card.find('.project-tags li').map((_, el) => $(el).text()).get(), ['#Puzzle']);
+      assert.equal(card.find('.project-card-tags').text(), 'Puzzle');
     }
   }
-  for (const value of ['"true"', '1', 'null', '[]']) {
+  for (const value of ['true', 'false', '"1"', '1.5', '9007199254740992', 'null', '[]']) {
     await writeFile(filename, `---\ntitle: Featured test\ntime: 2099\nfeatured: ${value}\n---\nBody`);
-    await assert.rejects(loadContent(directory), /2099-Featured.md: featured must be true or false/);
+    await assert.rejects(loadContent(directory), /2099-Featured.md: featured must be an integer/);
   }
+});
+
+
+test('one project hook updates both card layouts and the detail quote without changing filter tags', async t => {
+  const {directory, save} = await fixture(t);
+  const file = path.join(directory, 'projects/2099-Description.md');
+  await save({'Technical Game Design': ['2099-Description']});
+  for (const text of ['A **shared** description.', 'An updated description.']) {
+    await writeFile(file, '---\ntitle: Description test\ntime: 2099\nhook: >-\n  ' + text + '\ntags: [Puzzle]\nskills: [Tools]\n---\nBody');
+    const state = await loadContent(directory);
+    const project = state.collections.project.find(doc => doc.slug === '2099-Description');
+    assert.equal(project.data.hook, text);
+    const home = load(homePage(state));
+    const listing = load(collectionPage(state, 'project'));
+    const card = listing('.entry-card').filter((_, el) => listing(el).find('h2 a').attr('href') === project.url);
+    const detail = load(documentPage(state, project));
+    assert.equal(home('.project-description').html().trim(), card.find('.project-description').html().trim());
+    assert.equal(home('.project-description').text().trim(), detail('.project-hook').text().trim());
+    assert.equal(home('.project-card-tags').text(), 'Puzzle');
+    assert.equal(card.find('.project-card-tags').text(), 'Puzzle');
+    assert.equal(card.find('.project-card-tags a').attr('href'), '/projects.html?tag=Puzzle');
+    assert.deepEqual(JSON.parse(card.attr('data-project-tags')), ['Puzzle', 'Tools']);
+  }
+  await writeFile(file, '---\ntitle: Invalid\ntime: 2099\ndescription: [wrong]\n---\nBody');
+  await assert.rejects(loadContent(directory), /2099-Description.md: description must be text/);
 });

@@ -1,53 +1,47 @@
 ---
-title: "Duplicate Solution Unacceptable"
-tags: ["GameJam","Puzzle","Godot"]
-skills: ["Technical Game Design"]
-published: true 
-featured: false
+# Listing and publishing
 time: 2024-08
 
-header:
-  teaser: /assets/images/projects/Duplicate Solution Unacceptable/teaser.jpg
+published: true
+
+featured: 0
+
+teaser: /assets/images/projects/Duplicate Solution Unacceptable/teaser.jpg
+
+# Main content
+title: Duplicate Solution Unacceptable
+
+tags:
+  - GameJam
+  - Puzzle
+
+hook: |
+  Yep. Duplicate Solution Unacceptable in this game made by Godot.  
 
 gallery:
   - url: /assets/images/projects/Duplicate Solution Unacceptable/1.jpg
     image_path: /assets/images/projects/Duplicate Solution Unacceptable/1.jpg
-    alt: "Screen Shot A"
+    alt: Screen Shot A
 
-sidebar:
-  - title: Duplicate Solution Unacceptable
-    text: > 
-      Yep. Duplicate Solution Unacceptable in this game made by Godot.  
-  - title: Tags
-    text: > 
-      #GameJam #Puzzle #Godot
-  - title: Develop Date
-    text: > 
-      2024/8
-  - title: Team size
-    text: > 
-      1
-  - title: Download
-    text: > 
-      [Link](https://intoxicat-studio.itch.io/duplicate-solution-unacceptable)
-  - title: Role & Responsibility
-    text: >
-      Solo Development: 
-      <br>
-      - Everything.
+roles: |-
+  ### Solo Development
+
+# Sidebar
+skills:
+  - Technical Game Design
+
+development_date: 2024/8
+
+tech_stack:
+  - Godot
+
+team: 1 person
+
+links:
+  - label: itch.io
+    url: https://intoxicat-studio.itch.io/duplicate-solution-unacceptable
+
+# Extra content below this front matter appears after Roles.
 ---
 
-Yep. Duplicate Solution Unacceptable in this game made by Godot.  
-
-:::gallery gallery
-:::
-
-## Feature
-
-* As the level scales up, so does the difficulty.
-
-## Description
-
-《Duplicate Solution Unacceptable》is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Built to Scale." In the game, you have to use the arrow key to fill the 5 X 5 board. Remember, duplicate solutions are unacceptable, and the difficulty will build up as long as you keep playing. 
-
-This is my first time trying Godot, and I have been quite busy recently so I haven't had much time to prepare this game jam and learn the engine. I actually start this project on the last day of the Jam, but still, I got some ideas while messing up with Godot, which is a really fun experience.
+《Duplicate Solution Unacceptable》is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Built to Scale." In the game, you have to use the arrow key to fill the 5 X 5 board. Remember, duplicate solutions are unacceptable, and the difficulty will build up as long as you keep playing. This is my first time trying Godot, and I have been quite busy recently so I haven't had much time to prepare this game jam and learn the engine. I actually start this project on the last day of the Jam, but still, I got some ideas while messing up with Godot, which is a really fun experience.

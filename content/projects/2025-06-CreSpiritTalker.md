@@ -1,75 +1,64 @@
 ---
-title: "CreSpiritTalker"
-tags: ["Plugin","VisualNovel","Unity"]
-skills: ["Tools","UI/UX"]
-published: true 
-featured: true
+# Listing and publishing
 time: 2025-06
 
-header:
-  teaser: /assets/images/projects/CreSpiritTalker/teaser.png
+published: true
+
+featured: 2
+
+teaser: /assets/images/projects/CreSpiritTalker/teaser.png
+
+# Main content
+title: CreSpiritTalker
+
+tags:
+  - Plugin
+  - VisualNovel
+
+trailer: https://www.youtube-nocookie.com/embed/UEKAlN_w6Ao?controls=0
+
+hook: >
+  A Unity editor tool designed to help users create visual novel scenes, also a commissioned
+  outsourcing project from CreSpirit.
 
 gallery:
   - url: /assets/images/projects/CreSpiritTalker/1.png
     image_path: /assets/images/projects/CreSpiritTalker/1.png
-    alt: "Screen Shot A"
+    alt: Screen Shot A
   - url: /assets/images/projects/CreSpiritTalker/2.png
     image_path: /assets/images/projects/CreSpiritTalker/2.png
-    alt: "Screen Shot B"
+    alt: Screen Shot B
+  - url: /assets/images/projects/CreSpiritTalker/3.png
+    image_path: /assets/images/projects/CreSpiritTalker/3.png
+    alt: Screen Shot C
+  - url: /assets/images/projects/CreSpiritTalker/4.png
+    image_path: /assets/images/projects/CreSpiritTalker/4.png
+    alt: Screen Shot D
 
-sidebar:
-  - title: CreSpiritTalker
-    text: > 
-      A Unity editor tool designed to help users create visual novel scenes, also a commissioned outsourcing project from CreSpirit.
-  - title: Tags
-    text: > 
-      #Plugin #VisualNovel #Unity
-  - title: Develop Date
-    text: > 
-      2024/11 ~ 2025/6
-  - title: Team size
-    text: > 
-      1
-  - title: Download
-    text: > 
-      [Not Available]()
-  - title: Role & Responsibility
-    text: >
-      Solo Development: 
-      <br>
-      - Everything.
+roles: |-
+  ### Tool Programmer
+
+# Sidebar
+skills:
+  - Tools
+  - UI/UX
+
+development_date: 2024/11 ~ 2025/6
+
+tech_stack:
+  - Unity
+
+team: 1 person
+
+links: []
+
+# Extra content below this front matter appears after Roles.
 ---
 
-A Unity editor tool designed to help users create visual novel scenes, also a commissioned outsourcing project from CreSpirit.
+Whew, this is my first time creating a plugin tool—huge thanks to CreSpirit for giving me the opportunity! Developing a plugin is a completely different experience compared to making a game, and I’ve learned a great deal through this process. Not only did I gain insight into the mindset and development workflow required for tool creation, but I also picked up several Unity techniques I hadn’t used before. This tool is designed for a variety of use cases, from visual novel-style games to general dialogue scenes in other game genres.
 
-:::gallery gallery
-:::
+The most important feature of this project is the command system. Commands can be embedded directly into the dialogue using a special format. As the dialogue is read line by line, the system detects and executes these commands. They can handle everything from basic dialogue effects and object control to managing the flow of conversations—and more. 
+What’s even better is that developers can extend the system by inheriting the command class to create their own custom commands. This is especially powerful for implementing unique or complex behaviors. I have been also using this structure in the future, and eventually create an [Unity plugin](https://github.com/12OI3/Scriptable-Functions-Library).
 
-## Feature
-
-* Created a customizable Unity editor tool featuring its own editor window for comprehensive settings and databases.
-* Developed a system for embedding text commands with support for developer-defined custom commands.
-* Fixed issues related to saveing in new versions, implemented a system to safely migrate old save data to new versions
-
-## Description
-
-<b></b>
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/UEKAlN_w6Ao?controls=0" frameborder="0" allowfullscreen></iframe>
-<b></b>
-
-Whew, this is my first time creating a plugin tool—huge thanks to CreSpirit for giving me the opportunity!
-Developing a plugin is a completely different experience compared to making a game, and I’ve learned a great deal through this process.
-Not only did I gain insight into the mindset and development workflow required for tool creation, but I also picked up several Unity techniques I hadn’t used before.
-This tool is designed for a variety of use cases, from visual novel-style games to general dialogue scenes in other game genres. 
-In fact, I plan to use it in my future projects that require a dialogue system.
-
-The most important feature of this project is the command system. 
-Commands can be embedded directly into the dialogue using a special format. 
-As the dialogue is read line by line, the system detects and executes these commands. 
-They can handle everything from basic dialogue effects and object control to managing the flow of conversations—and more.
-
-What’s even better is that developers can extend the system by inheriting the command class to create their own custom commands. 
-This is especially powerful for implementing unique or complex behaviors.
-
-Unfortunately, since this is a commissioned outsourcing project, I’m not able to release it publicly.
+Unfortunately, since this is a commissioned outsourcing project, I’m not able to release it publicly. 
 However, if you’re curious to learn more, feel free to check out the devlogs!
