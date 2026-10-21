@@ -24,6 +24,14 @@ test('role grid preserves every project contribution with always-visible content
   assert.equal(plain('.project-role-card').text(), 'Solo Development\n');
 });
 
+test('role headings without contributions stay separated from adjacent cards', () => {
+  const source = '### UI/UX\n\n### Audio\n\n### Producer\n- Managed tasks.\n';
+  const $ = load(renderRoleGrid(source));
+  assert.equal($('.project-role-card').length, 3);
+  assert.equal($('.project-role-plain').length, 2);
+  assert.equal($.text().replace(/\s+/g, ' ').trim(), 'UI/UX Audio Producer Managed tasks.');
+});
+
 test('all current projects follow the fixed structure and keep extras after roles', async () => {
   const state = await loadContent();
   for (const doc of state.collections.project) {

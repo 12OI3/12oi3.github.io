@@ -58,5 +58,5 @@ export function renderRoleGrid(source) {
     if (!role.title) return `<div class="project-role-card project-role-plain">${body}</div>`;
     if (!body.trim()) return `<div class="project-role-card project-role-plain">${role.title}</div>`;
     return `<section class="project-role-card"><h3 class="project-role-title">${role.title}</h3><div class="project-role-contributions">${body}</div></section>`;
-  }).join('')}</div>`;
+  }).join('\n')}</div>`;
 }
