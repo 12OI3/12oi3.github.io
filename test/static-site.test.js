@@ -13,6 +13,8 @@ test('GitHub Pages output serves every page and local asset without the Markdown
   await mkdir(outputRoot, { recursive: true });
   await writeFile(path.join(outputRoot, 'stale-page.html'), 'Old page');
   const pages = await buildSite();
+  const assetPrefix = load(pages.get('index.html'))('script[type="module"]').attr('src').replace(/site\.js$/, '');
+  assert.match(assetPrefix, /^\/ui\/[a-f0-9]{16}\/$/);
   await assert.rejects(access(path.join(outputRoot, 'stale-page.html')));
   await access(path.join(outputRoot, '.nojekyll'));
   const app = express();
@@ -24,7 +26,7 @@ test('GitHub Pages output serves every page and local asset without the Markdown
   const base = `http://127.0.0.1:${server.address().port}`;
   const urls = new Set(['/']);
   for (const [filename, source] of await browserAssets(path.join(root, 'public'))) {
-    const response = await fetch(base + '/ui/' + filename);
+    const response = await fetch(base + assetPrefix + filename);
     assert.equal(response.status, 200, filename);
     assert.deepEqual(Buffer.from(await response.arrayBuffer()), source, filename);
     if (filename.endsWith('.js')) assert.match(response.headers.get('content-type'), /javascript/, filename);
@@ -51,7 +53,7 @@ test('GitHub Pages output serves every page and local asset without the Markdown
     assert.equal($('.journal-entry').length, state.collections[type].filter(doc => !doc.data.hidden).length);
     assert.equal($('.journal-preview').length, 0);
   }
-  assert.equal(await readFile(path.join(outputRoot, 'ui/site.js'), 'utf8'), await readFile(new URL('../public/site.js', import.meta.url), 'utf8'));
+  assert.equal(await readFile(path.join(outputRoot, assetPrefix.slice(1), 'site.js'), 'utf8'), await readFile(new URL('../public/site.js', import.meta.url), 'utf8'));
 });
 
 test('new standalone Markdown pages receive both existing URL forms', async () => {

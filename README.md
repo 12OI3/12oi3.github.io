@@ -241,7 +241,7 @@ One-time repository setup:
 3. If the `github-pages` environment restricts deployment branches, allow `Develop(Codex)` in **Settings → Environments → github-pages**.
 4. Commit and push these changes to `Develop(Codex)`. Check the **Deploy website to GitHub Pages** run in the repository's Actions tab.
 
-For future updates, edit Markdown or assets, commit, and push to `Develop(Codex)`. No manual HTML editing or committing `dist/` is needed. The build copies browser files to `/ui/`, media to `/assets/`, and preserves existing page and icon URLs, including filenames containing spaces, Unicode, or `#`. It also supplies a custom `404.html` and `.nojekyll` marker.
+For future updates, edit Markdown or assets, commit, and push to `Develop(Codex)`. No manual HTML editing or committing `dist/` is needed. The build copies browser files to `/ui/<content-hash>/` so deployments load matching scripts, nested modules, and styles instead of stale cached versions. Media goes to `/assets/`; existing page and icon URLs are preserved, including filenames containing spaces, Unicode, or `#`. It also supplies a custom `404.html` and `.nojekyll` marker.
 
 GitHub Pages serves generated files; it does not run the development server. Node.js is used only during the build and local development. The existing Dockerfile remains available as an optional way to run the live Markdown server outside GitHub Pages.
 

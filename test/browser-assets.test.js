@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { browserAssets } from '../scripts/browser-assets.js';
+import { browserAssets, browserAssetVersion } from '../scripts/browser-assets.js';
 
 test('browser asset audit follows nested imports and identifies missing modules and styles', async t => {
   const root = await mkdtemp(path.join(os.tmpdir(), 'portfolio-browser-assets-'));
@@ -19,6 +19,15 @@ test('browser asset audit follows nested imports and identifies missing modules 
   assert.deepEqual([...(await browserAssets(root)).keys()].sort(), [
     'modules/feature.css', 'modules/feature.js', 'modules/shared.js', 'site.css', 'site.js',
   ]);
+  const before = await browserAssets(root);
+  const version = browserAssetVersion(before);
+  assert.equal(browserAssetVersion(new Map([...before].reverse())), version);
+  await writeFile(path.join(root, 'modules/shared.js'), 'export function init() { return 1; }');
+  assert.notEqual(browserAssetVersion(await browserAssets(root)), version, 'Nested behavior changes invalidate entry points and all imports');
+  await writeFile(path.join(root, 'modules/shared.js'), 'export function init() {}');
+  assert.equal(browserAssetVersion(await browserAssets(root)), version);
+  await writeFile(path.join(root, 'modules/feature.css'), '.card { color: blue }');
+  assert.notEqual(browserAssetVersion(await browserAssets(root)), version, 'Nested stylesheet changes invalidate the asset tree');
   await writeFile(path.join(root, 'modules/shared.js'), "import './feature.js'; export function init() {}");
   assert.equal((await browserAssets(root)).size, 5, 'Shared imports/cycles are visited only once');
   await writeFile(path.join(root, 'modules/shared.js'), "import '../../outside.js';");

@@ -53,7 +53,7 @@ Filenames and public URLs are unchanged.
 navigation, back-to-top/cat animation, homepage selection, project filtering,
 lightbox, and opt-in comments. Each module owns its DOM queries, listeners, and
 state. Shared reduced-motion scroll behavior lives in `behaviors/scroll.js`.
-Use relative imports: the same files run under `/ui/` locally and on Pages.
+Use relative imports: the same files run under `/ui/` locally and `/ui/<content-hash>/` in static builds. The build hashes scripts, styles, and their dependencies so updates invalidate the entire browser asset tree.
 
 `public/site.css` imports `styles/` in an explicit order: foundation, shared
 layout, home, projects, journals, documents, then the shared cat component.

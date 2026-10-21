@@ -1,5 +1,14 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
+
+export function browserAssetVersion(files) {
+  const hash = createHash('sha256');
+  for (const [name, bytes] of [...files].sort(([a], [b]) => a.localeCompare(b))) {
+    hash.update(name).update('\0').update(bytes).update('\0');
+  }
+  return hash.digest('hex').slice(0, 16);
+}
 
 // Follow the native browser modules/styles used by the entry points. The build
 // copies public/ unchanged, so every relative import must resolve within it.

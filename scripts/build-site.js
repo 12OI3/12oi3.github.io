@@ -4,6 +4,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { collectionNames, loadContent, root } from '../server/content.js';
 import { homePage, collectionPage, documentPage, standalonePage } from '../server/views.js';
+import { browserAssets, browserAssetVersion } from './browser-assets.js';
 
 export const outputRoot = path.join(root, 'dist');
 
@@ -28,7 +29,14 @@ export function staticPages(state) {
 }
 
 export async function buildSite() {
+  const version = browserAssetVersion(await browserAssets(path.join(root, 'public')));
+  const assetPrefix = `/ui/${version}/`;
   const pages = staticPages(await loadContent());
+  // Version the whole module/style tree: entry-point query strings alone do
+  // not invalidate cached relative imports after a Pages deployment.
+  for (const [filename, html] of pages) {
+    pages.set(filename, html.replaceAll('/ui/', assetPrefix));
+  }
   // Only clear the dedicated output folder inside this checkout, never a link.
   const existing = await lstat(outputRoot).catch(error => {
     if (error.code !== 'ENOENT') throw error;
@@ -46,7 +54,7 @@ export async function buildSite() {
     await writeFile(destination, html);
   }
   await cp(path.join(root, 'assets'), path.join(outputRoot, 'assets'), { recursive: true });
-  await cp(path.join(root, 'public'), path.join(outputRoot, 'ui'), { recursive: true });
+  await cp(path.join(root, 'public'), path.join(outputRoot, 'ui', version), { recursive: true });
   for (const filename of legacyIcons) {
     await cp(path.join(root, 'public', 'icons', filename), path.join(outputRoot, filename));
   }
