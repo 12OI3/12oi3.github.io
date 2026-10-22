@@ -1,9 +1,9 @@
 ---
 highlight: true
 project: "2025-06-CreSpiritTalker"
-title: "CreSpiritTalker #2"
+title: I never thought savings can causing that much problems until now...
 excerpt: >
-   Updating More and More Important Features
+   CreSpiritTalker Devlog #2
 published: true 
 time: 2025-06-28
 ---
@@ -41,7 +41,10 @@ I also made a new save/load system.
 You can save the current game state, including all scene objects, logs, and metadata, as a JSON string.
 Loading this file restores the previous state.
 
-However, version updates may cause save files to become incompatible (e.g., missing lines or objects). 
+![](/assets/images/devlogs/CreSpiritTalker-2/SaveSystemExplain.png)
+
+However, version updates may cause save files to become incompatible (e.g., missing lines or objects).
+This is a problem that I never considered, since I never actually published a game before.
 To handle this, the system allows developers to register a "danger transfer list".
 If the system detects current save file is registered on the list, it uses the developer-defined transfer positions to redirect the loading flow.
 It then fast-forwards through dialogue to the correct point, executing only essential command logic in a non-async manner to ensure stability.
@@ -54,7 +57,10 @@ Sound files now support prefixes, useful for managing different versions or loca
 Dialogue JSON files can now include a scene name in the first line, allowing managers to auto-start scenes with new utility functions.
 Many new helper functions and commands have been added for easier integration and usability.
 
-Version 0.6.5 marks a temporarily complete milestone for CreSpiritTalker. While I may continue to make minor updates as needed, most of the core features are now in place.
-This has been my first experience developing a Unity plugin tool—and I’ve learned so much through this experence.
+## Futurn Plan
 
-[Take Me To Project Page](/project/2025-06-CreSpiritTalker/)
+The save system is really something that I am not expecting to spend so much time on.
+Working on a tool really gain me different perspective on what should a developer be considering throught the development.
+
+Version 0.6.5 marks a temporarily complete milestone for CreSpiritTalker. While I may continue to make minor updates as needed, most of the core features are now in place.
+This has been my first experience developing a Unity plugin tool, and I’ve learned so much through this experence.

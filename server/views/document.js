@@ -5,6 +5,7 @@ import { highlightedDevlog } from '../content/relationships.js';
 import { displayDate } from './dates.js';
 import { layout } from './layout.js';
 import { projectDetail } from './project-detail.js';
+import { linkedProjectCards } from './linked-projects.js';
 
 export function documentPage(state, doc) {
   const name = collectionNames[doc.type];
@@ -30,11 +31,11 @@ export function documentPage(state, doc) {
     <span class="headline-devlog-cta" aria-hidden="true">Read devlog <span>↗</span></span>
   </section>` : '';
   const linkedDevlogsHtml = doc.linkedDevlogs?.length ? `<section class="linked-devlogs" aria-labelledby="linked-devlogs-heading">
-    <h2 id="linked-devlogs-heading">Devlogs</h2><ul>${doc.linkedDevlogs.map(devlog => `<li><a href="${e(devlog.url)}">${e(devlog.data.title)}</a></li>`).join('')}</ul></section>` : '';
+    <h2 id="linked-devlogs-heading">Devlogs</h2><ul>${doc.linkedDevlogs.map((devlog, index) => `<li><a href="${e(devlog.url)}" aria-describedby="devlog-title-${index}">${e(plainText(devlog.data.excerpt || '').trim() || 'Read devlog')}</a><span class="devlog-title-tooltip" id="devlog-title-${index}" role="tooltip">${e(devlog.data.title)}</span></li>`).join('')}</ul></section>` : '';
   const commentsHtml = comments?.provider === 'disqus' && doc.data.comments !== false ? `
     <section class="comments" aria-label="Comments"><h2>Comments</h2><div id="disqus_thread" data-shortname="${e(comments.shortname)}" data-url="${e(commentUrl)}" data-identifier="${e(`/${doc.type}/${doc.slug}`)}"><button class="button load-comments" type="button">Load comments</button></div></section>` : '';
-  const content = doc.type === 'project' ? projectDetail(doc, { featuredDevlogHtml }) : `<div class="document-layout ${hasSidebar ? 'with-sidebar' : ''}">
-    <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1>${linkedProjectHtml}</header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${commentsHtml}</article>
+  const content = doc.type === 'project' ? projectDetail(doc, { featuredDevlogHtml, linkedDevlogsHtml }) : `<div class="document-layout ${hasSidebar ? 'with-sidebar' : ''}">
+    <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1>${linkedProjectHtml}</header><div class="prose">${renderMarkdown(doc.body, doc.data)}</div>${linkedProjectCards(state, doc)}${commentsHtml}</article>
     ${hasSidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}${linkedDevlogsHtml}</aside>` : ''}
     </div>`;
   return layout(`<div class="document-top">${doc.type !== 'project' ? `<span class="eyebrow">${e(displayDate(doc.data.time))} · ${readingTime} min read</span>` : ''}${navigation}</div>${content}`, {

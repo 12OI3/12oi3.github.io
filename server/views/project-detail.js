@@ -15,7 +15,7 @@ function projectExtras(body, data) {
 }
 
 // The template owns the section order; detailed prose lives in the Markdown body.
-export function projectDetail(doc, { featuredDevlogHtml }) {
+export function projectDetail(doc, { featuredDevlogHtml, linkedDevlogsHtml }) {
   const data = doc.data;
   const tags = normalizeTags(data.tags);
   return `<div class="document-layout with-sidebar project-detail-layout">
@@ -36,6 +36,7 @@ export function projectDetail(doc, { featuredDevlogHtml }) {
       <section><h2>Tech Stack</h2>${data.tech_stack?.length ? tagLinks(data.tech_stack, 'tech-stack-tags', 'Tech Stack') : '<p>Not specified.</p>'}</section>
       <section><h2>Team</h2>${data.team ? renderMarkdown(data.team) : '<p>Not specified.</p>'}</section>
       <section><h2>Links</h2>${data.links?.length ? `<ul class="project-links">${data.links.map(link => `<li><a href="${e(localUrl(link.url))}">${e(link.label)} <span aria-hidden="true">↗</span></a></li>`).join('')}</ul>` : '<p>Not available.</p>'}</section>
+      ${linkedDevlogsHtml}
     </aside>
   </div>`;
 }

@@ -4,6 +4,8 @@ time: 2026-05a
 
 published: true
 
+featured: 1
+
 teaser: /assets/images/projects/Bodega Budget/teaser.jpg
 
 # Main content

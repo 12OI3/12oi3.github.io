@@ -1,9 +1,11 @@
 ---
 highlight: true
-project: "2025-07-Vocabutory"
-title: "Vocabutory #3"
+projects:
+   - 2025-07-Vocabutory
+   - 2026-09-You Hive My Word
+title: This will be the last devlog for Vocabutory.
 excerpt: >
-   This will be the last devlog for Vocabutory.
+   Vocabutory Devlog #3
 published: true 
 time: 2026-06-12
 ---
@@ -80,5 +82,3 @@ After analyzing successful incremental games on the market, I decided to focus o
 At that moment, something finally clicked, and that is why this will be the last devlog for Vocabutory.
 
 In the future, development updates will continue under its new name. Still, I'm grateful for everything I learned while exploring different possibilities through Vocabutory.
-
-[Take Me To Project Page](/project/2025-07-Vocabutory/)

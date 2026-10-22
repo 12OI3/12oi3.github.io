@@ -37,7 +37,7 @@ test('all current projects follow the fixed structure and keep extras after role
   for (const doc of state.collections.project) {
     const $ = load(documentPage(state, doc));
     assert.equal($('.document-heading h1').text(), doc.data.title);
-    assert.deepEqual($('.project-sidebar h2').map((_, el) => $(el).text()).get(), [...(doc.data.tags.length ? ['Tags'] : []), ...(doc.data.skills.length ? ['Skills'] : []), 'Development date', 'Tech Stack', 'Team', 'Links'], doc.slug);
+    assert.deepEqual($('.project-sidebar h2').map((_, el) => $(el).text()).get(), [...(doc.data.tags.length ? ['Tags'] : []), ...(doc.data.skills.length ? ['Skills'] : []), 'Development date', 'Tech Stack', 'Team', 'Links', ...(doc.linkedDevlogs.length ? ['Devlogs'] : [])], doc.slug);
     assert.deepEqual($('.skill-tags a').map((_, el) => $(el).text()).get(), doc.data.skills, doc.slug);
     assert.deepEqual($('.project-sidebar .project-tags a').map((_, el) => $(el).text()).get(), doc.data.tags, doc.slug);
     assert.equal($('.document-heading .project-tags').length, 0, doc.slug);

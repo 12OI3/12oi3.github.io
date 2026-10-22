@@ -1,16 +1,14 @@
 ---
 highlight: true
 project: "2024-02-Project Fusion"
-title: "ProjectFusion #2"
+title: How I recreate Gameplay Ability System from Unreal in Unity in order to revive somebody. (and I failed)
 excerpt: >
-   The failure, the rework, and the break off.
+   ProjectFusion Devlog #2
 published: true 
 time: 2024-11-20
 ---
 
 ## The Failure
-
-Our previous prototype had too many issues.
 
 After releasing the demo, we realized the game was too complicated for players to understand. 
 The rules were overwhelming, and the core mechanic was buried under layers of complexity. 
@@ -50,8 +48,13 @@ This way, if we need to make significant changes again, we won’t have to overh
 
 GAS, a framework from Unreal Engine, uses attributes, tags, effects, and abilities to build a flexible system capable of handling any combat rules. 
 Although switching to Unreal Engine would have been more straightforward, we chose to replicate GAS within Unity to suit our project’s needs. 
+I was referenced [UnityGAS](https://github.com/h2v9696/UnityGAS) when recreating my version, and I didn't just copy paste evrything. The following four are the basic elements of a GAS system:
+- Ability
+- Attribute
+- Effect
+- Tag
 
-The gameplay you see now is powered by this custom-built system we made.
+And to add on this, I create a passive policy for the game to create passive ability more easily. This policy will listened to all effects happened in the system and response to them.The gameplay you see now is powered by this custom-built system we made.
 
 ![](/assets/images/devlogs/ProjectFusion-2/1.gif)
 
@@ -66,10 +69,6 @@ Project Fusion will be postponed indefinitely.
 The primary reason is that our team members have less and less time to dedicate to indie game development. 
 Burnout on the current project has also taken a toll on our enthusiasm and capacity to continue at our previous pace.
 
-However, IntoxiCAT Studio remains, and we are already planning a new, smaller-scale project. 
-The setbacks we experienced with Project Fusion have taught us valuable lessons about scoping and sustainable development.
-
+However, the setbacks we experienced with Project Fusion have taught us valuable lessons about scoping and sustainable development.
 Someday, we hope to return to Project Fusion and complete it, as it remains a game we deeply care about and aspire to bring to life. 
 Until then, we look forward to embarking on new adventures.
-
-[Take Me To Project Page](/project/2024-02-Project Fusion/)

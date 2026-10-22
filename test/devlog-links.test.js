@@ -6,6 +6,8 @@ import path from 'node:path';
 import { load } from 'cheerio';
 import { loadContent, root } from '../server/content.js';
 import { documentPage, homePage } from '../server/views.js';
+import { plainText } from '../server/markdown.js';
+import { localUrl } from '../server/html.js';
 
 test('multiple project links support highlights, backlinks, reassignment, and validation', async t => {
   const directory = await mkdtemp(path.join(os.tmpdir(), 'rob-multi-project-'));
@@ -29,11 +31,15 @@ test('multiple project links support highlights, backlinks, reassignment, and va
   assert.deepEqual($('.linked-project a').map((_, el) => $(el).attr('href')).get(), urls);
   assert.match($('.linked-project').text(), /^Projects:/);
   assert.equal($('.linked-project a').last().text(), 'A & B');
+  assert.deepEqual($('.linked-project-card').map((_, el) => $(el).attr('href')).get(), urls);
+  assert.equal($('.linked-project-card').last().find('h3').text(), 'A & B');
+  assert.equal($('.linked-project-card').last().find('img').length, 0);
   for (const ref of [first, second]) {
     assert.equal(sharedLinks(state, ref).length, 1);
     const page = load(documentPage(state, getProject(state, ref)));
     assert.equal(page('.project-headline-devlog a').attr('href'), devlog.url);
-    assert.equal(page('.linked-devlogs').length, 0);
+    assert.equal(page('.project-sidebar .linked-devlogs').length, 1);
+    assert.equal(page(`.project-sidebar .linked-devlogs a[href="${devlog.url}"]`).length, 1);
   }
   state.homeProjectGroups = [{ tag: 'Technical Game Design', projects: [getProject(state, first), getProject(state, second)] }];
   const home = load(homePage(state));
@@ -60,9 +66,36 @@ test('multiple project links support highlights, backlinks, reassignment, and va
   for (const ref of [first, second]) assert.equal(sharedLinks(state, ref).length, 0);
   devlog = state.collections.devlog.find(doc => doc.slug === slug);
   assert.equal(load(documentPage(state, devlog))('.linked-project').length, 0);
+  assert.equal(load(documentPage(state, devlog))('.linked-project-cards').length, 0);
   for (const invalid of [first, null, 123, {}, [123], [''], [' '], ['missing-project'], ['2099-Draft']]) {
     await save(invalid);
     await assert.rejects(loadContent(directory), /2099-01-01-Multi project.md: projects must/);
+  }
+});
+
+test('devlogs end with cards for their linked projects before comments', async () => {
+  const state = await loadContent();
+  for (const devlog of state.collections.devlog) {
+    const $ = load(documentPage(state, devlog));
+    const cards = $('.linked-project-card');
+    assert.equal(cards.length, devlog.linkedProjects.length, devlog.slug);
+    if (!cards.length) {
+      assert.equal($('.linked-project-cards').length, 0);
+      continue;
+    }
+    assert.equal($('.prose').next().hasClass('linked-project-cards'), true);
+    if ($('.comments').length) assert.equal($('.linked-project-cards').next().hasClass('comments'), true);
+    devlog.linkedProjects.forEach((linked, index) => {
+      const project = state.collections.project.find(item => item.url === linked.url);
+      const card = cards.eq(index);
+      assert.equal(card.attr('href'), project.url);
+      assert.equal(card.find('h3').text(), project.data.title);
+      assert.equal(card.find('p').text(), plainText(project.data.hook || ''));
+      assert.equal(card.find('img').attr('src'), project.data.teaser ? localUrl(project.data.teaser) : undefined);
+    });
+  }
+  for (const article of state.collections.article) {
+    assert.equal(load(documentPage(state, article))('.linked-project-cards').length, 0);
   }
 });
 
@@ -91,7 +124,7 @@ test('project headline features only the newest eligible highlighted linked devl
   assert.equal($('.project-headline-devlog a').attr('href'), featured.url);
   assert.equal($('.project-headline-devlog h2').text(), 'Design & <Iteration>');
   assert.equal($('.headline-devlog-excerpt').text(), 'A closer look at the design.');
-  assert.equal($('.linked-devlogs').length, 0);
+  assert.deepEqual($('.project-sidebar .linked-devlogs a').map((_, el) => $(el).attr('href')).get(), project.linkedDevlogs.map(doc => doc.url));
   assert.equal(load(documentPage(state, featured))('.project-headline-devlog').length, 0);
   for (const devlog of project.linkedDevlogs) devlog.data.highlight = false;
   assert.equal(load(documentPage(state, project))('.project-headline-devlog').length, 0);
@@ -99,7 +132,7 @@ test('project headline features only the newest eligible highlighted linked devl
   assert.equal(load(documentPage(state, project))('.project-headline-devlog').length, 0);
 });
 
-test('existing devlog relationships preserve backlinks without additional project lists', async () => {
+test('project sidebars list linked devlogs newest first and preserve backlinks', async () => {
   const state = await loadContent();
   for (const project of state.collections.project) {
     const expected = state.collections.devlog.filter(devlog => devlog.data.hidden !== true &&
@@ -112,7 +145,16 @@ test('existing devlog relationships preserve backlinks without additional projec
       assert.equal($('.linked-devlogs').length, 0);
       continue;
     }
-    assert.equal($('.linked-devlogs').length, 0);
+    assert.equal($('.project-sidebar .linked-devlogs').length, 1);
+    assert.deepEqual($('.linked-devlogs a').map((_, el) => $(el).attr('href')).get(), expected.map(doc => doc.url));
+    assert.deepEqual($('.linked-devlogs a').map((_, el) => $(el).text()).get(), expected.map(doc => plainText(doc.data.excerpt || '').trim() || 'Read devlog'));
+    for (const [index, devlog] of expected.entries()) {
+      const link = $('.linked-devlogs a').eq(index);
+      const tooltip = $(`#${link.attr('aria-describedby')}`);
+      assert.equal(tooltip.attr('role'), 'tooltip');
+      assert.equal(tooltip.text(), devlog.data.title);
+    }
+    assert.equal($('.document .linked-devlogs').length, 0);
     const dates = project.linkedDevlogs.map(doc => doc.data.time);
     assert.deepEqual(dates, [...dates].sort().reverse());
     for (const devlog of project.linkedDevlogs) {
@@ -146,7 +188,7 @@ test('new, reassigned, unlinked, hidden, and draft devlogs update project lists;
   state = await loadContent(directory);
   assert.equal(linked(state, first), false);
   assert.equal(linked(state, second), true);
-  assert.equal(load(documentPage(state, state.collections.project.find(doc => doc.slug === second)))('.linked-devlogs').length, 0, 'Projects omit the additional devlog list');
+  assert.equal(load(documentPage(state, state.collections.project.find(doc => doc.slug === second)))('.project-sidebar .linked-devlogs a').attr('href'), `/devlog/${encodeURIComponent(slug)}/`);
   const devlog = state.collections.devlog.find(doc => doc.slug === slug);
   assert.equal(load(documentPage(state, devlog))('.linked-project a').attr('href'), `/project/${encodeURIComponent(second)}/`);
   for (const extra of ['hidden: true', 'published: false']) {

@@ -1,9 +1,11 @@
 ---
 highlight: false
-project: "2025-07-Vocabutory"
-title: "Vocabutory #1"
+projects:
+   - 2025-07-Vocabutory
+   - 2026-09-You Hive My Word
+title: I made prototypes about words, and I gave up.
 excerpt: >
-   The new prototype game about vocabulary factory I am recently testing.
+   Vocabutory Devlog #1
 published: true 
 time: 2025-07-06
 ---
@@ -58,5 +60,3 @@ So I built a third prototype, this time exploring the idea as an **incremental**
 However, after I research about incremental games, I realize an important fact. How the gameplay of incremental game will attract players, and what makes incremental game fun is its numerical design. After several tests through, I believe that the concept of messing around with words is probably the least interesting idea as an incremental game. During this month of development, I realize that I didn't truly decide what is the core experience needed to be, and I keep changing the basic core design. This definitely not a good sign, and I think that I should give up the idea.
 
 Still, I make the last version of playable prototype. There is still some time for me to make a new game, and I'm still not going to give up yet!
-
-[Take Me To Project Page](/project/2025-07-Vocabutory/)

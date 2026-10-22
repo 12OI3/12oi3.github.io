@@ -1,9 +1,9 @@
 ---
 highlight: false
 project: "2024-02-Project Fusion"
-title: "ProjectFusion #1"
+title: Gladly, we spent a whole year for nothing!
 excerpt: >
-   The prototype of our new Boss-rush turn-based combat-"Project Fusion" 
+   ProjectFusion Devlog #1
 published: true 
 time: 2023-11-09
 ---
@@ -86,7 +86,11 @@ Players can help three mages in their party to equip their artifact. Except for 
 
 Finally, once the player is ready, they can proceed to the next phase of battle. 
 
-## Core Mechanic Testing Demo and Questionnaire
+## Future Plan
+
+However, after spending an entire year on development, we realized that the game's complex systems were becoming increasingly difficult to manage. There was still so much work needed to complete the game, yet we couldn't even tell whether the final experience would be fun. Therefore, we decided to put the project on hold for now. Hopefully, someday in the future, we'll have the chance to come back to it!
+
+<!-- ## Core Mechanic Testing Demo and Questionnaire
 
 Thank you for reading this far I believe you now have a certain level of understanding of the game we are currently developing. We have already uploaded the core mechanics testing version of the game on Itch.io, and we hope that you can go there to try it out, whether you want to experience the order timeline mechanics or just messing up with the artifact fusion system. We also hope that you can fill out the survey below to provide us with some feedback. Please let us know whether the mechanics and systems in the game are enjoyable, and any suggestions or reviews about our game. 
 
@@ -98,4 +102,4 @@ In the future, we plan to release a more polished version of the demo early next
 
 If you have a strong interest in this project, feel free to follow our Itch.io account to receive notifications when we have updates. Once again, we appreciate all the players who have provided us with feedback. Thank you! 
 
-[Take Me To Project Page](/project/2024-02-Project Fusion/)
+[Take Me To Project Page](/project/2024-02-Project Fusion/) -->

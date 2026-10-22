@@ -1,9 +1,9 @@
 ---
 highlight: false
 project: "2025-06-CreSpiritTalker"
-title: "CreSpiritTalker #1"
+title: I made a viusal novel tool that support infinity possiblities.
 excerpt: >
-   Showcase of the outsourcing viusal novel tool.
+   CreSpiritTalker Devlog #1
 published: true 
 time: 2024-11-15
 ---
@@ -15,6 +15,7 @@ time: 2024-11-15
 ## Introduction
 
 CreSpiritTalker is a highly customizable Unity editor tool designed to help users create visual novel scenes. As a commissioned outsourcing project from CreSpirit, this tool has been in development since 10/29/2024. The tool is written in C#.
+Since this is an outsourcing project, I cannot go with that much details, so I will explain the features I made.
 
 ## Feature - Create Scene to Customize
 
@@ -35,5 +36,3 @@ In addition, users can insert text commands to add effects during dialogues and 
 ## Future Plan
 
 The basic structure of the tool was finished. I will continue to add default functions like custom buttons, vocal & sfx & bgm settings, sprites controller...
-
-[Take Me To Project Page](/project/2025-06-CreSpiritTalker/)
