@@ -1,16 +1,27 @@
 ---
-skills: ["Technical Game Design","Tools","UI/UX"]
+title: "How I became the only one to have all 4 games attending the CMU ETC Festival"
+
+time: "2025-12-16"
+
+published: true
+
+comments: true
+
 highlight: true
+
+excerpt: |
+  Building Virtual Worlds
+
+skills:
+  - "Technical Game Design"
+  - "Tools"
+  - "UI/UX"
+
 projects:
-   - 2025-09-FOLDward
-   - 2025-10-MICDROP
-   - 2025-10-This Planet Sucks
-   - 2025-11-BEAT-Shojo
-title: How I became the only one to have all 4 games attending the CMU ETC Festival
-excerpt: >
-   Building Virtual Worlds
-published: true 
-time: 2025-12-16
+  - "2025-09-FOLDward"
+  - "2025-10-MICDROP"
+  - "2025-10-This Planet Sucks"
+  - "2025-11-BEAT-Shojo"
 ---
 
 ## Here I Come, Pittsburgh

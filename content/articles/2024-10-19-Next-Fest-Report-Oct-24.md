@@ -1,10 +1,16 @@
 ---
 title: "Next Fest Report: October 2024"
-excerpt: >
-  Reviews of some demos I played during Next Fest: October 2024, including Border Pioneer, Urban Myth Dissolution Center, Star Vaders and Sultan’s Game.
+
+time: "2024-10-19"
+
 published: true
-time: 2024-10-19
-teaser: /assets/images/articles/NextFestReportOct24/teaser.jpg
+
+comments: true
+
+excerpt: |
+  Reviews of some demos I played during Next Fest: October 2024, including Border Pioneer, Urban Myth Dissolution Center, Star Vaders and Sultan’s Game.
+
+teaser: "/assets/images/articles/NextFestReportOct24/teaser.jpg"
 ---
 
 Reviews of some demos I played during Next Fest: October 2024, including Border Pioneer, Urban Myth Dissolution Center, Star Vaders and Sultan’s Game.

@@ -1,6 +1,12 @@
 ---
 title: "Projects"
-pinned_tags: [Technical Game Design, Tools, UI/UX]
+
+comments: true
+
+pinned_tags:
+  - "Technical Game Design"
+  - "Tools"
+  - "UI/UX"
 ---
 
 Making games is hard, but fun.

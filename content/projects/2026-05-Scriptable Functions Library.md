@@ -1,44 +1,40 @@
 ---
-# Listing and publishing
-time: 2026-05b
+title: "Scriptable Functions Library"
+
+time: "2026-05b"
 
 published: true
 
+comments: true
+
 featured: 2
 
-teaser: /assets/images/projects/Scriptable Functions Library/teaser.jpg
+hook: |
+  A Unity tool that generates a ScriptableObject used to register and manage callable functions via string IDs.
 
-# Main content
-title: Scriptable Functions Library
+skills:
+  - "Tools"
 
 tags:
-  - Plugin
-  - Database
+  - "Plugin"
+  - "Database"
 
-hook: >
-  A Unity tool that generates a ScriptableObject used to register and manage callable functions via
-  string IDs.
+teaser: "/assets/images/projects/Scriptable Functions Library/teaser.jpg"
 
 roles: |-
   ### Solo Development
 
-# Sidebar
-skills:
-  - Tools
-
-development_date: 2026/4 ~ 2026/4
+development_date: "2026/4 ~ 2026/4"
 
 tech_stack:
-  - Unity
-  - C#
+  - "Unity"
+  - "C#"
 
-team: 1 person
+team: "1 person"
 
 links:
-  - label: GitHub
-    url: https://github.com/12OI3/Scriptable-Functions-Library
-
-# Extra content below this front matter appears after Roles.
+  - label: "GitHub"
+    url: "https://github.com/12OI3/Scriptable-Functions-Library"
 ---
 
 Scriptable Functions Library provides a lightweight way to organize and invoke functions using string IDs. It is flexible enough to support various use cases. This tool is particularly suitable for technical designers or developers comfortable with minor code integration, as some parameters must still be defined in code. This system is also designed primarily for prototyping. It may not scale efficiently for large production systems.

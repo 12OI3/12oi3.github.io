@@ -1,10 +1,16 @@
 ---
 title: "Next Fest Report: February 2026"
-excerpt: >
-  I wrote short comments for all 31 demos I played, including Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.
+
+time: "2026-03-03"
+
 published: true
-time: 2026-03-03
-teaser: /assets/images/articles/NextFestReportFeb26/teaser.jpg
+
+comments: true
+
+excerpt: |
+  I wrote short comments for all 31 demos I played, including Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.
+
+teaser: "/assets/images/articles/NextFestReportFeb26/teaser.jpg"
 ---
 
 This time, I planned to try something different. I wrote short comments for all 31 demos I played. However, I’ll still highlight a few that are especially worth checking out at the beginning: Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.

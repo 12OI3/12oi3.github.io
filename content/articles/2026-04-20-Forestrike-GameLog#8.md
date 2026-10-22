@@ -1,28 +1,36 @@
 ---
 title: "Forestrike - You Really Don’t Need Your Game To Be a Roguelike."
-excerpt: >
-  Should I make a roguelike game? (NO.)
+
+time: "2026-04-20"
+
 published: true
-time: 2026-04-20
-teaser: /assets/images/articles/GameLog8/teaser.jpg
+
+comments: true
+
+excerpt: |
+  Should I make a roguelike game? (NO.)
+
+teaser: "/assets/images/articles/GameLog8/teaser.jpg"
+
 roguelikes:
-  - url: https://store.steampowered.com/app/646570/Slay_the_Spire/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/ss_01aa3e7759e457bfbf2422f31c325d7b3ba8a6eb.1920x1080.jpg?t=1774015376
-  - url: https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247080/ss_1185c7db3fb1bc004b09550db103678ed727e03e.1920x1080.jpg?t=1776098044
-  - url: https://store.steampowered.com/app/632360/Risk_of_Rain_2/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/ss_328d6fcb223f848c2a1047bb86702c4175d92317.1920x1080.jpg?t=1775753930
-  - url: https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/ss_25a4a446a433218d41a7e87e35b60c297e68e7a4.1920x1080.jpg?t=1731977365
+  - url: "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/ss_01aa3e7759e457bfbf2422f31c325d7b3ba8a6eb.1920x1080.jpg?t=1774015376"
+  - url: "https://store.steampowered.com/app/247080/Crypt_of_the_NecroDancer/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/247080/ss_1185c7db3fb1bc004b09550db103678ed727e03e.1920x1080.jpg?t=1776098044"
+  - url: "https://store.steampowered.com/app/632360/Risk_of_Rain_2/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/ss_328d6fcb223f848c2a1047bb86702c4175d92317.1920x1080.jpg?t=1775753930"
+  - url: "https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250900/ss_25a4a446a433218d41a7e87e35b60c297e68e7a4.1920x1080.jpg?t=1731977365"
+
 weird_roguelikes:
-  - url: https://store.steampowered.com/app/3784030/RACCOIN_Coin_Pusher_Roguelike/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3784030/35bb5c1df6d0aae62a1d52cba320a4a77b76d78e/ss_35bb5c1df6d0aae62a1d52cba320a4a77b76d78e.1920x1080.jpg?t=1777470714
-  - url: https://store.steampowered.com/app/2622380/ELDEN_RING_NIGHTREIGN/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622380/ss_592648ca7867f7efc92c14166b254bb01ddab65a.1920x1080.jpg?t=1773099036
-  - url: https://store.steampowered.com/app/1599600/PlateUp/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1599600/ss_833de2e09f19972bb9e7db021c793da6afdab8a0.1920x1080.jpg?t=1777365800
-  - url: https://store.steampowered.com/app/3191030/Nubbys_Number_Factory/
-    image_path: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3191030/16514d446db919bb6c64843e58a87bdc612be08b/ss_16514d446db919bb6c64843e58a87bdc612be08b.1920x1080.jpg?t=1777324745
+  - url: "https://store.steampowered.com/app/3784030/RACCOIN_Coin_Pusher_Roguelike/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3784030/35bb5c1df6d0aae62a1d52cba320a4a77b76d78e/ss_35bb5c1df6d0aae62a1d52cba320a4a77b76d78e.1920x1080.jpg?t=1777470714"
+  - url: "https://store.steampowered.com/app/2622380/ELDEN_RING_NIGHTREIGN/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2622380/ss_592648ca7867f7efc92c14166b254bb01ddab65a.1920x1080.jpg?t=1773099036"
+  - url: "https://store.steampowered.com/app/1599600/PlateUp/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1599600/ss_833de2e09f19972bb9e7db021c793da6afdab8a0.1920x1080.jpg?t=1777365800"
+  - url: "https://store.steampowered.com/app/3191030/Nubbys_Number_Factory/"
+    image_path: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3191030/16514d446db919bb6c64843e58a87bdc612be08b/ss_16514d446db919bb6c64843e58a87bdc612be08b.1920x1080.jpg?t=1777324745"
 ---
 
 :::gallery roguelikes half

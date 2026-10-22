@@ -1,62 +1,59 @@
 ---
-# Listing and publishing
-time: 2026-10
+title: "What Does This Sound Like?"
+
+time: "2026-10"
 
 published: true
 
+comments: true
+
 featured: 3
-
-teaser: /assets/images/projects/What Does This Sound Like/teaser.jpg
-
-# Main content
-title: What Does This Sound Like?
-
-tags:
-  - Puzzle
-  - Sound
-  - ETC-Project
-
-trailer: https://www.youtube-nocookie.com/embed/lztbRbR-ab0?controls=0
 
 hook: |
   Listen closer! The world sounds different when you actually listen to it...
 
+skills:
+  - "Technical Game Design"
+  - "Tools"
+
+tags:
+  - "Puzzle"
+  - "Sound"
+  - "ETC-Project"
+
+teaser: "/assets/images/projects/What Does This Sound Like/teaser.jpg"
+
+trailer: "https://www.youtube-nocookie.com/embed/lztbRbR-ab0?controls=0"
+
 gallery:
-  - url: /assets/images/projects/What Does This Sound Like/1.jpg
-    image_path: /assets/images/projects/What Does This Sound Like/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/What Does This Sound Like/2.jpg
-    image_path: /assets/images/projects/What Does This Sound Like/2.jpg
-    alt: Screenshot B
+  - url: "/assets/images/projects/What Does This Sound Like/1.jpg"
+    image_path: "/assets/images/projects/What Does This Sound Like/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/What Does This Sound Like/2.jpg"
+    image_path: "/assets/images/projects/What Does This Sound Like/2.jpg"
+    alt: "Screenshot B"
 
 roles: |-
   ### Designer
   - Original core idea.
   - Participate in level design and game mechanics.
-
+  
   ### Programmer
   - Basic system structures
   - Prefab-based level system
   - Partial UI programming
 
-# Sidebar
-skills:
-  - Technical Game Design
-  - Tools
-
-development_date: 2026/08 ~ PRESENT
+development_date: "2026/08 ~ PRESENT"
 
 tech_stack:
-  - Unity
-  - FMOD
+  - "Unity"
+  - "FMOD"
 
-team: 7 people
+team: "7 people"
 
 links:
-  - label: Project Website
-    url: https://projects.etc.cmu.edu/what-does-this-sound-like/
-
-# Extra content below this front matter appears after Roles.
+  - label: "Project Website"
+    url: "https://projects.etc.cmu.edu/what-does-this-sound-like/"
 ---
 
 What Does This Sound Like? is a Foley-inspired exploration and puzzle game about listening, improvising, and rediscovering the creative possibilities hidden inside everyday sound.

@@ -1,12 +1,22 @@
 ---
-skills: ["Tools"]
+title: "I made a visual novel tool that supports infinite possibilities."
+
+time: "2024-11-15"
+
+published: true
+
+comments: true
+
 highlight: false
+
+excerpt: |
+  CreSpiritTalker Devlog #1
+
+skills:
+  - "Tools"
+  - "UI/UX"
+
 project: "2025-06-CreSpiritTalker"
-title: I made a visual novel tool that supports infinite possibilities.
-excerpt: >
-   CreSpiritTalker Devlog #1
-published: true 
-time: 2024-11-15
 ---
 
 <b></b>

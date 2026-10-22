@@ -1,10 +1,16 @@
 ---
 title: "BALL X PIT - A Textbook Example of Indie Games for Now and the Future"
-excerpt: >
-  What elements make an indie game sell in 2025?
+
+time: "2026-02-03"
+
 published: true
-time: 2026-02-03
-teaser: /assets/images/articles/GameLog4/teaser.jpg
+
+comments: true
+
+excerpt: |
+  What elements make an indie game sell in 2025?
+
+teaser: "/assets/images/articles/GameLog4/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2062430/a28844182780f12e79a6b8d5db69eb8677642440/ss_a28844182780f12e79a6b8d5db69eb8677642440.1920x1080.jpg?t=1769697489)](https://store.steampowered.com/app/2062430/BALL_x_PIT/)

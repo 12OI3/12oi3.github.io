@@ -1,61 +1,58 @@
 ---
-# Listing and publishing
-time: 2023-07b
+title: "Deal Da Time"
+
+time: "2023-07b"
 
 published: true
 
-teaser: /assets/images/projects/Deal Da Time/teaser.jpg
-
-# Main content
-title: Deal Da Time
-
-tags:
-  - GameJam
-  - Puzzle
-  - Platform
+comments: true
 
 hook: |
   A platformer game, but you are the timer?
 
+skills:
+  - "Technical Game Design"
+
+tags:
+  - "GameJam"
+  - "Puzzle"
+  - "Platform"
+
+teaser: "/assets/images/projects/Deal Da Time/teaser.jpg"
+
 gallery:
-  - url: /assets/images/projects/Deal Da Time/1.jpg
-    image_path: /assets/images/projects/Deal Da Time/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/Deal Da Time/2.jpg
-    image_path: /assets/images/projects/Deal Da Time/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/Deal Da Time/3.jpg
-    image_path: /assets/images/projects/Deal Da Time/3.jpg
-    alt: Screenshot C
+  - url: "/assets/images/projects/Deal Da Time/1.jpg"
+    image_path: "/assets/images/projects/Deal Da Time/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/Deal Da Time/2.jpg"
+    image_path: "/assets/images/projects/Deal Da Time/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/Deal Da Time/3.jpg"
+    image_path: "/assets/images/projects/Deal Da Time/3.jpg"
+    alt: "Screenshot C"
 
 roles: |-
-
+  
   ### Designer
   - Design the core mechanics of the game.
   - Level design.
-
+  
   ### Programmer
   - Main menu system.
   
   ### Producer
   - Manage the project's production schedule and task distribution.
 
-# Sidebar
-skills:
-  - Technical Game Design
-
-development_date: 2023/7
+development_date: "2023/7"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 4 people
+team: "4 people"
 
 links:
-  - label: itch.io
-    url: https://intoxicat-studio.itch.io/deal-da-time
-
-# Extra content below this front matter appears after Roles.
+  - label: "itch.io"
+    url: "https://intoxicat-studio.itch.io/deal-da-time"
 ---
 
 Deal Da Time is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Roles Reversed."

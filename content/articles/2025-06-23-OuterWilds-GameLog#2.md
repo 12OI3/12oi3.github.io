@@ -1,10 +1,16 @@
 ---
 title: "Outer Wilds - My Heart Of Curiosity"
-excerpt: >
-  Through a series of coincidences and fated decisions, my journey through Outer Wilds led to this moment.
+
+time: "2025-06-23"
+
 published: true
-time: 2025-06-23
-teaser: /assets/images/articles/GameLog2/teaser.jpg
+
+comments: true
+
+excerpt: |
+  Through a series of coincidences and fated decisions, my journey through Outer Wilds led to this moment.
+
+teaser: "/assets/images/articles/GameLog2/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/ss_ec95a283483f0438be40d033f08b9d956e748d54.1920x1080.jpg?t=1729097431)](https://store.steampowered.com/app/753640/Outer_Wilds/)

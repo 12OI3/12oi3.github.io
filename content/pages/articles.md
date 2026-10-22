@@ -1,5 +1,7 @@
 ---
 title: "Articles"
+
+comments: true
 ---
 
 Every game I play is a unique experience.

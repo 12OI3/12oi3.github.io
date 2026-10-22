@@ -1,58 +1,54 @@
 ---
-# Listing and publishing
-time: 2025-06
+title: "CreSpiritTalker"
+
+time: "2025-06"
 
 published: true
 
+comments: true
+
 featured: 2
 
-teaser: /assets/images/projects/CreSpiritTalker/teaser.png
+hook: |
+  A Unity editor tool designed to help users create visual novel scenes, also a commissioned outsourcing project from CreSpirit.
 
-# Main content
-title: CreSpiritTalker
+skills:
+  - "Tools"
+  - "UI/UX"
 
 tags:
-  - Plugin
-  - VisualNovel
+  - "Plugin"
+  - "VisualNovel"
 
-trailer: https://www.youtube-nocookie.com/embed/UEKAlN_w6Ao?controls=0
+teaser: "/assets/images/projects/CreSpiritTalker/teaser.png"
 
-hook: >
-  A Unity editor tool designed to help users create visual novel scenes, also a commissioned
-  outsourcing project from CreSpirit.
+trailer: "https://www.youtube-nocookie.com/embed/UEKAlN_w6Ao?controls=0"
 
 gallery:
-  - url: /assets/images/projects/CreSpiritTalker/1.png
-    image_path: /assets/images/projects/CreSpiritTalker/1.png
-    alt: Screenshot A
-  - url: /assets/images/projects/CreSpiritTalker/2.png
-    image_path: /assets/images/projects/CreSpiritTalker/2.png
-    alt: Screenshot B
-  - url: /assets/images/projects/CreSpiritTalker/3.png
-    image_path: /assets/images/projects/CreSpiritTalker/3.png
-    alt: Screenshot C
-  - url: /assets/images/projects/CreSpiritTalker/4.png
-    image_path: /assets/images/projects/CreSpiritTalker/4.png
-    alt: Screenshot D
+  - url: "/assets/images/projects/CreSpiritTalker/1.png"
+    image_path: "/assets/images/projects/CreSpiritTalker/1.png"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/CreSpiritTalker/2.png"
+    image_path: "/assets/images/projects/CreSpiritTalker/2.png"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/CreSpiritTalker/3.png"
+    image_path: "/assets/images/projects/CreSpiritTalker/3.png"
+    alt: "Screenshot C"
+  - url: "/assets/images/projects/CreSpiritTalker/4.png"
+    image_path: "/assets/images/projects/CreSpiritTalker/4.png"
+    alt: "Screenshot D"
 
 roles: |-
   ### Tool Programmer
 
-# Sidebar
-skills:
-  - Tools
-  - UI/UX
-
-development_date: 2024/11 ~ 2025/6
+development_date: "2024/11 ~ 2025/6"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 1 person
+team: "1 person"
 
 links: []
-
-# Extra content below this front matter appears after Roles.
 ---
 
 Whew, this is my first time creating a plugin tool—huge thanks to CreSpirit for giving me the opportunity! Developing a plugin is a completely different experience compared to making a game, and I’ve learned a great deal through this process. Not only did I gain insight into the mindset and development workflow required for tool creation, but I also picked up several Unity techniques I hadn’t used before. This tool is designed for a variety of use cases, from visual novel-style games to general dialogue scenes in other game genres.

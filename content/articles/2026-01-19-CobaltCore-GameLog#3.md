@@ -1,10 +1,16 @@
 ---
 title: "Cobalt Core - How Do You Let Players End a Roguelike Game Properly?"
-excerpt: >
-  The best word I can use to describe the ending of Cobalt Core is beautiful.
+
+time: "2026-01-19"
+
 published: true
-time: 2026-01-19
-teaser: /assets/images/articles/GameLog3/teaser.jpg
+
+comments: true
+
+excerpt: |
+  The best word I can use to describe the ending of Cobalt Core is beautiful.
+
+teaser: "/assets/images/articles/GameLog3/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2179850/ss_61d8442fc974476e7d4f5d521cb61a577995315f.1920x1080.jpg?t=1753747411)](https://store.steampowered.com/app/2179850/Cobalt_Core/)

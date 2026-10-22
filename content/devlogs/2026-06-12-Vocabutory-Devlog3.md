@@ -1,14 +1,23 @@
 ---
-skills: ["Technical Game Design","UI/UX"]
+title: "This will be the last devlog for Vocabutory."
+
+time: "2026-06-12"
+
+published: true
+
+comments: true
+
 highlight: true
+
+excerpt: |
+  Vocabutory Devlog #3
+
+skills:
+  - "Technical Game Design"
+
 projects:
-   - 2025-07-Vocabutory
-   - 2026-09-You Hive My Word
-title: This will be the last devlog for Vocabutory.
-excerpt: >
-   Vocabutory Devlog #3
-published: true 
-time: 2026-06-12
+  - "2025-07-Vocabutory"
+  - "2026-09-You Hive My Word"
 ---
 
 This will be the last devlog for Vocabutory.

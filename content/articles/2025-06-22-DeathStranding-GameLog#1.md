@@ -1,10 +1,16 @@
 ---
 title: "Death Stranding - A Perfect Game To Me"
-excerpt: >
-  Once a game becomes perfect for someone, it will leave a deep and lasting impact. Death Stranding did change my life.
+
+time: "2025-06-22"
+
 published: true
-time: 2025-06-22
-teaser: /assets/images/articles/GameLog1/teaser.jpg
+
+comments: true
+
+excerpt: |
+  Once a game becomes perfect for someone, it will leave a deep and lasting impact. Death Stranding did change my life.
+
+teaser: "/assets/images/articles/GameLog1/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1850570/ss_f64a1140651ff5af30eb63bb6e5b41753d00a98e.1920x1080.jpg?t=1764081491)](https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/)

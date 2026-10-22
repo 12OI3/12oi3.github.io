@@ -1,55 +1,52 @@
 ---
-# Listing and publishing
-time: 2025-07
+title: "Vocabutory"
+
+time: "2025-07"
 
 published: true
 
+comments: true
+
 featured: 1
-
-teaser: /assets/images/projects/Vocabutory/teaser.jpg
-
-# Main content
-title: Vocabutory
-
-tags:
-  - Incremental
-  - Prototype
 
 hook: |
   An incremental game prototype about a vocabulary factory, where you spell words to make numbers grow.
 
+skills:
+  - "Technical Game Design"
+  - "Tools"
+  - "UI/UX"
+
+tags:
+  - "Incremental"
+  - "Prototype"
+
+teaser: "/assets/images/projects/Vocabutory/teaser.jpg"
+
 gallery:
-  - url: /assets/images/projects/Vocabutory/1.jpg
-    image_path: /assets/images/projects/Vocabutory/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/Vocabutory/2.jpg
-    image_path: /assets/images/projects/Vocabutory/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/Vocabutory/3.jpg
-    image_path: /assets/images/projects/Vocabutory/3.jpg
-    alt: Screenshot C
+  - url: "/assets/images/projects/Vocabutory/1.jpg"
+    image_path: "/assets/images/projects/Vocabutory/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/Vocabutory/2.jpg"
+    image_path: "/assets/images/projects/Vocabutory/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/Vocabutory/3.jpg"
+    image_path: "/assets/images/projects/Vocabutory/3.jpg"
+    alt: "Screenshot C"
 
 roles: |-
   ### Solo Development
 
-# Sidebar
-skills:
-  - Technical Game Design
-  - Tools
-  - UI/UX
-
-development_date: 2025/6 ~ PRESENT
+development_date: "2025/6 ~ PRESENT"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 1 person
+team: "1 person"
 
 links:
-  - label: itch.io
-    url: https://intoxicat-studio.itch.io/vocabutory
-
-# Extra content below this front matter appears after Roles.
+  - label: "itch.io"
+    url: "https://intoxicat-studio.itch.io/vocabutory"
 ---
 
 《Vocabutory》 is an experimental prototype where players operate factories to generate words. Use upgrades and perks to boost your efficiency and produce more characters per second!

@@ -1,14 +1,23 @@
 ---
-skills: ["Technical Game Design"]
+title: "Guess what? I am back!"
+
+time: "2025-07-25"
+
+published: true
+
+comments: true
+
 highlight: false
+
+excerpt: |
+  Vocabutory Devlog #2
+
+skills:
+  - "Technical Game Design"
+
 projects:
-   - 2025-07-Vocabutory
-   - 2026-09-You Hive My Word
-title: Guess what? I am back!
-excerpt: >
-   Vocabutory Devlog #2
-published: true 
-time: 2025-07-25
+  - "2025-07-Vocabutory"
+  - "2026-09-You Hive My Word"
 ---
 
 ## A Bold Decision for the Project

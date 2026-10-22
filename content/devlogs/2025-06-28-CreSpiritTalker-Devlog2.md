@@ -1,12 +1,22 @@
 ---
-skills: ["Tools","UI/UX"]
+title: "I never thought saving could cause so many problems until now..."
+
+time: "2025-06-28"
+
+published: true
+
+comments: true
+
 highlight: true
+
+excerpt: |
+  CreSpiritTalker Devlog #2
+
+skills:
+  - "Tools"
+  - "UI/UX"
+
 project: "2025-06-CreSpiritTalker"
-title: I never thought saving could cause so many problems until now...
-excerpt: >
-   CreSpiritTalker Devlog #2
-published: true 
-time: 2025-06-28
 ---
 
 <b></b>

@@ -1,73 +1,70 @@
 ---
-# Listing and publishing
-time: 2023-07a
+title: "You Ken-Do It"
+
+time: "2023-07a"
 
 published: true
 
-teaser: /assets/images/projects/You Ken-Do It/teaser.jpg
+comments: true
 
-# Main content
-title: You Ken-Do It
-
-tags:
-  - VR
-  - Action
-  - Sport
-
-trailer: https://www.youtube-nocookie.com/embed/I-cSSbIxxKY?controls=0
-
-hook: >
+hook: |
   A VR kendo game focused on a Block & Counter mechanic.
 
+skills:
+  - "UI/UX"
+
+tags:
+  - "VR"
+  - "Action"
+  - "Sport"
+
+teaser: "/assets/images/projects/You Ken-Do It/teaser.jpg"
+
+trailer: "https://www.youtube-nocookie.com/embed/I-cSSbIxxKY?controls=0"
+
 gallery:
-  - url: /assets/images/projects/You Ken-Do It/1.jpg
-    image_path: /assets/images/projects/You Ken-Do It/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/You Ken-Do It/2.jpg
-    image_path: /assets/images/projects/You Ken-Do It/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/You Ken-Do It/3.jpg
-    image_path: /assets/images/projects/You Ken-Do It/3.jpg
-    alt: Screenshot C
-  - url: /assets/images/projects/You Ken-Do It/4.jpg
-    image_path: /assets/images/projects/You Ken-Do It/4.jpg
-    alt: Screenshot D
-  - url: /assets/images/projects/You Ken-Do It/5.jpg
-    image_path: /assets/images/projects/You Ken-Do It/5.jpg
-    alt: Screenshot E
-  - url: /assets/images/projects/You Ken-Do It/6.jpg
-    image_path: /assets/images/projects/You Ken-Do It/6.jpg
-    alt: Screenshot F
+  - url: "/assets/images/projects/You Ken-Do It/1.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/You Ken-Do It/2.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/You Ken-Do It/3.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/3.jpg"
+    alt: "Screenshot C"
+  - url: "/assets/images/projects/You Ken-Do It/4.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/4.jpg"
+    alt: "Screenshot D"
+  - url: "/assets/images/projects/You Ken-Do It/5.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/5.jpg"
+    alt: "Screenshot E"
+  - url: "/assets/images/projects/You Ken-Do It/6.jpg"
+    image_path: "/assets/images/projects/You Ken-Do It/6.jpg"
+    alt: "Screenshot F"
 
 roles: |-
-
+  
   ### Designer
   - Design most mechanics of the game (e.g., the game loop and core mechanics).
-
+  
   ### Programmer
   - UI programming.
   - Bug fixes and some subfeatures.
-
+  
   ### Producer
   - Manage the project's production schedule and task distribution.
   - Apply agile methodology to support a more flexible development process.
 
-# Sidebar
-skills:
-  - UI/UX
-
-development_date: 2023/5 ~ 2023/7
+development_date: "2023/5 ~ 2023/7"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 5 people
+team: "5 people"
 
 links:
-  - label: itch.io
-    url: https://intoxicat-studio.itch.io/you-ken-do-it
-
-# Extra content below this front matter appears after Roles.
+  - label: "itch.io"
+    url: "https://intoxicat-studio.itch.io/you-ken-do-it"
 ---
 
 Picking up a real sword is a nearly impossible dream for most players, let alone using it to defeat enemies and save the world. While kendo exists in real life, its entry barrier is relatively high compared to other sports, making it difficult for most people to spar with others in reality. For most, it’s an experience they won’t easily have. That’s why we’ve created a VR kendo action game, designed to offer three different types of players a unique experience: those who want to feel the joy of trying kendo for the first time, those who crave the thrill of slicing through enemies without hesitation, and those who wish to practice kendo through the game.

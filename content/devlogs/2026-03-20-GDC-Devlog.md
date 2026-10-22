@@ -1,11 +1,21 @@
 ---
-skills: ["Technical Game Design","Tools","UI/UX"]
+title: "Sigh..."
+
+time: "2026-03-20"
+
+published: true
+
+comments: true
+
 highlight: false
-title: Sigh...
-excerpt: >
-   GDC 2026
-published: true 
-time: 2026-03-20
+
+excerpt: |
+  GDC 2026
+
+skills:
+  - "Technical Game Design"
+  - "Tools"
+  - "UI/UX"
 ---
 
 

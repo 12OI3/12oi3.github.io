@@ -1,5 +1,7 @@
 ---
 title: "Devlogs"
+
+comments: true
 ---
 
 Devlogs about the projects I’m developing. 

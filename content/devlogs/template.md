@@ -1,28 +1,26 @@
 ---
-# Listing and publishing — replace with the post date using YYYY-MM-DD.
-time: "2026-10-19"
-published: false
-comments: true
-# hidden: true # Optional: keep the direct URL but omit from listings.
-
-# Post details
 title: "Project Title #1 — Devlog Title"
 
-# Skills covered in this post: Technical Game Design, Tools, UI/UX.
-skills: []
+# Use YYYY-MM for projects and YYYY-MM-DD for posts.
+time: "2026-10-19"
 
-excerpt: >-
-  A short introduction to this update and why it matters.
+# Keep drafts unpublished until they are ready.
+published: false
 
-# Relationships
-# Use exact published project filenames without .md. Leave [] for general posts.
-projects: []
-# projects:
-#   - "2026-10-Project Title"
+# Optional: hidden: true keeps the direct URL but omits the page from listings.
+comments: true
 
-# Feature this post on its linked projects and their homepage cards.
+# Feature this devlog on its linked projects when published.
 highlight: false
 
+excerpt: |-
+  A short introduction to this update and why it matters.
+
+# Supported skills: Technical Game Design, Tools, UI/UX. Use [] for none.
+skills: []
+
+# Exact published project filenames without .md. Use [] for general posts.
+projects: []
 ---
 
 ## What changed

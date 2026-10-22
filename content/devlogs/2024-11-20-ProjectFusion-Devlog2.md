@@ -1,12 +1,21 @@
 ---
-skills: ["Technical Game Design","Tools"]
-highlight: true
+title: "How I recreated Unreal’s Gameplay Ability System in Unity in order to revive somebody (and failed)."
+
+time: "2024-11-20"
+
+published: true
+
+comments: true
+
+highlight: false
+
+excerpt: |
+  Project Fusion Devlog #2
+
+skills:
+  - "Tools"
+
 project: "2024-02-Project Fusion"
-title: How I recreated Unreal’s Gameplay Ability System in Unity in order to revive somebody (and failed).
-excerpt: >
-   Project Fusion Devlog #2
-published: true 
-time: 2024-11-20
 ---
 
 ## The Failure

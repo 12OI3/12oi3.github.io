@@ -1,16 +1,17 @@
 ---
-# Listing and publishing — replace with the post date using YYYY-MM-DD.
-time: "2026-10-19"
-published: false
-comments: true
-# hidden: true # Optional: keep the direct URL but omit from listings.
-
-# Post details
 title: "Article Title"
 
-excerpt: >-
-  A short introduction to the topic and the main idea of this article.
+# Use YYYY-MM for projects and YYYY-MM-DD for posts.
+time: "2026-10-19"
 
+# Keep drafts unpublished until they are ready.
+published: false
+
+# Optional: hidden: true keeps the direct URL but omits the page from listings.
+comments: true
+
+excerpt: |-
+  A short introduction to the topic and the main idea of this article.
 ---
 
 Introduce the topic, your perspective, and what the reader will take away.

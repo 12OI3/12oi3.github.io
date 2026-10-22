@@ -1,64 +1,61 @@
 ---
-# Listing and publishing
-time: 2022-06
+title: "An Extra Ordinary YouTube Video"
+
+time: "2022-06"
 
 published: true
 
-teaser: /assets/images/projects/An Extra Ordinary YouTube Video/teaser.jpg
+comments: true
 
-# Main content
-title: An Extra Ordinary YouTube Video
-
-tags:
-  - BulletHell
-  - Action
-
-trailer: https://www.youtube-nocookie.com/embed/cKSgTXbnqIg?controls=0
-
-hook: >
+hook: |
   A bullet hell action game where you can rewind the boss fight via a video progress bar.
 
+skills:
+  - "Technical Game Design"
+  - "Tools"
+
+tags:
+  - "BulletHell"
+  - "Action"
+
+teaser: "/assets/images/projects/An Extra Ordinary YouTube Video/teaser.jpg"
+
+trailer: "https://www.youtube-nocookie.com/embed/cKSgTXbnqIg?controls=0"
+
 gallery:
-  - url: /assets/images/projects/An Extra Ordinary YouTube Video/1.jpg
-    image_path: /assets/images/projects/An Extra Ordinary YouTube Video/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/An Extra Ordinary YouTube Video/2.jpg
-    image_path: /assets/images/projects/An Extra Ordinary YouTube Video/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/An Extra Ordinary YouTube Video/3.jpg
-    image_path: /assets/images/projects/An Extra Ordinary YouTube Video/3.jpg
-    alt: Screenshot C
+  - url: "/assets/images/projects/An Extra Ordinary YouTube Video/1.jpg"
+    image_path: "/assets/images/projects/An Extra Ordinary YouTube Video/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/An Extra Ordinary YouTube Video/2.jpg"
+    image_path: "/assets/images/projects/An Extra Ordinary YouTube Video/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/An Extra Ordinary YouTube Video/3.jpg"
+    image_path: "/assets/images/projects/An Extra Ordinary YouTube Video/3.jpg"
+    alt: "Screenshot C"
 
 roles: |-
-
+  
   ### Designer
   - Design most mechanics of the game (e.g., the YouTube interface and rewind mechanic).
   - Design the first boss fight.
-
+  
   ### Programmer
   - Create an instruction-based boss script that allows levels to be rewound.
   - Use object pooling to create a bullet system with a text-based editor.
-
+  
   ### Producer
   - Manage the project's production schedule and task distribution.
-  
-# Sidebar
-skills:
-  - Technical Game Design
-  - Tools
 
-development_date: 2022/4 ~ 2022/6
+development_date: "2022/4 ~ 2022/6"
 
 tech_stack:
-  - Cocos
+  - "Cocos"
 
-team: 4 people
+team: "4 people"
 
 links:
-  - label: Play game
-    url: https://menu-71f3a.web.app/
-
-# Extra content below this front matter appears after Roles.
+  - label: "Play game"
+    url: "https://menu-71f3a.web.app/"
 ---
 
 An Extraordinary YouTube Video is a bullet hell action game created during the CS 241002 course at National Tsing Hua University, using the Cocos engine to develop a web-based game. Our concept was inspired by the idea of tricking players into believing they were watching an impressive YouTube gameplay video, only to realize it was someone actually playing live, with the YouTube interface being a clever fake.

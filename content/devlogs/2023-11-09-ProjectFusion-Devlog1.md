@@ -1,12 +1,21 @@
 ---
-skills: ["Technical Game Design"]
+title: "Gladly, we spent a whole year for nothing!"
+
+time: "2023-11-09"
+
+published: true
+
+comments: true
+
 highlight: false
+
+excerpt: |
+  Project Fusion Devlog #1
+
+skills:
+  - "Technical Game Design"
+
 project: "2024-02-Project Fusion"
-title: Gladly, we spent a whole year for nothing!
-excerpt: >
-   Project Fusion Devlog #1
-published: true 
-time: 2023-11-09
 ---
 
 ## Introduction

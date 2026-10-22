@@ -1,14 +1,23 @@
 ---
-skills: ["Technical Game Design"]
+title: "I made prototypes about words, and I gave up."
+
+time: "2025-07-06"
+
+published: true
+
+comments: true
+
 highlight: false
+
+excerpt: |
+  Vocabutory Devlog #1
+
+skills:
+  - "Technical Game Design"
+
 projects:
-   - 2025-07-Vocabutory
-   - 2026-09-You Hive My Word
-title: I made prototypes about words, and I gave up.
-excerpt: >
-   Vocabutory Devlog #1
-published: true 
-time: 2025-07-06
+  - "2025-07-Vocabutory"
+  - "2026-09-You Hive My Word"
 ---
 
 ## An Art-Less Game?

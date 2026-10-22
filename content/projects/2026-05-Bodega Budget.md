@@ -1,83 +1,79 @@
 ---
-# Listing and publishing
-time: 2026-05a
+title: "Bodega Budget"
+
+time: "2026-05a"
 
 published: true
 
+comments: true
+
 featured: 1
 
-teaser: /assets/images/projects/Bodega Budget/teaser.jpg
+hook: |
+  Navigate through the financial landscape in the year 2050, where you invest, save, and budget in a futuristic bodega.
 
-# Main content
-title: Bodega Budget
+skills:
+  - "Technical Game Design"
+  - "Tools"
+  - "UI/UX"
 
 tags:
-  - Financial Literacy
-  - ETC-Project
+  - "Financial Literacy"
+  - "ETC-Project"
 
-trailer: https://www.youtube-nocookie.com/embed/uzQ53fHCTOs?controls=0
+teaser: "/assets/images/projects/Bodega Budget/teaser.jpg"
 
-hook: >
-  Navigate through the financial landscape in the year 2050, where you invest, save, and budget in a
-  futuristic bodega.
+trailer: "https://www.youtube-nocookie.com/embed/uzQ53fHCTOs?controls=0"
 
 gallery:
-  - url: /assets/images/projects/Bodega Budget/1.jpg
-    image_path: /assets/images/projects/Bodega Budget/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/Bodega Budget/2.jpg
-    image_path: /assets/images/projects/Bodega Budget/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/Bodega Budget/3.jpg
-    image_path: /assets/images/projects/Bodega Budget/3.jpg
-    alt: Screenshot C
-  - url: /assets/images/projects/Bodega Budget/4.jpg
-    image_path: /assets/images/projects/Bodega Budget/4.jpg
-    alt: Screenshot D
-  - url: /assets/images/projects/Bodega Budget/5.jpg
-    image_path: /assets/images/projects/Bodega Budget/5.jpg
-    alt: Screenshot E
-  - url: /assets/images/projects/Bodega Budget/6.jpg
-    image_path: /assets/images/projects/Bodega Budget/6.jpg
-    alt: Screenshot F
-  - url: /assets/images/projects/Bodega Budget/7.jpg
-    image_path: /assets/images/projects/Bodega Budget/7.jpg
-    alt: Screenshot G
-  - url: /assets/images/projects/Bodega Budget/8.jpg
-    image_path: /assets/images/projects/Bodega Budget/8.jpg
-    alt: Screenshot H
-  - url: /assets/images/projects/Bodega Budget/9.jpg
-    image_path: /assets/images/projects/Bodega Budget/9.jpg
-    alt: Screenshot I
+  - url: "/assets/images/projects/Bodega Budget/1.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/Bodega Budget/2.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/Bodega Budget/3.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/3.jpg"
+    alt: "Screenshot C"
+  - url: "/assets/images/projects/Bodega Budget/4.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/4.jpg"
+    alt: "Screenshot D"
+  - url: "/assets/images/projects/Bodega Budget/5.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/5.jpg"
+    alt: "Screenshot E"
+  - url: "/assets/images/projects/Bodega Budget/6.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/6.jpg"
+    alt: "Screenshot F"
+  - url: "/assets/images/projects/Bodega Budget/7.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/7.jpg"
+    alt: "Screenshot G"
+  - url: "/assets/images/projects/Bodega Budget/8.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/8.jpg"
+    alt: "Screenshot H"
+  - url: "/assets/images/projects/Bodega Budget/9.jpg"
+    image_path: "/assets/images/projects/Bodega Budget/9.jpg"
+    alt: "Screenshot I"
 
 roles: |-
   ### Designer
   - Basic mechanics and game loop
-
+  
   ### Programmer
   - Basic system structures
   - Most game systems
-
+  
   ### UI/UX
 
-# Sidebar
-skills:
-  - Technical Game Design
-  - Tools
-  - UI/UX
-
-development_date: 2026/1 ~ 2026/4
+development_date: "2026/1 ~ 2026/4"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 5 people
+team: "5 people"
 
 links:
-  - label: Project Website
-    url: https://projects.etc.cmu.edu/interest-curve/
-
-# Extra content below this front matter appears after Roles.
+  - label: "Project Website"
+    url: "https://projects.etc.cmu.edu/interest-curve/"
 ---
 
 We are team Interest Curve, a group of graduate students from Carnegie Mellon University’s Entertainment Technology Center, working on a client project called Bodega Budget with Syclus. The project aims at educating teens in the African-American community about finance and budgeting, to facilitate upward mobility in future generations.

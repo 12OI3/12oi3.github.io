@@ -1,10 +1,16 @@
 ---
 title: "Persona 5 Royal - What Are JRPGs Missing Nowadays?"
-excerpt: >
-  A strong hook at the start of the game.
+
+time: "2026-02-17"
+
 published: true
-time: 2026-02-17
-teaser: /assets/images/articles/GameLog5/teaser.jpg
+
+comments: true
+
+excerpt: |
+  A strong hook at the start of the game.
+
+teaser: "/assets/images/articles/GameLog5/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1687950/ss_38d09e40dd56df43a1bb083dc94e27cb1360b526.1920x1080.jpg?t=1763530018)](https://store.steampowered.com/app/1687950/Persona_5_Royal/)

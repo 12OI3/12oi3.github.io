@@ -1,10 +1,16 @@
 ---
 title: "Street Fighter 6 - Fighting Game Character Theme Dilemma"
-excerpt: >
-  This article will NOT improve your FTG skills.
+
+time: "2026-04-05"
+
 published: true
-time: 2026-04-05
-teaser: /assets/images/articles/GameLog7/teaser.jpg
+
+comments: true
+
+excerpt: |
+  This article will NOT improve your FTG skills.
+
+teaser: "/assets/images/articles/GameLog7/teaser.jpg"
 ---
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1384160/ss_0f29aebacb81b972782382dbf4c0079f0d37b330.1920x1080.jpg?t=1774423106)](https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/)

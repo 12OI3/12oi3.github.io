@@ -1,61 +1,57 @@
 ---
-# Listing and publishing
-time: 2026-01a
+title: "One Day More"
+
+time: "2026-01a"
 
 published: true
 
-teaser: /assets/images/projects/One Day More/teaser.jpg
+comments: true
 
-# Main content
-title: One Day More
+hook: |
+  A narrative puzzle game with no text, you are a ghost that try to help a little girl by possessing items.
+
+skills:
+  - "Technical Game Design"
+  - "Tools"
 
 tags:
-  - GameJam
-  - Narrative
+  - "GameJam"
+  - "Narrative"
 
-trailer: https://www.youtube-nocookie.com/embed/JlRxX7L-hp4?controls=0
+teaser: "/assets/images/projects/One Day More/teaser.jpg"
 
-hook: >
-  A narrative puzzle game with no text, you are a ghost that try to help a little girl by possessing
-  items.
+trailer: "https://www.youtube-nocookie.com/embed/JlRxX7L-hp4?controls=0"
 
 gallery:
-  - url: /assets/images/projects/One Day More/1.jpg
-    image_path: /assets/images/projects/One Day More/1.jpg
-    alt: Screenshot A
-  - url: /assets/images/projects/One Day More/2.jpg
-    image_path: /assets/images/projects/One Day More/2.jpg
-    alt: Screenshot B
-  - url: /assets/images/projects/One Day More/3.jpg
-    image_path: /assets/images/projects/One Day More/3.jpg
-    alt: Screenshot C
+  - url: "/assets/images/projects/One Day More/1.jpg"
+    image_path: "/assets/images/projects/One Day More/1.jpg"
+    alt: "Screenshot A"
+  - url: "/assets/images/projects/One Day More/2.jpg"
+    image_path: "/assets/images/projects/One Day More/2.jpg"
+    alt: "Screenshot B"
+  - url: "/assets/images/projects/One Day More/3.jpg"
+    image_path: "/assets/images/projects/One Day More/3.jpg"
+    alt: "Screenshot C"
 
 roles: |-
   ### Designer
   - Design level progression
-
+  
   ### Programmer
   - Level progression system
   - Possession system
   - Event bus system
 
-# Sidebar
-skills:
-  - Technical Game Design
-  - Tools
-
-development_date: 2025/12 ~ 2026/1
+development_date: "2025/12 ~ 2026/1"
 
 tech_stack:
-  - Unity
+  - "Unity"
 
-team: 5 people
+team: "5 people"
 
 links:
-  - label: itch.io
-    url: https://austinszema.itch.io/one-day-more
-
-# Extra content below this front matter appears after Roles.
+  - label: "itch.io"
+    url: "https://austinszema.itch.io/one-day-more"
 ---
 
 One Day More is a narrative puzzle game that was created during thatgamejam #01, with the picture below as its theme.
