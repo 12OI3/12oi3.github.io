@@ -12,7 +12,7 @@ teaser: /assets/images/articles/GameLog5/teaser.jpg
 
 # JRPGs Need a Strong Hook at the Start
 
-One of the biggest problems JRPGs face nowadays is how to keep players engaged until the “fun part” begins. I love the JRPG genre, but I also admit that many titles have a slow start. The first ten hours can feel like a drag. As players become more and more impatient, I believe modern JRPGs truly need a strong hook right at the beginning, a hook to let players continue playing the game.
+One of the biggest problems JRPGs face nowadays is how to keep players engaged until the “fun part” begins. I love the JRPG genre, but I also admit that many titles have a slow start. The first ten hours can feel like a drag. As players become more and more impatient, I believe modern JRPGs truly need a strong hook right at the beginning, a hook that makes players want to continue playing the game.
 
 ![](/assets/images/articles/GameLog5/7.jpg)
 
@@ -20,7 +20,7 @@ Persona 5 Royal is a great example of a JRPG with a powerful opening hook. I abs
 
 Here, I’ll briefly break down how ATLUS crafted the first ten minutes of Persona 5 Royal to hook players into committing to a 100-hour experience.
 
-[Gameplay video here if you haven't play the game.](https://www.youtube.com/watch?v=tKvPxugqx1o)
+[Gameplay video here if you haven't played the game.](https://www.youtube.com/watch?v=tKvPxugqx1o)
 
 # A Walkthrough of Persona 5 Royal’s Opening
 
@@ -44,11 +44,11 @@ You launch into a flashy combat sequence, and the battle begins.
 
 # Letting Players Glimpse the Best Parts of the Game
 
-Within minutes, players experience many of the game’s highlights: Stylish UI design, Summoning abilities, Turn-based combat mechanics, Flashy animations
+Within minutes, players experience many of the game’s highlights: stylish UI design, summoning abilities, turn-based combat mechanics, and flashy animations.
 
 ![](/assets/images/articles/GameLog5/4.jpg)
 
-At this points, players get to see some of the highlights of the game. Stylish UI, Summoner like abilities,  combat rules and more. There are just so cool. After the combat, more enemy came you somebody navigate you to another route. Everything feels cool and polished. After the initial fight, more enemies arrive, and someone guides you to another route. If you’re playing the Royal version, this section also showcases new features: stealth mechanics, the grappling hook, a mystery helper, the new combat theme “Take Over,” and an All-Out Attack cutscene.
+At this point, players have already seen some of the game’s highlights. Everything feels cool and polished. After the initial fight, more enemies arrive, and someone guides you to another route. If you’re playing the Royal version, this section also showcases new features: stealth mechanics, the grappling hook, a mystery helper, the new combat theme “Take Over,” and an All-Out Attack cutscene.
 
 ![](/assets/images/articles/GameLog5/5.jpg)
 

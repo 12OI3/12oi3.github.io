@@ -12,36 +12,36 @@ teaser: /assets/images/projects/Project Fusion/teaser.jpg
 title: Project Fusion
 
 tags:
-  - TurnBaseCombat
+  - TurnBasedCombat
   - Prototype
 
 hook: >
-  A unique turn based boss rush combat with special order timeline mechanic and artifact fusion
+  A unique turn-based boss rush game with a special order timeline mechanic and an artifact fusion
   system. 
 
 gallery:
   - url: /assets/images/projects/Project Fusion/1.gif
     image_path: /assets/images/projects/Project Fusion/1.gif
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Project Fusion/2.gif
     image_path: /assets/images/projects/Project Fusion/2.gif
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Project Fusion/3.gif
     image_path: /assets/images/projects/Project Fusion/3.gif
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
 
   ### Designer
-  - Design most mechanics (ex. game loop, core fusion mechanics, combats,  skills)
+  - Design most mechanics (e.g., the game loop, core fusion mechanics, combat, and skills).
   - UI/UX Design.
 
   ### Programmer
   - Overall system design.
   - Fusion system.
   - UI programming with MVC structure.
-  - Collaborating to create an assembly-language-based skill system.
-  - Recreate Game Ability System in 2.0 prototype version
+  - Collaborate to create an assembly-language-based skill system.
+  - Recreate the Gameplay Ability System in the 2.0 prototype.
   
   ### Producer
   - Manage the project's production schedule and task distribution.

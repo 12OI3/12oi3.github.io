@@ -1,9 +1,10 @@
 ---
+skills: ["Technical Game Design","Tools"]
 highlight: true
 project: "2024-02-Project Fusion"
-title: How I recreate Gameplay Ability System from Unreal in Unity in order to revive somebody. (and I failed)
+title: How I recreated Unreal’s Gameplay Ability System in Unity in order to revive somebody (and failed).
 excerpt: >
-   ProjectFusion Devlog #2
+   Project Fusion Devlog #2
 published: true 
 time: 2024-11-20
 ---
@@ -48,13 +49,13 @@ This way, if we need to make significant changes again, we won’t have to overh
 
 GAS, a framework from Unreal Engine, uses attributes, tags, effects, and abilities to build a flexible system capable of handling any combat rules. 
 Although switching to Unreal Engine would have been more straightforward, we chose to replicate GAS within Unity to suit our project’s needs. 
-I was referenced [UnityGAS](https://github.com/h2v9696/UnityGAS) when recreating my version, and I didn't just copy paste evrything. The following four are the basic elements of a GAS system:
+I referenced [UnityGAS](https://github.com/h2v9696/UnityGAS) when recreating my version, and I didn't just copy and paste everything. The following four are the basic elements of a GAS system:
 - Ability
 - Attribute
 - Effect
 - Tag
 
-And to add on this, I create a passive policy for the game to create passive ability more easily. This policy will listened to all effects happened in the system and response to them.The gameplay you see now is powered by this custom-built system we made.
+On top of this, I created a passive policy for the game to make passive abilities easier to create. This policy listens to all effects occurring in the system and responds to them. The gameplay you see now is powered by this custom-built system.
 
 ![](/assets/images/devlogs/ProjectFusion-2/1.gif)
 

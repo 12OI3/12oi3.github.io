@@ -22,16 +22,16 @@ hook: |
 gallery:
   - url: /assets/images/projects/You Hive My Word/4.jpg
     image_path: /assets/images/projects/You Hive My Word/4.jpg
-    alt: Screen Shot D
+    alt: Screenshot D
   - url: /assets/images/projects/You Hive My Word/1.jpg
     image_path: /assets/images/projects/You Hive My Word/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/You Hive My Word/2.jpg
     image_path: /assets/images/projects/You Hive My Word/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/You Hive My Word/3.jpg
     image_path: /assets/images/projects/You Hive My Word/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
   ### Solo Development

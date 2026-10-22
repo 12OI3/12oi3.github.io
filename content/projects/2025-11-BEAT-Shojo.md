@@ -24,30 +24,30 @@ hook: |
 gallery:
   - url: /assets/images/projects/BEAT-Shojo/1.jpg
     image_path: /assets/images/projects/BEAT-Shojo/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/BEAT-Shojo/2.jpg
     image_path: /assets/images/projects/BEAT-Shojo/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/BEAT-Shojo/3.jpg
     image_path: /assets/images/projects/BEAT-Shojo/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
   - url: /assets/images/projects/BEAT-Shojo/4.jpg
     image_path: /assets/images/projects/BEAT-Shojo/4.jpg
-    alt: Screen Shot D
+    alt: Screenshot D
   - url: /assets/images/projects/BEAT-Shojo/5.jpg
     image_path: /assets/images/projects/BEAT-Shojo/5.jpg
-    alt: Screen Shot E
+    alt: Screenshot E
   - url: /assets/images/projects/BEAT-Shojo/6.jpg
     image_path: /assets/images/projects/BEAT-Shojo/6.jpg
-    alt: Screen Shot F
+    alt: Screenshot F
 
 roles: |-
   ### Programmer
-  - Implemented entire game.
+  - Implemented the entire game.
 
   ### Designer
-  - Participated Core Gameplay Design.
-  - Designed detail game mechanics, QoL and combat design.
+  - Participated in core gameplay design.
+  - Designed detailed game mechanics, QoL and combat design.
   
   ### UI/UX
 
@@ -72,6 +72,6 @@ links: []
 # Extra content below this front matter appears after Roles.
 ---
 
-Carnegie Mellon University Entertainment Techonology Center signature courses's Build Virtual World need us to form teams with random teammates and make a world within two weeks based on a random prompt. In the final round of the course, we were asked to develop a game suitable for presentation at a public festival. Our primary design goal was to create an experience that would immediately draw attention, encourage guests to try it, and motivate them to replay. To achieve this, we implemented microphone-based mechanics that allow players to shout into a microphone to trigger attacks, using sound and excitement to attract nearby audiences. At the same time, we designed the Smash-like fighting game system that is easy to understand at a glance, lowering the barrier for first-time players. As players spend more time with the game, its competitive nature and deeper mechanics become apparent, encouraging repeated play and mastery of advanced movement and combat techniques.
+Building Virtual Worlds, a signature course at Carnegie Mellon University’s Entertainment Technology Center, requires us to form teams with randomly assigned teammates and build a world within two weeks based on a random prompt. In the final round of the course, we were asked to develop a game suitable for presentation at a public festival. Our primary design goal was to create an experience that would immediately draw attention, encourage guests to try it, and motivate them to replay. To achieve this, we implemented microphone-based mechanics that allow players to shout into a microphone to trigger attacks, using sound and excitement to attract nearby audiences. At the same time, we designed a Smash-like fighting game system that is easy to understand at a glance, lowering the barrier for first-time players. As players spend more time with the game, its competitive nature and deeper mechanics become apparent, encouraging repeated play and mastery of advanced movement and combat techniques.
 
 [Watch our festival presentation](https://www.youtube.com/watch?v=P1I1-MPE_Ww&t=7028s)

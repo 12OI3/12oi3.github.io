@@ -1,4 +1,5 @@
 ---
+skills: ["Technical Game Design","UI/UX"]
 highlight: true
 projects:
    - 2025-07-Vocabutory
@@ -43,14 +44,14 @@ During playtesting, one idea caught my attention: the Infinite Monkey Theory. Fo
 
 It looked promising, but I still felt that something fundamental was missing. As I mentioned earlier, I needed solutions for both progression and theme. While experimenting with different themes, I also wanted to explore alternative gameplay directions.
 
-## Why Need Keyboard When You Have Mouse?
+## Why Do You Need a Keyboard When You Have a Mouse?
 
 Then Bongo Cat came to mind. With desktop companions becoming increasingly popular during 2025, I wondered whether that concept could work with my game. Since the characters would already be typing, why not turn them into productivity companions? While you worked, your companion would work as well, generating letters in the background.
 
 [![](/assets/images/devlogs/Vocabulary-3/Theme2.png)]()
 {.text-center}
 
-In this version, I experimented with a mouse theme and gave it the pun title "Why Need Keyboard When You Have Mouse?" After finishing the prototype and testing it, I realized this direction wasn't aligned with my vision. 
+In this version, I experimented with a mouse theme and gave it the pun title "Why Do You Need a Keyboard When You Have a Mouse?" After finishing the prototype and testing it, I realized this direction wasn't aligned with my vision. 
 
 My ideal playtime for the game was around two hours, with optional endgame content. Turning it into a desktop companion would dramatically increase the overall playtime. More importantly, I would have to sacrifice much of the strategic decision-making because the pacing of the game would fundamentally change. I still think the idea could work, but considering my limited development time, I decided to put it aside.
 
@@ -63,7 +64,7 @@ It was a terrible idea.
 [![](/assets/images/devlogs/Vocabulary-3/Theme3.png)]()
 {.text-center}
 
-I rebuilt the entire game around a bee theme, mainly because I could call the workers "spelling bees." I also came up with the title "You Hive My Word," which I loved because it not only emphasized the bee theme but also hinted at the game's wordplay. But most importantally, the prototype featured a hexagonal relationship system. Players could assign tiles as bee rooms, factory rooms, or order rooms.
+I rebuilt the entire game around a bee theme, mainly because I could call the workers "spelling bees." I also came up with the title "You Hive My Word," which I loved because it not only emphasized the bee theme but also hinted at the game's wordplay. But most importantly, the prototype featured a hexagonal relationship system. Players could assign tiles as bee rooms, factory rooms, or order rooms.
 - Bee rooms provided their abilities to nearby factory rooms.
 - Factory rooms supplied their production to nearby order rooms.
 
@@ -77,7 +78,7 @@ So, I went back to square one.
 <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nBtZi0Q1bMs?controls=0" frameborder="0" allowfullscreen></iframe>
 <b></b>
 
-After analyzing successful incremental games on the market, I decided to focus on visual clarity first. I discarded every idea that wasn't working and built one final prototype. I created a physics system that increased the distance between creating a word and receiving its score. This not only made the gameplay easier to understand, but also created opportunities to introduce new mechanical twists later on. I ultimately kept the bee theme because I had also come up with a Chinese title that I loved: 「蜂建字度」
+After analyzing successful incremental games on the market, I decided to focus on visual clarity first. I discarded every idea that wasn't working and built one final prototype. I created a physics system that increased the distance between creating a word and receiving its score. This not only made the gameplay easier to understand, but also created opportunities to introduce new mechanical twists later on. I ultimately kept the bee theme because I had also come up with a Chinese title that I loved: 「蜂建字度」.
 
 At that moment, something finally clicked, and that is why this will be the last devlog for Vocabutory.
 

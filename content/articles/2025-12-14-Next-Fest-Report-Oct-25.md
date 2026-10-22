@@ -1,13 +1,13 @@
 ---
 title: "Next Fest Report: October 2025"
 excerpt: >
-  Reviews of some demos I played during Next Fest: October 2024, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.
+  Reviews of some demos I played during Next Fest: October 2025, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.
 published: true
 time: 2025-12-14
 teaser: /assets/images/articles/NextFestReportOct25/teaser.jpg
 ---
 
-Reviews of some demos I played during Next Fest: October 2024, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.
+Reviews of some demos I played during Next Fest: October 2025, including ANTHEM#9, Tingus Goose, Goblin Sushi, Tears of Metal and Wretch: Divine Ascent.
 
 [![](/assets/images/articles/NextFestReportOct25/1.jpg)](https://store.steampowered.com/app/2656490/ANTHEM9/)
 {.text-center}
@@ -27,7 +27,7 @@ Interesting! The game itself is relatively simple—you make sushi. I’d descri
 [![](/assets/images/articles/NextFestReportOct25/4.jpg)](https://store.steampowered.com/app/1913120/Tears_of_Metal/)
 {.text-center}
 ## Tears of Metal
-I never thought I’d get to play an indie 無双-style game, let alone one set in a Scottish background with roguelike elements. 無双 is a subgenre of hack-and-slash games, mostly popular in Japan, where the player fights on a battlefield and clears enemies like mowing grass. This game definitely captures the 無双 vibe, which makes it really exciting. I also tried the multiplayer mode, which was quite fun. However, the roguelike aspects still need improvement—the synergies between different elements feel underdeveloped, and the available strategies are fairly shallow. Since the massive enemy scale in the late game is wild and I didn't beat it, and the game is still very much worth trying.
+I never thought I’d get to play an indie 無双-style game, let alone one set in Scotland with roguelike elements. 無双 is a subgenre of hack-and-slash games, mostly popular in Japan, where the player fights on a battlefield and clears enemies like mowing grass. This game definitely captures the 無双 vibe, which makes it really exciting. I also tried the multiplayer mode, which was quite fun. However, the roguelike aspects still need improvement—the synergies between different elements feel underdeveloped, and the available strategies are fairly shallow. The sheer number of enemies in the late game is wild. Although I didn't beat it, the game is still very much worth trying.
 
 [![](/assets/images/articles/NextFestReportOct25/5.jpg)](https://store.steampowered.com/app/3081280/Wretch_Divine_Ascent/)
 {.text-center}

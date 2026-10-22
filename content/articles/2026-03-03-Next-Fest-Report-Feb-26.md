@@ -1,5 +1,5 @@
 ---
-title: "Next Fest Report: October 2026"
+title: "Next Fest Report: February 2026"
 excerpt: >
   I wrote short comments for all 31 demos I played, including Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.
 published: true
@@ -10,7 +10,7 @@ teaser: /assets/images/articles/NextFestReportFeb26/teaser.jpg
 This time, I planned to try something different. I wrote short comments for all 31 demos I played. However, I’ll still highlight a few that are especially worth checking out at the beginning: Onikura, Far Far West, Gambonanza, Wanderburg, and Lost and Found Co.
 
 ## Denshattack
-The game looks cool, but playing it doesn’t feel as same as watching it. You control a train instead of a skateboarder, dealing with sequences of QTE events while trying to perform tricks. The concept is interesting, but the gameplay feel doesn’t quite match the visual hype.
+The game looks cool, but playing it doesn’t feel the same as watching it. You control a train instead of a skateboarder, dealing with sequences of QTE events while trying to perform tricks. The concept is interesting, but the gameplay feel doesn’t quite match the visual hype.
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2524850/e80438803d92f5f36311f2dd3b8b12c716913bbc/ss_e80438803d92f5f36311f2dd3b8b12c716913bbc.1920x1080.jpg?t=1772125918)](https://store.steampowered.com/app/2524850/Denshattack/)
 
@@ -94,7 +94,7 @@ A dungeon crawler by the creator of Vampire Survivors. Is it fun? Not really. It
 
 
 ## Gambonanza
-As someone who recently started playing chess, this is incredibly fun. It looks like Balatro, but it’s essentially a chess roguelike. Building unbreakable pieces is satisfying, and item synergies are solid. A retry button would be nice — I blunder often. Balance could use tweaking, but overall it’s a strong demo I really like.
+As someone who recently started playing chess, I find this incredibly fun. It looks like Balatro, but it’s essentially a chess roguelike. Building unbreakable pieces is satisfying, and item synergies are solid. A retry button would be nice — I blunder often. Balance could use tweaking, but overall it’s a strong demo I really like.
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3509230/8f671f5e6ab2b7a473d1d1b6740d40eddfdc0224/ss_8f671f5e6ab2b7a473d1d1b6740d40eddfdc0224.1920x1080.jpg?t=1772214726)](https://store.steampowered.com/app/3509230/Gambonanza/)
 
@@ -148,7 +148,7 @@ A charming co-op birdwatching concept. Players share bird locations, show photos
 
 
 ## The Last Salvage Squad
-A first-person game with a cool art style, but nothing groundbreaking. I do like the death animation: the camera pulls back and shows your body collapsing. It explains why weapon is scattered at the start of each level.
+A first-person game with a cool art style, but nothing groundbreaking. I do like the death animation: the camera pulls back and shows your body collapsing. It explains why weapons are scattered at the start of each level.
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3551190/c242437dcd6bdbbc8adf3832f4bb2d287ddec7eb/ss_c242437dcd6bdbbc8adf3832f4bb2d287ddec7eb.1920x1080.jpg?t=1771359245)](https://store.steampowered.com/app/3551190/The_Last_Salvage_Squad/)
 

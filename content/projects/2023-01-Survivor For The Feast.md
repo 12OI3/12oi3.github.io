@@ -19,45 +19,45 @@ tags:
 trailer: https://www.youtube-nocookie.com/embed/GfqEUPrGqfg?controls=0
 
 hook: >
-  In this survivor-like game, you must defeat monsters, collect ingredients, cook dishes, and be stronger.
+  In this survivor-like game, you must defeat monsters, collect ingredients, cook dishes, and grow stronger.
 
 gallery:
   - url: /assets/images/projects/Survivor For The Feast/1.jpg
     image_path: /assets/images/projects/Survivor For The Feast/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Survivor For The Feast/2.jpg
     image_path: /assets/images/projects/Survivor For The Feast/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Survivor For The Feast/3.jpg
     image_path: /assets/images/projects/Survivor For The Feast/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
   - url: /assets/images/projects/Survivor For The Feast/4.jpg
     image_path: /assets/images/projects/Survivor For The Feast/4.jpg
-    alt: Screen Shot D
+    alt: Screenshot D
   - url: /assets/images/projects/Survivor For The Feast/5.jpg
     image_path: /assets/images/projects/Survivor For The Feast/5.jpg
-    alt: Screen Shot E
+    alt: Screenshot E
   - url: /assets/images/projects/Survivor For The Feast/6.jpg
     image_path: /assets/images/projects/Survivor For The Feast/6.jpg
-    alt: Screen Shot F
+    alt: Screenshot F
 
 roles: |-
 
   ### Designer
-  - Design most mechanics of the game (ex. game loop, cooking, skills)
-  - Balancing between ingredients, recipes, bios, weathers, enemies, skills.
+  - Design most mechanics of the game (e.g., the game loop, cooking, and skills).
+  - Balance ingredients, recipes, biomes, weather, enemies, and skills.
 
   ### Programmer
   - Overall system design.
   - UI programming.
-  - Hotfixes and some of the sub features.
+  - Hotfixes and some of the subfeatures.
 
   ### Producer
   - Manage the project's production schedule and task distribution.
-  - Apply agile methodlogy using hand-crafted Discord server.
+  - Apply agile methodology using a custom Discord server.
 
   ### Art
-  - Art of main character (including animation).
+  - Art for the main character (including animation).
 
 # Sidebar
 skills:
@@ -78,9 +78,9 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-Survivor For The Feast is a survivor-like game developed using Unity during the CS 550300 at National Tsing Hua University. This unique game combines survivor like with cooking. As a chef, your goal is to hunt for rare ingredients and sell them for a large profit. Players explore various biomes, defeat mobs, collect ingredients, and combine those ingredients based on their properties to create dishes that grant skills and strengthen the player. You must defeat the final boss to obtain the ultimate rare ingredient.
+Survivor For The Feast is a survivor-like game developed using Unity during the CS 550300 course at National Tsing Hua University. This unique game combines survivor-like gameplay with cooking. As a chef, your goal is to hunt for rare ingredients and sell them for a large profit. Players explore various biomes, defeat mobs, collect ingredients, and combine those ingredients based on their properties to create dishes that grant skills and strengthen the player. You must defeat the final boss to obtain the ultimate rare ingredient.
 
-At the start of the game, players choose from three different job classes. There are six distinct biomes, each with unique mobs that drop different ingredients. While players can move and perform basic attacks, a special attack is required to land the killing blow on mobs for ingredients to drop. During exploration, players earn exploration points by defeating mobs or completing missions. After fully exploration the level, a boss spawns, and defeating it is required to progress to the next stage. Since mobs grow stronger over time, it’s essential not to stay too long in one area.
+At the start of the game, players choose from three different job classes. There are six distinct biomes, each with unique mobs that drop different ingredients. While players can move and perform basic attacks, a special attack is required to land the killing blow on mobs for ingredients to drop. During exploration, players earn exploration points by defeating mobs or completing missions. After fully exploring the level, a boss spawns, and defeating it is required to progress to the next stage. Since mobs grow stronger over time, it’s essential not to stay too long in one area.
 
 Players can find campfires on the map, which are the places where cooking is available. Each ingredient has unique properties, and combining them can create dishes. These dishes represent skills, and stacking dishes strengthens those skills. There are 144 dishes in total, and with various weapon upgrades and status effect stacks, players can become unstoppable. Special dishes can only be created with rare ingredient combinations, unlocking the ultimate ability.
 

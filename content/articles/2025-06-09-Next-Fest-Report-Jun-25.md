@@ -1,13 +1,13 @@
 ---
 title: "Next Fest Report: June 2025"
 excerpt: >
-  Reviews of some demos I played during Next Fest: June 2024, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.
+  Reviews of some demos I played during Next Fest: June 2025, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.
 published: true
 time: 2025-06-09
 teaser: /assets/images/articles/NextFestReportJun25/teaser.jpg
 ---
 
-Reviews of some demos I played during Next Fest: June 2024, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.
+Reviews of some demos I played during Next Fest: June 2025, including CAIRN, Dead as Disco, Flick Shot Rogues and BALL x PIT.
 
 [![](/assets/images/articles/NextFestReportJun25/1.jpg)](https://store.steampowered.com/app/1588550/Cairn/)
 {.text-center}
@@ -19,14 +19,14 @@ I really appreciate how the game uses minimal UI to create a strong sense of imm
 [![](/assets/images/articles/NextFestReportJun25/2.jpg)](https://store.steampowered.com/app/3404260/Dead_as_Disco/)
 {.text-center}
 ## Dead as Disco
-At a glance, this game feels like a fusion of Hi-Fi RUSH and SIFU. It perfectly blends countering incoming attacks with executing your own badass combo moves— all based on rhythm. I really admire how the game syncs different moves with the current beat; it feels incredible when the execution animations align perfectly with the background music. The gameplay is genuinely fun, and I thoroughly enjoyed countering, chaining combos, and beating down enemies. The execution of the core mechanics is simply a blast.
+At a glance, this game feels like a fusion of Hi-Fi RUSH and SIFU. It perfectly blends countering incoming attacks with executing your own badass combo moves—all based on rhythm. I really admire how the game syncs different moves with the current beat; it feels incredible when the execution animations align perfectly with the background music. The gameplay is genuinely fun, and I thoroughly enjoyed countering, chaining combos, and beating down enemies. The execution of the core mechanics is simply a blast.
 
 [![](/assets/images/articles/NextFestReportJun25/3.jpg)](https://store.steampowered.com/app/2427450/Flick_Shot_Rogues/)
 {.text-center}
 ## Flick Shot Rogues
 This game is overall a lot of fun. First of all, it features a solid core gameplay loop: you shoot your character at different angles, crash into enemies to deal damage, and then land in a new position to dodge incoming attacks. Mastering the shooting mechanics takes real skill and practice, as you’ll need to both deal damage and position yourself strategically for the next turn. 
 
-The roguelike aspect is also quite engaging. Before each run, you choose two characters, and their artifacts can be selected soom after. From there, your goal is to pick upgrades that enable these four components—two characters and two artifacts—to synergize effectively. In other words, your foundational setup is established early on, and the rest of the game revolves around finding the best way to make everything work together. It’s fascinating to have your core synergy determined so early, leaving it up to the player to adapt and strategize from there. Thanks to the engaging core mechanics, this game delivers a fun and rewarding experience.
+The roguelike aspect is also quite engaging. Before each run, you choose two characters, and their artifacts can be selected soon after. From there, your goal is to pick upgrades that enable these four components—two characters and two artifacts—to synergize effectively. In other words, your foundational setup is established early on, and the rest of the game revolves around finding the best way to make everything work together. It’s fascinating to have your core synergy determined so early, leaving it up to the player to adapt and strategize from there. Thanks to the engaging core mechanics, this game delivers a fun and rewarding experience.
 
 [![](/assets/images/articles/NextFestReportJun25/4.jpg)](https://store.steampowered.com/app/2062430/BALL_x_PIT/)
 {.text-center}

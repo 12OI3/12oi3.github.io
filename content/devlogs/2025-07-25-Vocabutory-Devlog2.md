@@ -1,4 +1,5 @@
 ---
+skills: ["Technical Game Design"]
 highlight: false
 projects:
    - 2025-07-Vocabutory
@@ -47,6 +48,6 @@ I also implemented an upgrade system that lets players improve basic efficiency 
 
 Of course, that was just my own impression. To validate the idea, I cleaned up the UI to make the mechanics easier to understand and sent the prototype out for testing. The feedback was very encouraging—the core system felt solid and satisfying. I also received a lot of great suggestions for making progression more exciting, which was extremely helpful. For the first time, I feel like this project has the potential to become my first commercial game.
 
-That said, there are still major challenges ahead. Incremental games thrive on surprising players and constantly giving them new toys to play with. While the perk system is interesting, testers pointed out that it might not provide enough surprises over a two-hour play session. I’ll need to design additional systems to keep things fresh. That said, there are still major challenges ahead. Incremental games thrive on surprising players and constantly giving them new toys to play with. While the perk system is interesting, testers pointed out that it might not provide enough surprises over a two-hour play session. I’ll need to design additional systems to keep things fresh.
+That said, there are still major challenges ahead. Incremental games thrive on surprising players and constantly giving them new toys to play with. While the perk system is interesting, testers pointed out that it might not provide enough surprises over a two-hour play session. I’ll need to design additional systems to keep things fresh.
 
 There’s still a long road ahead, but based on the latest testing results, I’m excited to keep going. I’ll continue experimenting with mechanics and working toward a unique, eye-catching art style that can make Vocabutory stand out.

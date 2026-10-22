@@ -1,4 +1,44 @@
 /* Journals styles, including their responsive rules. */
+.devlog-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.devlog-skills li {
+  color: var(--gold);
+  font-size: .8125rem;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.devlog-skills li::before {
+  content: '[';
+  opacity: .5;
+  margin-right: 5px;
+}
+
+.devlog-skills li::after {
+  content: ']';
+  opacity: .5;
+  margin-left: 5px;
+}
+
+.journal-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.journal-subtitle .devlog-skills {
+  margin: 0;
+}
+
 .journal-year-group + .journal-year-group {
   margin-top: 32px;
 }

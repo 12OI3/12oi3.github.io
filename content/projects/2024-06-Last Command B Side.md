@@ -18,24 +18,24 @@ tags:
 trailer: https://www.youtube-nocookie.com/embed/C8xFFVI-QN4?controls=0
 
 hook: |
-  The game I participated in as technical game design intern at CreSpirit.
+  The game I participated in as a technical game design intern at CreSpirit.
 
 gallery:
   - url: /assets/images/projects/Last Command B Side/1.jpg
     image_path: /assets/images/projects/Last Command B Side/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Last Command B Side/2.jpg
     image_path: /assets/images/projects/Last Command B Side/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Last Command B Side/3.jpg
     image_path: /assets/images/projects/Last Command B Side/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
   ### Technical Game Design Intern  
-  - Mini game design, iterates and implements.
-  - Level built tools inside Unity
-  - Execute MVC UI/UX structure.
+  - Minigame design, iteration, and implementation.
+  - Level-building tools inside Unity.
+  - Implement an MVC structure for UI/UX.
 
 # Sidebar
 skills:
@@ -57,4 +57,4 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-[Last Command: B-Side](https://store.steampowered.com/app/2417760/Last_Command_BSide/) is a story-driven DLC for the pixel-art bullet-hell action game [Last Command](https://store.steampowered.com/app/1487270/Last_Command/), released on November 5, 2025. I was participate in this project during my intern in [CreSpirit](https://www.crespirit.com/about-us/), collborate with studio [No Stuck Game Studios](https://www.facebook.com/HungerDungeon/). I was responsible to design and create a mini-game for the DLC content, supporting the tempo in between boss fights. Check out the devlogs for the details of process.
+[Last Command: B-Side](https://store.steampowered.com/app/2417760/Last_Command_BSide/) is a story-driven DLC for the pixel-art bullet-hell action game [Last Command](https://store.steampowered.com/app/1487270/Last_Command/), released on November 5, 2025. I participated in this project during my internship at [CreSpirit](https://www.crespirit.com/about-us/), collaborating with [No Stuck Game Studios](https://www.facebook.com/HungerDungeon/). I was responsible for designing and creating a mini-game for the DLC content, supporting the pacing between boss fights. Check out the devlogs for details of the process.

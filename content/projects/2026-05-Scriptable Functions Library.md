@@ -41,7 +41,7 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-Scriptable Functions Library provides a lightweight way to organize and invoke functions using string ID. It is flexible enough to support various use cases. This tool is particularly suitable for technical designers or developers comfortable with minor code integration, as some parameters must still be defined in code. This system is also designed primarily for prototyping. It may not scale efficiently for large production systems.
+Scriptable Functions Library provides a lightweight way to organize and invoke functions using string IDs. It is flexible enough to support various use cases. This tool is particularly suitable for technical designers or developers comfortable with minor code integration, as some parameters must still be defined in code. This system is also designed primarily for prototyping. It may not scale efficiently for large production systems.
 
 That said, it helps:
 - Avoid large switch-case statements
@@ -51,13 +51,13 @@ That said, it helps:
 
 
 
-**I should put these under devlog instead**
+**I should put these in a devlog instead**
 
 ## Basic Utilities
 
 Open the tool via: "Window > Scriptable Functions Library" in the menu.
 
-In order to use the tool, you will have to create library. A scriptable object will be created under the resource folde, and this asset stores all preset data and is used at runtime.
+In order to use the tool, you will have to create a library. A ScriptableObject will be created in the Resources folder, and this asset stores all preset data and is used at runtime.
 
 Do not rename or move this asset. Its path is required for proper functionality.
 
@@ -86,7 +86,7 @@ public class DemoFunction : ScriptableFunction
 
 ```
 
-DemoFunction is automatically detected and registered. You can check out all classes via the tool window, and enable/disable it in runtime.
+DemoFunction is automatically detected and registered. You can check out all classes via the tool window, and enable or disable them at runtime.
 
 You can add tooltips using Unity’s Tooltip attribute:
 
@@ -108,11 +108,11 @@ public class DemoToolTipFunction : ScriptableFunction
 
 These tooltips will appear in the editor for better readability.
 
-## Abstract Usages
+## Abstract Classes
 
 Abstract classes are ignored during registration, making them ideal for defining shared logic or parameters.
 
-It is recommand to create an abstract base class that implement shared behavior, then having more class inherit from it.
+It is recommended to create an abstract base class that implements shared behavior, then have other classes inherit from it.
 
 ```csharp
 
@@ -147,7 +147,7 @@ public class Three : NumberFunction
 
 ## Async/Await
 
-This library support Async/Await:
+This library supports async/await:
 
 ``` csharp
 

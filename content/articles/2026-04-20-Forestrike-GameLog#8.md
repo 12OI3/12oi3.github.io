@@ -1,5 +1,5 @@
 ---
-title: "Forestrike - You Really Don’t Need Your Game To Be Roguelike."
+title: "Forestrike - You Really Don’t Need Your Game To Be a Roguelike."
 excerpt: >
   Should I make a roguelike game? (NO.)
 published: true
@@ -105,11 +105,11 @@ Playtesting.
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/ss_5ab29592c9b5cafe5ce787740afc411eecb9664a.1920x1080.jpg?t=1774958057)](https://store.steampowered.com/app/2379780/Balatro/)
 {.text-center}
 
-Additionally, what happens after players beat your game? How do you keep them engaged? Can you provide enough meaningful build variety? Can you create new experiences after players understand the system? Can you encourage experimentation with different strategies? Upon all that, how do you know it works?
+Additionally, what happens after players beat your game? How do you keep them engaged? Can you provide enough meaningful build variety? Can you create new experiences after players understand the system? Can you encourage experimentation with different strategies? On top of all that, how do you know it works?
 
 Playtesting.
 
-As you might have guessed, playtesting is critical. Even small system changes can drastically affect the roguelike experience. This causing making a roguelike often takes far more time than expected, even when you already expect it to take a lot of time.
+As you might have guessed, playtesting is critical. Even small system changes can drastically affect the roguelike experience. This means making a roguelike often takes far more time than expected, even when you already expect it to take a lot of time.
 
 # Do or Do Not? Please Try First.
 
@@ -121,7 +121,7 @@ There are too many roguelike and roguelite games today. Almost every possible me
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2132850/ss_91952981162e91bb26079bef1291394740e5fe70.1920x1080.jpg?t=1771398437)](https://store.steampowered.com/app/2132850/Rabbit_and_Steel/)
 {.text-center}
 
-Rabbit & Steel is another. It’s a MMO raiding roguelike. You and your friends fight bosses, gain items, learn mechanics, and eventually win. However, the fun of MMO raiding comes from learning and mastering mechanics and boss patterns. Winning because someone has a broken build undermines that experience. To be fair, Rabbit & Steel is still reasonably well-balanced, so it’s not a bad experience. My feeling is, the roguelike elements feel somewhat unnecessary.
+Rabbit & Steel is another. It’s an MMO raiding roguelike. You and your friends fight bosses, gain items, learn mechanics, and eventually win. However, the fun of MMO raiding comes from learning and mastering mechanics and boss patterns. Winning because someone has a broken build undermines that experience. To be fair, Rabbit & Steel is still reasonably well-balanced, so it’s not a bad experience. My feeling is, the roguelike elements feel somewhat unnecessary.
 
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1839810/8c21046a189054ce04c26fbefa91508771ab69bd/ss_8c21046a189054ce04c26fbefa91508771ab69bd.1920x1080.jpg?t=1775711961)](https://store.steampowered.com/app/1839810/Out_Of_Hands/)
 {.text-center}
@@ -136,10 +136,10 @@ That said, I’m not against roguelikes. When the structure truly supports the d
 [![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/262060/ss_617a6f43c4c673af497bc76de61dbb00e9d4079c.1920x1080.jpg?t=1769780578)](https://store.steampowered.com/app/262060/Darkest_Dungeon/)
 {.text-center}
 
-If you have an innovative idea that might work as a roguelike, it’s always worth trying. Not only to see if it works, but also to avoid committing to a design that fundamentally doesn’t. Still, remember that the core is the most important part of the game. If the core is not fun, it still won't be fun after you adding tons of skllls, levels and enemies.
+If you have an innovative idea that might work as a roguelike, it’s always worth trying. Not only to see if it works, but also to avoid committing to a design that fundamentally doesn’t. Still, remember that the core is the most important part of the game. If the core is not fun, it still won't be fun after you add tons of skills, levels and enemies.
 
 # Final Thought
 
 Let’s say you have the time and money, and you want to make a roguelike. Before making that decision, ask yourself:
 
-**Is it because I want to make a roguelike, or the game needs to be a roguelike?**
+**Is it because I want to make a roguelike, or because the game needs to be a roguelike?**

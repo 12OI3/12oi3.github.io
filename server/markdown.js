@@ -19,11 +19,18 @@ md.renderer.rules.heading_open = (tokens, index, options, env, self) => {
   env.headings ??= new Map();
   const count = (env.headings.get(base) || 0) + 1;
   env.headings.set(base, count);
-  tokens[index].attrSet('id', count === 1 ? base : `${base}-${count}`);
+  const id = count === 1 ? base : `${base}-${count}`;
+  tokens[index].attrSet('id', id);
+  if (env.sectionHeadings && Number(tokens[index].tag.slice(1)) <= 3) {
+    const label = (tokens[index + 1]?.children || []).map(token =>
+      ['text', 'code_inline', 'image'].includes(token.type) ? token.content :
+        ['softbreak', 'hardbreak'].includes(token.type) ? ' ' : '').join('');
+    env.sectionHeadings.push({ id, level: Number(tokens[index].tag.slice(1)), label });
+  }
   return self.renderToken(tokens, index, options);
 };
 
-export function renderMarkdown(source, data = {}) {
+export function renderMarkdown(source, data = {}, env = {}) {
   let text = source.replace(/\]\((\/[^\n]*?)\)/g, (_, url) => `](${localUrl(url)})`);
   text = text.replace(/<(h[1-6])>([^\n]+)<\/\1>\r?\n\{\.([^}]+)\}/g,
     (_, tag, heading, classes) => `<${tag} class="${escapeHtml(classes.replace(/\s+\./g, ' '))}">${heading}</${tag}>`);
@@ -33,7 +40,7 @@ export function renderMarkdown(source, data = {}) {
     (_, name, layout) => `\n${gallery(data, name, layout)}\n`);
   text = text.replace(/^:::feature\s+(\S+)[ \t]+(\S+)[ \t]*\r?\n:::[ \t]*$/gm,
     (_, name, type) => `\n${feature(data, name, type, renderMarkdown).replace(/\n\s*/g, '')}\n`);
-  return md.render(text, {});
+  return md.render(text, env);
 }
 
 export function plainText(source) {

@@ -16,28 +16,28 @@ tags:
 trailer: https://www.youtube-nocookie.com/embed/cKSgTXbnqIg?controls=0
 
 hook: >
-  A bullet hell action game where you can rewind the boss fight via video progress bar.
+  A bullet hell action game where you can rewind the boss fight via a video progress bar.
 
 gallery:
   - url: /assets/images/projects/An Extra Ordinary YouTube Video/1.jpg
     image_path: /assets/images/projects/An Extra Ordinary YouTube Video/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/An Extra Ordinary YouTube Video/2.jpg
     image_path: /assets/images/projects/An Extra Ordinary YouTube Video/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/An Extra Ordinary YouTube Video/3.jpg
     image_path: /assets/images/projects/An Extra Ordinary YouTube Video/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
 
   ### Designer
-  - Design most mechanics of the game (ex. Youtube interface, Rewind)
+  - Design most mechanics of the game (e.g., the YouTube interface and rewind mechanic).
   - Design the first boss fight.
 
   ### Programmer
-  - Create an instruction-base boss script allow levels to be rewindable.
-  - Use object pooling to create bullet system with text-based editor.
+  - Create an instruction-based boss script that allows levels to be rewound.
+  - Use object pooling to create a bullet system with a text-based editor.
 
   ### Producer
   - Manage the project's production schedule and task distribution.
@@ -61,7 +61,7 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-An Extraordinary YouTube Video is a bullet hell action game created during the CS 241002 at National Tsing Hua University, using the Cocos engine to develop a web-based game. Our concept was inspired by the idea of tricking players into believing they were watching an impressive YouTube gameplay video, only to realize it was someone actually playing in live, with the YouTube interface being a clever fake.
+An Extraordinary YouTube Video is a bullet hell action game created during the CS 241002 course at National Tsing Hua University, using the Cocos engine to develop a web-based game. Our concept was inspired by the idea of tricking players into believing they were watching an impressive YouTube gameplay video, only to realize it was someone actually playing live, with the YouTube interface being a clever fake.
 
 We chose the bullet hell genre for its visual appeal and intensity, allowing us to design a game with strong ornamental value. The game features three distinct stages, each with its own unique style. Players can dodge and attack while accumulating gauges that power an ultimate ability. The more aggressively you play, the higher your score will be when the boss is defeated within a set time.
 

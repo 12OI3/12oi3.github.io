@@ -1,6 +1,7 @@
 import { escapeHtml as e } from '../html.js';
 import { renderMarkdown } from '../markdown.js';
 import { displayDate } from './dates.js';
+import { devlogSkills } from '../components/devlog-skills.js';
 
 export function journalEntries(entries) {
   const years = new Map();
@@ -20,7 +21,7 @@ export function journalEntries(entries) {
         return `<article class="journal-entry">
           <time class="journal-date" datetime="${e(rawDate)}">${e(dateLabel)}</time>
           <div class="journal-copy"><h3><a href="${e(doc.url)}">${e(doc.data.title)}</a></h3>
-          <div class="journal-excerpt">${renderMarkdown(doc.data.excerpt || '')}</div></div>
+          <div class="journal-subtitle"><div class="journal-excerpt">${renderMarkdown(doc.data.excerpt || '')}</div>${devlogSkills(doc)}</div></div>
         </article>`;
       }).join('')}
     </section>`).join('')}</div>`;

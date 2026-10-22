@@ -16,19 +16,19 @@ tags:
 trailer: https://www.youtube-nocookie.com/embed/JlRxX7L-hp4?controls=0
 
 hook: >
-  A narritive puzzle game with no text, you are a ghost that try to help a little girl by possessing
+  A narrative puzzle game with no text, you are a ghost that try to help a little girl by possessing
   items.
 
 gallery:
   - url: /assets/images/projects/One Day More/1.jpg
     image_path: /assets/images/projects/One Day More/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/One Day More/2.jpg
     image_path: /assets/images/projects/One Day More/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/One Day More/3.jpg
     image_path: /assets/images/projects/One Day More/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
   ### Designer
@@ -36,8 +36,8 @@ roles: |-
 
   ### Programmer
   - Level progression system
-  - Possessing system
-  - Events bus system
+  - Possession system
+  - Event bus system
 
 # Sidebar
 skills:
@@ -58,11 +58,11 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-One Day More is a narritive puzzle game that was created during thatgamejam #01, with the theme of below picture.
+One Day More is a narrative puzzle game that was created during thatgamejam #01, with the picture below as its theme.
 
 [![](/assets/images/projects/One Day More/sp.jpg)]()
 {.text-center}
 
-In our game, you play as a ghost who has to help lead a little girl through multiple tasks by possessing different objects. The game has four different scenes, and you will have to possess objects in order to trigger events. After you possess successfully, the scene will shift. 
+In our game, you play as a ghost who has to help lead a little girl through multiple tasks by possessing different objects. The game has four different scenes, and you will have to possess objects in order to trigger events. After you successfully possess an object, the scene will shift. 
 
-As for the story, it is good for you to experience on your own.
+As for the story, it is best experienced on your own.

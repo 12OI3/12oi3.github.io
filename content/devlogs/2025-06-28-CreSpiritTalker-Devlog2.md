@@ -1,7 +1,8 @@
 ---
+skills: ["Tools","UI/UX"]
 highlight: true
 project: "2025-06-CreSpiritTalker"
-title: I never thought savings can causing that much problems until now...
+title: I never thought saving could cause so many problems until now...
 excerpt: >
    CreSpiritTalker Devlog #2
 published: true 
@@ -29,8 +30,8 @@ Developers can assign Character SFX, which plays a unique sound effect per chara
 
 ## Feature - Dialog Options
 
-Dialogue option is now possible, it’s a bit tricky to set up, but incredibly flexible once implemented.
-A new mechanism called Dialog Jump allows for conditional dialogue progression, it will continue to jump the dialog lines until the current key meet the jump string.
+Dialogue options are now possible. They’re a bit tricky to set up, but incredibly flexible once implemented.
+A new mechanism called Dialog Jump allows for conditional dialogue progression. It skips dialogue lines until the current key matches the jump string.
 When a dialogue line includes [Dialog_WaitForJumper], it pauses until a specified string in the manager is changed.
 By combining this with objects that inherit from the CreSpiritTalkerButton class and using spawn commands, you can create custom dialogue options.
 Buttons can modify the Dialog Jump string, resuming the dialogue based on player choice.
@@ -44,23 +45,23 @@ Loading this file restores the previous state.
 ![](/assets/images/devlogs/CreSpiritTalker-2/SaveSystemExplain.png)
 
 However, version updates may cause save files to become incompatible (e.g., missing lines or objects).
-This is a problem that I never considered, since I never actually published a game before.
+This is a problem that I never considered, since I had never actually published a game before.
 To handle this, the system allows developers to register a "danger transfer list".
-If the system detects current save file is registered on the list, it uses the developer-defined transfer positions to redirect the loading flow.
+If the system detects that the current save file is registered on the list, it uses the developer-defined transfer positions to redirect the loading flow.
 It then fast-forwards through dialogue to the correct point, executing only essential command logic in a non-async manner to ensure stability.
 
 ## Feature - More and More QOL
 
 I’ve also added many QoL features to make development smoother.
-For example, an one-click scanning can now register all custom commands in the project.
+For example, a one-click scan can now register all custom commands in the project.
 Sound files now support prefixes, useful for managing different versions or localizations.
 Dialogue JSON files can now include a scene name in the first line, allowing managers to auto-start scenes with new utility functions.
 Many new helper functions and commands have been added for easier integration and usability.
 
-## Futurn Plan
+## Future Plan
 
-The save system is really something that I am not expecting to spend so much time on.
-Working on a tool really gain me different perspective on what should a developer be considering throught the development.
+The save system is something I really wasn’t expecting to spend so much time on.
+Working on a tool really gave me a different perspective on what a developer should consider throughout development.
 
 Version 0.6.5 marks a temporarily complete milestone for CreSpiritTalker. While I may continue to make minor updates as needed, most of the core features are now in place.
-This has been my first experience developing a Unity plugin tool, and I’ve learned so much through this experence.
+This has been my first experience developing a Unity plugin tool, and I’ve learned so much through this experience.

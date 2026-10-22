@@ -16,18 +16,18 @@ tags:
   - Prototype
 
 hook: |
-  An incremental prototype game about vocabulary factory, spelling words to gain numbers.
+  An incremental game prototype about a vocabulary factory, where you spell words to make numbers grow.
 
 gallery:
   - url: /assets/images/projects/Vocabutory/1.jpg
     image_path: /assets/images/projects/Vocabutory/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Vocabutory/2.jpg
     image_path: /assets/images/projects/Vocabutory/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Vocabutory/3.jpg
     image_path: /assets/images/projects/Vocabutory/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
   ### Solo Development
@@ -52,6 +52,6 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-《Vocabutory》is an experimental prototype where players operate factories to generate words. Use upgrades and perks to boost your efficiency and produce more characters per second!
+《Vocabutory》 is an experimental prototype where players operate factories to generate words. Use upgrades and perks to boost your efficiency and produce more characters per second!
 
 The game is currently in development and will continue to receive updates. Stay tuned if you're interested in the project, and feel free to share your thoughts and feedback!

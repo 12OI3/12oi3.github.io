@@ -21,6 +21,8 @@ you set `published: true`.
    in their separate lists. The template controls display order automatically.
 4. For a linked devlog, add exact published project filenames without `.md` to
    `projects`. Set `highlight: true` only when it should be featured.
+   Add a `skills` list using `Technical Game Design`, `Tools`, and/or `UI/UX`.
+   These labels appear on the devlog page and its entry on the devlogs main page.
 5. Set `published: true` when ready, then run `pnpm build` to validate references
    and generate the site. Publishing to the live site still requires the usual
    GitHub Pages workflow.

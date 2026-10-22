@@ -24,15 +24,15 @@ hook: |
 gallery:
   - url: /assets/images/projects/What Does This Sound Like/1.jpg
     image_path: /assets/images/projects/What Does This Sound Like/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/What Does This Sound Like/2.jpg
     image_path: /assets/images/projects/What Does This Sound Like/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
 
 roles: |-
   ### Designer
   - Original core idea.
-  - Participate in level design & game mechnics.
+  - Participate in level design and game mechanics.
 
   ### Programmer
   - Basic system structures
@@ -79,7 +79,7 @@ What begins as an inconvenient assignment gradually becomes a journey of redisco
 
 ## How It Works
 
-1. Explore - Travel through handcrafted 2.5D environments built with the feeling of miniature sets. Observe each space and discover objects with unexpected sonic possibilities
+1. Explore - Travel through handcrafted 2.5D environments built with the feeling of miniature sets. Observe each space and discover objects with unexpected sonic possibilities.
 2. Record - Interact with objects, surfaces, movements, and environments to capture the sounds they produce.
 3. Edit - Arrange your recordings inside an unfinished film. Adjust their timing and volume to transform a silent scene into a complete soundscape.
 

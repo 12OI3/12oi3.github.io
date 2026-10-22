@@ -8,6 +8,9 @@ comments: true
 # Post details
 title: "Project Title #1 — Devlog Title"
 
+# Skills covered in this post: Technical Game Design, Tools, UI/UX.
+skills: []
+
 excerpt: >-
   A short introduction to this update and why it matters.
 

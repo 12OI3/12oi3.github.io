@@ -19,13 +19,13 @@ project_groups:
     - 2026-09-You Hive My Word
     - 2024-06-Last Command B Side
   Tools:
-    - 2025-06-CreSpiritTalker
     - 2026-05-Scriptable Functions Library
+    - 2025-06-CreSpiritTalker
     - 2026-04-QA King
   UI/UX:
     - 2025-11-BEAT-Shojo
-    - 2026-05-Bodega Budget
     - 2024-02-Project Fusion
+    - 2026-05-Bodega Budget
 ---
 
 :::feature intro center

@@ -19,7 +19,7 @@ hook: |
 gallery:
   - url: /assets/images/projects/MASKexe/1.jpg
     image_path: /assets/images/projects/MASKexe/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
 
 roles: |-
 
@@ -54,4 +54,4 @@ links:
 
 You are instructed to launch the executable and proceed. The system accepts certain configurations, applies judgment, and offers no explanation. Every response you receive passes through a Mask.  Across five stages, the grid expands, fragments, and gradually loses its sense of stability. What begins as simple compliance turns into negotiation, experimentation, and eventually confrontation. The Mask remains constant. The system does not. MASK.exe does not teach through instruction. It teaches through rejection. Wear the Mask carefully.
 
-This was created Pittsburgh Global Game Jam 2026 under theme of "mask." We cleaver to interprt the theme "mask" as verb, design a puzzle mechanics around masking. We also happened to come up with an interesting meta solution as ending of the game, telling narritive with surprising scene.
+This was created at Pittsburgh Global Game Jam 2026 under the theme of "mask." We chose to interpret "mask" as a verb, designing puzzle mechanics around masking. We also came up with an interesting meta solution for the ending of the game, telling the story through a surprising scene.

@@ -20,13 +20,13 @@ hook: |
 gallery:
   - url: /assets/images/projects/Deal Da Time/1.jpg
     image_path: /assets/images/projects/Deal Da Time/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Deal Da Time/2.jpg
     image_path: /assets/images/projects/Deal Da Time/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Deal Da Time/3.jpg
     image_path: /assets/images/projects/Deal Da Time/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
 
@@ -58,7 +58,7 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-Deal Da Time is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Role Reversed."
+Deal Da Time is a mini puzzle game that was created during GMTK Jam 2023, with the theme of "Roles Reversed."
 
 In our game, you need to adjust the timer to help a stupid little bot reach the goal. Since this bot only takes action based on the time, you have to speed up or slow down the timer to achieve perfect timing.
 

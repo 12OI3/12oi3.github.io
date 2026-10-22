@@ -13,6 +13,7 @@ export function parseDocument(source, filename = '') {
 export function validateDocument(data, type, filename) {
   if (!data.title || !data.time) throw new Error(`title and time are required: ${filename}`);
   if (type === 'devlog') {
+    data.skills = normalizeSkills(data.skills, `${filename} skills`);
     if (data.highlight === undefined) data.highlight = false;
     if (typeof data.highlight !== 'boolean') throw new Error(`${filename}: highlight must be true or false (without quotes)`);
   }

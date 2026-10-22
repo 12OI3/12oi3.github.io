@@ -14,20 +14,20 @@ tags:
   - Action
 
 hook: >
-  Created during Global Game Jam 2021, with the theme of ”Lost and Found”.
+  Created during Global Game Jam 2021, with the theme of “Lost and Found”.
 
 gallery:
   - url: /assets/images/projects/Lost in Dungeon/1.jpg
     image_path: /assets/images/projects/Lost in Dungeon/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
 
 roles: |-
   ### Designer
   - Core gameplay idea
-  - Text contents
+  - Text content
 
   ### Programmer
-  - Map generate system
+  - Map generation system
 
 # Sidebar
 skills:

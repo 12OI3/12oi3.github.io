@@ -24,31 +24,31 @@ hook: >
 gallery:
   - url: /assets/images/projects/Bodega Budget/1.jpg
     image_path: /assets/images/projects/Bodega Budget/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/Bodega Budget/2.jpg
     image_path: /assets/images/projects/Bodega Budget/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/Bodega Budget/3.jpg
     image_path: /assets/images/projects/Bodega Budget/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
   - url: /assets/images/projects/Bodega Budget/4.jpg
     image_path: /assets/images/projects/Bodega Budget/4.jpg
-    alt: Screen Shot D
+    alt: Screenshot D
   - url: /assets/images/projects/Bodega Budget/5.jpg
     image_path: /assets/images/projects/Bodega Budget/5.jpg
-    alt: Screen Shot E
+    alt: Screenshot E
   - url: /assets/images/projects/Bodega Budget/6.jpg
     image_path: /assets/images/projects/Bodega Budget/6.jpg
-    alt: Screen Shot F
+    alt: Screenshot F
   - url: /assets/images/projects/Bodega Budget/7.jpg
     image_path: /assets/images/projects/Bodega Budget/7.jpg
-    alt: Screen Shot G
+    alt: Screenshot G
   - url: /assets/images/projects/Bodega Budget/8.jpg
     image_path: /assets/images/projects/Bodega Budget/8.jpg
-    alt: Screen Shot H
+    alt: Screenshot H
   - url: /assets/images/projects/Bodega Budget/9.jpg
     image_path: /assets/images/projects/Bodega Budget/9.jpg
-    alt: Screen Shot I
+    alt: Screenshot I
 
 roles: |-
   ### Designer
@@ -80,7 +80,7 @@ links:
 # Extra content below this front matter appears after Roles.
 ---
 
-We are team Interest Curve, a group of graduate students from Carnegie Mellon University’s Entertainment Technology Center, working on a client project called Bodega Budget with Syclus. The project aims at educating teens in the African-American community about finance and budgeting, to facilitate upwards mobility in future generations.
+We are team Interest Curve, a group of graduate students from Carnegie Mellon University’s Entertainment Technology Center, working on a client project called Bodega Budget with Syclus. The project aims at educating teens in the African-American community about finance and budgeting, to facilitate upward mobility in future generations.
 
 Bodega Budget is a roguelike experience designed to introduce teens to fundamental financial concepts such as budgeting, saving, and investing. Through gameplay, players engage with personal finance in a hands-on, experiential way.
 

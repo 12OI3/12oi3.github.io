@@ -1,13 +1,14 @@
 ---
+skills: ["Technical Game Design","Tools","UI/UX"]
 highlight: true
 projects:
    - 2025-09-FOLDward
    - 2025-10-MICDROP
    - 2025-10-This Planet Sucks
    - 2025-11-BEAT-Shojo
-title: "Building Virtual World"
+title: How I became the only one to have all 4 games attending the CMU ETC Festival
 excerpt: >
-   My crazy first semester in CMU ETC
+   Building Virtual Worlds
 published: true 
 time: 2025-12-16
 ---
@@ -21,9 +22,9 @@ After long consideration, I decided to fly to the US for the first time in my li
 I just wanted to meet more people and make connections.
 These are things I had little access to during my undergraduate years, and I am really excited to see what will happen.
 
-## About Building Virtual World (And My Goal)
+## About Building Virtual Worlds (And My Goal)
 
-Building Virtual World is CMU ETC’s signature course, where faculty randomly group us, assign us themes, and let us make something within one to two weeks.
+Building Virtual Worlds is CMU ETC’s signature course, where faculty randomly group us, assign us themes, and let us make something within one to two weeks.
 When they were introducing the rules, they mentioned that your game would have a chance to get into the Festival and be showcased to the public.
 They also mentioned that last year there was one student who got all four rounds of games into the Festival, which is really rare.
 
@@ -33,7 +34,7 @@ I knew it would be extremely hard work for me, but sadly, I am just such a compe
 
 ## FOLDward (Round 1)
 
-During round 1, I was finding my place in how I should work with others.
+During round 1, I was finding my place and figuring out how to work with others.
 
 [![](/assets/images/projects/FOLDward/teaser.jpg)](/project/2025-09-FOLDward)
 {.text-center}
@@ -52,28 +53,39 @@ In the end, we made a really polished game, and I am really satisfied with our w
 
 That was our first round, and it did change my mindset from before.
 I also kind of realized how to cooperate with others and what my strengths are.
-I may not be good at thinking of a good idea from zero to one, but I can make other games better.
+I may not be good at coming up with a good idea from scratch, but I can make other games better.
+
+[FOLDward (Round 1)](/project/2025-09-FOLDward)
 
 ## MICDROP (Round 2)
 
 Then came round 2.
-After rethinking everything, the round 2 team was the closest to what I imagine my ideal development team would be.
-Everybody was active and responsive, which made it feel like a breeze to work with even though two of the members were inexperienced.
+After rethinking everything, I found that the round 2 team was the closest to what I imagined my ideal development team would be.
+Everybody was active and responsive, which made working together feel like a breeze even though two of the members were inexperienced.
 
 [![](/assets/images/projects/MICDROP/teaser.jpg)](/project/2025-10-MICDROP)
 {.text-center}
 
-This round, we were demanded to make a VR experience, plus we had to consider naive guests and indirect control.
-Naive guests means that guests are new to VR, and indirect control means that we cannot tell guests exactly what to do.
-VR is already hard to develop, and adding these two extra constraints made it the most challenging round among all to design.
+This round, we were required to make a VR experience, plus we had to consider naive guests and indirect control.
+“Naive guests” means that guests are new to VR, and indirect control means that we cannot tell guests exactly what to do.
+VR experiences are already hard to develop, and adding these two extra constraints made it the most challenging round to design.
 We almost freaked out, and I brought out every brain cell I had to refine everything again and again.
+
+![](/assets/images/devlogs/Building Virtual World/IndirectControl.jpg)
+
+For example, this is the start of the game.
+The title "MicDrop" suggests what players should do, and there is a microphone in the distance.
+Only the microphone is lit, suggesting that players should not walk forward to grab it.
+Thus, players only need to figure out how to "distance grab" it and drop it on the floor.
+Then the game starts, asking players to distance grab items and throw them.
+We managed to use limited options to let guests learn what to do while keeping the immersive experience.
 
 ![](/assets/images/devlogs/Building Virtual World/team_photo_2.jpg)
 {.text-center}
 
-Thankfully, we had a pretty good design that fit the theme we were given, and we came up with a crazy ending that made the narrative of the game really deep.
-And it was just a three-minute experience.
-We managed to design everything perfectly, using limited options to let guests learn what to do while keeping the immersive experience.
+Thankfully, we not only had a pretty good design that fit the theme we were given, but also came up with a crazy ending that made the narrative of the game really deep in just a three-minute experience.
+
+[MICDROP (Round 2)](/project/2025-10-MICDROP)
 
 ## This Planet Sucks (Round 3)
 
@@ -103,6 +115,8 @@ But if I were to rank all four BVW games, this would be the last one, and I wish
 I still have to state that our teammates all did their jobs, and it was a pleasure to work with them.
 It was just that the design did not feel quite right for me.
 
+[This Planet Sucks (Round 3)](/project/2025-10-This Planet Sucks)
+
 ## BEAT-Shojo (Round 4)
 
 [![](/assets/images/projects/BEAT-Shojo/teaser.jpg)](/project/2025-11-BEAT-Shojo)
@@ -118,12 +132,12 @@ We brainstormed and listed three factors we needed to consider:
 
 How do we attract guests to come?
 
-How do we let guests want to try?
+How do we make guests want to try it?
 
-How do we let guests want to replay?
+How do we make guests want to replay it?
 
 We thought of using microphone input as one of the key mechanics, allowing us to attract people through the loudness our game created.
-We analyzed that guests would want to try the game when they think they can do better, so a game that is easy to understand is important.
+We reasoned that guests would want to try the game when they think they can do better, so a game that is easy to understand is important.
 Additionally, if we want players to replay, we still need extra design depth.
 Thus, we concluded that we could make a Smash-like fighting game involving yelling into a microphone to launch attacks.
 Since it is Smash-like and uses microphone input, it would be easy to understand, and the competitive nature and deep strategy of fighting games would encourage replay.
@@ -137,6 +151,25 @@ We achieved what we planned and added even more extra elements to spice it up.
 The game itself was really deep, and our team did not feel bored while playtesting it.
 The completeness of the game definitely caught people’s attention, and I am proud of it.
 
+During the development, there were also two critical things I achieved:
+
+![](/assets/images/devlogs/Building Virtual World/R4_1.png)
+![](/assets/images/devlogs/Building Virtual World/R4_2.png)
+
+The first was the fighting game system. I created a state machine for characters and a ScriptableObject for all the parameters.
+As a fighting game enjoyer, I have a basic sense of how a fighting game should be implemented.
+Thus, the state machine contains all the possible states, with all possible transition effects needed.
+The ScriptableObject lets me adjust not only basic data like movement speed and jump height, but also the startup, active, and recovery frames for all actions, plus hurtbox and velocity changes.
+Because it is scriptable object, I can adjust the frame datas during playmode, and I only need to line up the animation with the frame dats after.
+
+[![](/assets/images/projects/BEAT-Shojo/3.jpg)](/project/2025-11-BEAT-Shojo)
+{.text-center}
+
+The second was the UI/UX. It had been two years since I worked on UI/UX for [Project Fusion](/project/2024-02-Project Fusion), and since I finished the base fighting game system in one week, I decided to challenge myself to create some dope UI/UX. With the help of my teammates, I did manage to create something really awesome.
+Since I am not an art major, I definitely couldn’t pull off something detailed and well-crafted in one week. Thus, the UI was designed using just basic shapes and colors, with dynamic animation to convey the feeling of the fight.
+
+[BEAT-Shojo (Round 4)](/project/2025-11-BEAT-Shojo)
+
 ## The Festival
 
 Yes, my goal.
@@ -144,11 +177,11 @@ The goal I set during the first week of the semester was to have all four rounds
 
 Well, I made it.
 
-I really surprised that I made it since there were so much interesting games that others made.
+I was really surprised that I made it, since others had made so many interesting games.
 
 I was the only person who had all four rounds get into the Festival, and it was definitely not easy.
 Preparing for all four rounds was indeed crazy, and I had to constantly run around checking on others since I was also a producer for all four rounds.
-Thanks to all my teammates who supported me, I was able to survive through that.
+Thanks to all my teammates who supported me, I was able to survive that.
 
 During the Festival, watching others play the games I participated in did make me happy.
 But at the same time, I knew that these four games I made were not the best games in the Festival.
@@ -162,7 +195,7 @@ Was it worth it?
 To be honest, I don’t know.
 
 During BVW, I was always thinking about what I should gain from this experience.
-I did met a lot of crazy people, worked with them.
+I did meet a lot of crazy people and work with them.
 I set a really crazy goal, and I achieved it.
 
 But what did it prove?
@@ -176,7 +209,7 @@ Maybe it was just because BVW suited my work environment, allowing me to generat
 When will I stop thinking about “maybe” and truly gain confidence? <br>
 I hope to find out in the future.
 
-But at least there were some facts I gained from BVW certainly:
+But at least I learned a few things for certain from BVW:
 
 I love game development. <br>
 I enjoy being a generalist game dev. <br>
@@ -184,9 +217,3 @@ I do want to be an indie game developer. <br>
 
 
 We'll see then.
-
-## Projects:
-* [FOLDward(Round 1)](/project/2025-09-FOLDward)
-* [MICDROP(Round 2)](/project/2025-10-MICDROP)
-* [This Planet Sucks(Round 3)](/project/2025-10-This Planet Sucks)
-* [BEAT-Shojo(Round 4)](/project/2025-11-BEAT-Shojo)

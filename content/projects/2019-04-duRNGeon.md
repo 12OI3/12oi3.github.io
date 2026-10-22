@@ -10,22 +10,22 @@ teaser: /assets/images/projects/duRNGeon/teaser.jpg
 title: duRNGeon
 
 tags:
-  - RougeLike
+  - Roguelike
   - AutoBattler
 
 hook: |
-  A dungeon crawler rogue-like game made by Unity if the player can control RNG.
+  A dungeon-crawling roguelike made with Unity in which the player can control RNG.
 
 gallery:
   - url: /assets/images/projects/duRNGeon/1.jpg
     image_path: /assets/images/projects/duRNGeon/1.jpg
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/duRNGeon/2.jpg
     image_path: /assets/images/projects/duRNGeon/2.jpg
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/duRNGeon/3.jpg
     image_path: /assets/images/projects/duRNGeon/3.jpg
-    alt: Screen Shot C
+    alt: Screenshot C
 
 roles: |-
   ### Technical Game Design
@@ -46,4 +46,4 @@ links: []
 # Extra content below this front matter appears after Roles.
 ---
 
-DuRNGeon is a dungeon crawler rogue-like game. You play as a hero venturing into a dungeon where everything is determined by RNG. However, you have received the blessing of a god, allowing you to control the RNG within the game. Therefore, you embark on a journey to save the Random Number God.
+DuRNGeon is a dungeon-crawling roguelike game. You play as a hero venturing into a dungeon where everything is determined by RNG. However, you have received the blessing of a god, allowing you to control the RNG within the game. Therefore, you embark on a journey to save the Random Number God.

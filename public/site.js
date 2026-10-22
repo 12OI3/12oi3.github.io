@@ -7,6 +7,7 @@ import { initLightbox } from './behaviors/lightbox.js';
 import { initComments } from './behaviors/comments.js';
 import { initProjectRoles } from './behaviors/project-roles.js';
 import { initProjectGallery } from './behaviors/project-gallery.js';
+import { initSectionNavigation } from './behaviors/section-navigation.js';
 
 initNavigation();
 initBackToTop();
@@ -16,3 +17,4 @@ initLightbox();
 initComments();
 initProjectRoles();
 initProjectGallery();
+initSectionNavigation();

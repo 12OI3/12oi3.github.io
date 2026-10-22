@@ -24,16 +24,16 @@ hook: >
 gallery:
   - url: /assets/images/projects/CreSpiritTalker/1.png
     image_path: /assets/images/projects/CreSpiritTalker/1.png
-    alt: Screen Shot A
+    alt: Screenshot A
   - url: /assets/images/projects/CreSpiritTalker/2.png
     image_path: /assets/images/projects/CreSpiritTalker/2.png
-    alt: Screen Shot B
+    alt: Screenshot B
   - url: /assets/images/projects/CreSpiritTalker/3.png
     image_path: /assets/images/projects/CreSpiritTalker/3.png
-    alt: Screen Shot C
+    alt: Screenshot C
   - url: /assets/images/projects/CreSpiritTalker/4.png
     image_path: /assets/images/projects/CreSpiritTalker/4.png
-    alt: Screen Shot D
+    alt: Screenshot D
 
 roles: |-
   ### Tool Programmer
@@ -58,7 +58,7 @@ links: []
 Whew, this is my first time creating a plugin tool—huge thanks to CreSpirit for giving me the opportunity! Developing a plugin is a completely different experience compared to making a game, and I’ve learned a great deal through this process. Not only did I gain insight into the mindset and development workflow required for tool creation, but I also picked up several Unity techniques I hadn’t used before. This tool is designed for a variety of use cases, from visual novel-style games to general dialogue scenes in other game genres.
 
 The most important feature of this project is the command system. Commands can be embedded directly into the dialogue using a special format. As the dialogue is read line by line, the system detects and executes these commands. They can handle everything from basic dialogue effects and object control to managing the flow of conversations—and more. 
-What’s even better is that developers can extend the system by inheriting the command class to create their own custom commands. This is especially powerful for implementing unique or complex behaviors. I have been also using this structure in the future, and eventually create an [Unity plugin](https://github.com/12OI3/Scriptable-Functions-Library).
+What’s even better is that developers can extend the system by inheriting the command class to create their own custom commands. This is especially powerful for implementing unique or complex behaviors. I continued using this structure in later projects and eventually created a [Unity plugin](https://github.com/12OI3/Scriptable-Functions-Library).
 
 Unfortunately, since this is a commissioned outsourcing project, I’m not able to release it publicly. 
 However, if you’re curious to learn more, feel free to check out the devlogs!
