@@ -1,5 +1,5 @@
 ---
-title: "I never thought saving could cause so many problems until now..."
+title: "CreSpiritTalker Devlog #2"
 
 time: "2025-06-28"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: true
 
-excerpt: |
-  CreSpiritTalker Devlog #2
+excerpt: |-
+  I never thought saving could cause so many problems until now...
 
 skills:
   - "Tools"

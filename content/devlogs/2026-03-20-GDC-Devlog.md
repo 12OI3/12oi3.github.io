@@ -1,5 +1,5 @@
 ---
-title: "Sigh..."
+title: "GDC 2026"
 
 time: "2026-03-20"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  GDC 2026
+excerpt: |-
+  Sigh...
 
 skills:
   - "Technical Game Design"

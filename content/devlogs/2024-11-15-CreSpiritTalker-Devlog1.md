@@ -1,5 +1,5 @@
 ---
-title: "I made a visual novel tool that supports infinite possibilities."
+title: "CreSpiritTalker Devlog #1"
 
 time: "2024-11-15"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  CreSpiritTalker Devlog #1
+excerpt: |-
+  I made a visual novel tool that supports infinite possibilities.
 
 skills:
   - "Tools"

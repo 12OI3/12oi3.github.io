@@ -1,7 +1,7 @@
 ---
-title: "The first time I got paid for making something, I made a mini game."
+title: "Last Command: B-Side Devlog #1"
 
-time: "2025-11-05"
+time: "2024-11-05"
 
 published: false
 
@@ -10,7 +10,7 @@ comments: true
 highlight: true
 
 excerpt: |-
-  Last Command: B-Side Devlog #1
+  You should not use MVC into game UIs.
 
 skills:
   - "Technical Game Design"

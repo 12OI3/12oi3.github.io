@@ -1,5 +1,5 @@
 ---
-title: "How I became the only one to have all 4 games attending the CMU ETC Festival"
+title: "Building Virtual Worlds"
 
 time: "2025-12-16"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: true
 
-excerpt: |
-  Building Virtual Worlds
+excerpt: |-
+  How I became the only one to have all 4 games attending the CMU ETC Festival
 
 skills:
   - "Technical Game Design"

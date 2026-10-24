@@ -1,5 +1,5 @@
 ---
-title: "I prototype so many time for two months, and they all failed."
+title: "You Hive My Word Devlog #1"
 
 time: "2026-08-05"
 
@@ -10,7 +10,7 @@ comments: true
 highlight: true
 
 excerpt: |-
-  You Hive My Word Devlog #1
+  I prototype so many time for two months, and they all failed.
 
 skills:
   - "Technical Game Design"

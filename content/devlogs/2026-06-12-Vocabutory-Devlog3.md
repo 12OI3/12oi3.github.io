@@ -1,5 +1,5 @@
 ---
-title: "This will be the last devlog for Vocabutory."
+title: "Vocabutory Devlog #3"
 
 time: "2026-06-12"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: true
 
-excerpt: |
-  Vocabutory Devlog #3
+excerpt: |-
+  This will be the last devlog for Vocabutory.
 
 skills:
   - "Technical Game Design"

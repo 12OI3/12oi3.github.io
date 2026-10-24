@@ -1,5 +1,5 @@
 ---
-title: "I create the best system in my 8 years game dev life."
+title: "What Does This Sound Like? Devlog #1"
 
 time: "2026-10-22"
 
@@ -10,7 +10,7 @@ comments: true
 highlight: true
 
 excerpt: |-
-  What Does This Sound Like? Devlog #1
+  I create the best system in my 8 years game dev life.
 
 skills:
   - "Technical Game Design"

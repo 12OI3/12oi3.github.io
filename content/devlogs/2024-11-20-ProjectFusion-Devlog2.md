@@ -1,5 +1,5 @@
 ---
-title: "How I recreated Unreal’s Gameplay Ability System in Unity in order to revive somebody (and failed)."
+title: "Project Fusion Devlog #2"
 
 time: "2024-11-20"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  Project Fusion Devlog #2
+excerpt: |-
+  How I recreated Unreal’s Gameplay Ability System in Unity in order to revive somebody (and failed).
 
 skills:
   - "Tools"

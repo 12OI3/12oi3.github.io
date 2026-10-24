@@ -1,5 +1,5 @@
 ---
-title: "I made prototypes about words, and I gave up."
+title: "Vocabutory Devlog #1"
 
 time: "2025-07-06"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  Vocabutory Devlog #1
+excerpt: |-
+  I made prototypes about words, and I gave up.
 
 skills:
   - "Technical Game Design"

@@ -1,5 +1,5 @@
 ---
-title: "Gladly, we spent a whole year for nothing!"
+title: "Project Fusion Devlog #1"
 
 time: "2023-11-09"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  Project Fusion Devlog #1
+excerpt: |-
+  Gladly, we spent a whole year for nothing!
 
 skills:
   - "Technical Game Design"

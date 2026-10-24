@@ -1,5 +1,5 @@
 ---
-title: "Guess what? I am back!"
+title: "Vocabutory Devlog #2"
 
 time: "2025-07-25"
 
@@ -9,8 +9,8 @@ comments: true
 
 highlight: false
 
-excerpt: |
-  Vocabutory Devlog #2
+excerpt: |-
+  Guess what? I am back!
 
 skills:
   - "Technical Game Design"
