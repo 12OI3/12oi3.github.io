@@ -38,7 +38,7 @@ export function feature(data, name, type, renderMarkdown) {
       ${renderMarkdown(item.excerpt || '', data)}
       ${type === 'project' ? projectCardTags(item.tags) : ''}
       ${type === 'project' && item.hook ? `<div class="project-description">${renderMarkdown(item.hook, data)}</div>` : ''}
-      ${type === 'project' && item.latestDevlog ? `<div class="feature-devlog"><span class="feature-devlog-label">Featured devlog</span><a href="${escapeHtml(localUrl(item.latestDevlog.url))}">${escapeHtml(item.latestDevlog.title)} <span aria-hidden="true">↗</span></a></div>` : ''}
+      ${type === 'project' && item.latestDevlog ? `<div class="feature-devlog"><span class="feature-devlog-label">Featured devlog</span><a href="${escapeHtml(localUrl(item.latestDevlog.url))}">${escapeHtml(item.latestDevlog.excerpt || item.latestDevlog.title)} <span aria-hidden="true">↗</span></a></div>` : ''}
       ${item.url && type !== 'project' ? `<a class="button" href="${escapeHtml(localUrl(item.url))}">${escapeHtml(item.btn_label || 'More')}</a>` : ''}</div>
     </article>`).join('')}</section>${type === 'project' ? `<p class="home-project-empty" role="status"${data[name].some(item => item.group === data.selectedGroup) ? ' hidden' : ''}>No projects selected for this tag yet.</p>` : ''}`;
 }

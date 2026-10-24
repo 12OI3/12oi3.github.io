@@ -39,8 +39,10 @@ export function documentPage(state, doc) {
   const sectionHeadings = [];
   const bodyHtml = doc.type === 'project' ? '' : renderMarkdown(doc.body, doc.data, { sectionHeadings });
   const sectionNav = ['devlog', 'article'].includes(doc.type) ? sectionNavigation(sectionHeadings) : '';
+  const excerptHtml = doc.type === 'devlog' && plainText(doc.data.excerpt || '').trim()
+    ? `<div class="document-excerpt">${renderMarkdown(doc.data.excerpt)}</div>` : '';
   const content = doc.type === 'project' ? projectDetail(doc, { featuredDevlogHtml, linkedDevlogsHtml }) : `<div class="document-layout ${hasSidebar ? 'with-sidebar' : ''}">
-    <article class="document"><header class="document-heading"><h1>${e(doc.data.title)}</h1>${linkedProjectHtml}${devlogSkills(doc)}</header><div class="reading-layout ${sectionNav ? 'has-section-navigation' : ''}"><div class="reading-content"><div class="prose">${bodyHtml}</div>${linkedProjectCards(state, doc)}${commentsHtml}</div>${sectionNav}</div></article>
+    <article class="document"><header class="document-heading${excerptHtml ? ' has-excerpt' : ''}"><h1>${e(doc.data.title)}</h1>${excerptHtml}${linkedProjectHtml}${devlogSkills(doc)}</header><div class="reading-layout ${sectionNav ? 'has-section-navigation' : ''}"><div class="reading-content"><div class="prose">${bodyHtml}</div>${linkedProjectCards(state, doc)}${commentsHtml}</div>${sectionNav}</div></article>
     ${hasSidebar ? `<aside class="project-sidebar" aria-label="Project details">${sidebar.map(item => `<section>${item.title ? `<h2>${e(item.title)}</h2>` : ''}${item.text ? renderMarkdown(item.text) : ''}</section>`).join('')}${linkedDevlogsHtml}</aside>` : ''}
     </div>`;
   return layout(`<div class="document-top">${doc.type !== 'project' ? `<span class="eyebrow">${e(displayDate(doc.data.time))} · ${readingTime} min read</span>` : ''}${navigation}</div>${content}`, {

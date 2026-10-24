@@ -70,18 +70,20 @@ test('home cards show descriptions and the newest highlighted visible devlog, wi
   const { directory, state, save } = await fixture(t);
   const [project, withoutDevlogs] = state.collections.project.filter(doc => !doc.linkedDevlogs.length);
   await save({ Tools: [project.slug, withoutDevlogs.slug] });
-  for (const [name, date, extra] of [['Older', '2098-01-01', 'highlight: true'], ['Latest & best', '2099-01-01', 'highlight: true'], ['Hidden', '2099-02-01', 'highlight: true\nhidden: true'], ['Draft', '2099-03-01', 'highlight: true\npublished: false'], ['Not featured', '2099-04-01', 'highlight: false'], ['Default', '2099-05-01', '']]) {
+  for (const [name, date, extra] of [['Older', '2098-01-01', 'highlight: true'], ['Latest & best', '2099-01-01', 'highlight: true\nexcerpt: A **short** update & overview.'], ['Hidden', '2099-02-01', 'highlight: true\nhidden: true'], ['Draft', '2099-03-01', 'highlight: true\npublished: false'], ['Not featured', '2099-04-01', 'highlight: false'], ['Default', '2099-05-01', '']]) {
     await writeFile(path.join(directory, 'devlogs', `${date}-Test.md`), `---\ntitle: ${name}\ntime: ${date}\nproject: ${project.slug}\n${extra}\n---\nBody`);
   }
   const updated = await loadContent(directory);
   const $ = load(homePage(updated));
   const card = $('#home-projects article:not([hidden])').first();
   assert.equal(card.find('.feature-project-link').attr('href'), project.url);
-  assert.equal(card.find('.feature-devlog a').text(), 'Latest & best ↗');
+  assert.equal(card.find('.feature-devlog a').text(), 'A short update & overview. ↗');
   assert.equal(card.find('.feature-devlog a').attr('href'), '/devlog/2099-01-01-Test/');
   assert.equal(card.find('.project-description').text().trim(), project.data.hook.trim());
   assert.deepEqual(card.find('.project-card-tags a').map((_, el) => $(el).text()).get(), project.data.tags);
   assert.equal($('#home-projects article').filter((_, el) => $(el).find('.feature-project-link').attr('href') === withoutDevlogs.url).find('.feature-devlog').length, 0);
+  updated.collections.devlog.find(doc => doc.slug === '2099-01-01-Test').data.excerpt = '';
+  assert.equal(load(homePage(updated))('#home-projects article:not([hidden])').first().find('.feature-devlog a').text(), 'Latest & best ↗');
   for (const devlog of updated.collections.devlog) devlog.data.highlight = false;
   assert.equal(load(homePage(updated))('.feature-devlog').length, 0);
 });

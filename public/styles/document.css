@@ -73,6 +73,22 @@ a.document-nav-link:hover { border-color:var(--gold); background:var(--panel); }
   line-height:1.12;
 }
 
+.document-heading.has-excerpt h1 {
+  margin-bottom:16px;
+}
+
+.document-excerpt {
+  max-width:70ch;
+  margin-bottom:28px;
+  color:var(--muted);
+  font-size:clamp(1.05rem,1.8vw,1.25rem);
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+
+.document-excerpt > :first-child { margin-top:0; }
+.document-excerpt > :last-child { margin-bottom:0; }
+
 .document {
   min-width:0;
 }

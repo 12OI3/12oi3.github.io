@@ -10,7 +10,7 @@ export function homePage(state) {
   const card = (doc, group) => {
     const devlog = highlightedDevlog(doc);
     return { title: doc.data.title, url: doc.url, image_path: doc.data.teaser, tags: doc.data.tags, hook: doc.data.hook, group,
-      latestDevlog: devlog ? { title: devlog.data.title, url: devlog.url } : null };
+      latestDevlog: devlog ? { title: devlog.data.title, excerpt: plainText(devlog.data.excerpt || '').trim(), url: devlog.url } : null };
   };
   const projects = groups.flatMap(group => group.projects.map(doc => card(doc, group.tag)));
   const intro = page.data.intro.map(item => ({ ...item, specialties: groups.map(group => group.tag) }));

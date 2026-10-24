@@ -44,7 +44,9 @@ export function renderMarkdown(source, data = {}, env = {}) {
 }
 
 export function plainText(source) {
-  return renderMarkdown(source).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  return renderMarkdown(source).replace(/<[^>]*>/g, ' ')
+    .replace(/&(?:#x[\da-f]+|#\d+|[a-z][\da-z]+);/gi, entity => md.utils.unescapeAll(entity))
+    .replace(/\s+/g, ' ').trim();
 }
 
 // Split on actual Markdown headings, so headings inside code blocks stay intact.
