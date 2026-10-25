@@ -21,7 +21,7 @@ I originally planned to play 56 demos, but I only got through some of them. Here
 - Moldwasher
 - Order of the Sinking Star
 - Onimusha: Way of the Sword
-- [**Map Map - A Game About Maps**](#map-map---a-game-about-maps)
+- [**Map Map - A Game About Maps**](#map-map-a-game-about-maps)
 - Legionbound
 - Selfie Worm
 - [**Batomon Showdown**](#batomon-showdown)

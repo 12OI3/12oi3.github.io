@@ -48,7 +48,7 @@ A strong theme, appealing aesthetics, and a clear UI were all essential.
 
 During playtesting, one idea caught my attention: the Infinite Monkey Theory. For those unfamiliar with it, the theory suggests that given an infinite number of monkeys and an infinite amount of time, they could eventually recreate the complete works of Shakespeare. I immediately thought this theme would fit my game perfectly, so I quickly built a prototype around it.
 
-[![](/assets/images/devlogs/Vocabulary-3/Theme1.png)]()
+[![](/assets/images/devlogs/Vocabulary-3/Theme1.png)](/assets/images/devlogs/Vocabulary-3/Theme1.png)
 {.text-center}
 
 It looked promising, but I still felt that something fundamental was missing. As I mentioned earlier, I needed solutions for both progression and theme. While experimenting with different themes, I also wanted to explore alternative gameplay directions.
@@ -57,7 +57,7 @@ It looked promising, but I still felt that something fundamental was missing. As
 
 Then Bongo Cat came to mind. With desktop companions becoming increasingly popular during 2025, I wondered whether that concept could work with my game. Since the characters would already be typing, why not turn them into productivity companions? While you worked, your companion would work as well, generating letters in the background.
 
-[![](/assets/images/devlogs/Vocabulary-3/Theme2.png)]()
+[![](/assets/images/devlogs/Vocabulary-3/Theme2.png)](/assets/images/devlogs/Vocabulary-3/Theme2.png)
 {.text-center}
 
 In this version, I experimented with a mouse theme and gave it the pun title "Why Do You Need a Keyboard When You Have a Mouse?" After finishing the prototype and testing it, I realized this direction wasn't aligned with my vision. 
@@ -70,7 +70,7 @@ Even after the previous prototypes, I kept asking myself: "How can I introduce m
 
 It was a terrible idea.
 
-[![](/assets/images/devlogs/Vocabulary-3/Theme3.png)]()
+[![](/assets/images/devlogs/Vocabulary-3/Theme3.png)](/assets/images/devlogs/Vocabulary-3/Theme3.png)
 {.text-center}
 
 I rebuilt the entire game around a bee theme, mainly because I could call the workers "spelling bees." I also came up with the title "You Hive My Word," which I loved because it not only emphasized the bee theme but also hinted at the game's wordplay. But most importantly, the prototype featured a hexagonal relationship system. Players could assign tiles as bee rooms, factory rooms, or order rooms.

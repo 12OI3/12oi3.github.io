@@ -56,7 +56,7 @@ links:
 
 One Day More is a narrative puzzle game that was created during thatgamejam #01, with the picture below as its theme.
 
-[![](/assets/images/projects/One Day More/sp.jpg)]()
+[![](/assets/images/projects/One Day More/sp.jpg)](/assets/images/projects/One Day More/sp.jpg)
 {.text-center}
 
 In our game, you play as a ghost who has to help lead a little girl through multiple tasks by possessing different objects. The game has four different scenes, and you will have to possess objects in order to trigger events. After you successfully possess an object, the scene will shift. 

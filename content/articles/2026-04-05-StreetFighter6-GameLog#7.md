@@ -86,13 +86,13 @@ As you might expect, the music is played dynamically during the fight.
 
 This video demonstrates how a match works in Street Fighter 6.
 
-[![](/assets/images/articles/GameLog7/M1.jpg)]()
+[![](/assets/images/articles/GameLog7/M1.jpg)](/assets/images/articles/GameLog7/M1.jpg)
 {.text-center}
 
 At the start of each match, the game plays the opening segment of the character’s theme.
 After a few seconds, the fight begins.
 
-[![](/assets/images/articles/GameLog7/M2.jpg)]()
+[![](/assets/images/articles/GameLog7/M2.jpg)](/assets/images/articles/GameLog7/M2.jpg)
 {.text-center}
 
 Matches are typically Best-of-Three (FT2).
@@ -101,7 +101,7 @@ This means up to three rounds, each corresponding to a different section of the 
 This structure is extremely hype, since each section escalates the intensity.
 For example, in this match, the second section introduces additional guitar riffs, and the third section adds electronic layers and an alternate vocal performance.
 
-[![](/assets/images/articles/GameLog7/M3.jpg)]()
+[![](/assets/images/articles/GameLog7/M3.jpg)](/assets/images/articles/GameLog7/M3.jpg)
 {.text-center}
 
 At any moment, a player can enter Critical Health.
@@ -110,14 +110,14 @@ When this happens, the music switches to the critical health segment.
 This section creates a strong sense of danger.
 It not only signals a last chance for the losing player, but also warns the leading player not to relax.
 
-[![](/assets/images/articles/GameLog7/M4.jpg)]()
+[![](/assets/images/articles/GameLog7/M4.jpg)](/assets/images/articles/GameLog7/M4.jpg)
 {.text-center}
 
 At the end of a round—if the match isn’t over—the music transitions into the bridge section.
 This moment is important.
 It gives players a brief emotional reset, allowing them to rethink their strategy.
 
-[![](/assets/images/articles/GameLog7/M5.jpg)]()
+[![](/assets/images/articles/GameLog7/M5.jpg)](/assets/images/articles/GameLog7/M5.jpg)
 {.text-center}
 
 This is a brilliant use of dynamic music.
