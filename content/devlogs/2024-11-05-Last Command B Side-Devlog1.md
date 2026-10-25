@@ -3,7 +3,7 @@ title: "Last Command: B-Side Devlog #1"
 
 time: "2024-11-05"
 
-published: false
+published: true
 
 comments: true
 
