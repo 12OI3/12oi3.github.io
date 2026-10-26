@@ -122,8 +122,8 @@ test('project headline features only the newest eligible highlighted linked devl
   assert.equal($('.project-headline-devlog').length, 1);
   assert.equal($('.project-detail-layout').children().first().hasClass('project-headline-devlog'), true, 'Featured devlog leads the full-width project layout');
   assert.equal($('.project-headline-devlog a').attr('href'), featured.url);
-  assert.equal($('.project-headline-devlog h2').text(), 'Design & <Iteration>');
-  assert.equal($('.headline-devlog-excerpt').text(), 'A closer look at the design.');
+  assert.equal($('.project-headline-devlog h2').text(), 'A closer look at the design.');
+  assert.equal($('.headline-devlog-excerpt').text(), 'Design & <Iteration>');
   assert.deepEqual($('.project-sidebar .linked-devlogs a').map((_, el) => $(el).attr('href')).get(), project.linkedDevlogs.map(doc => doc.url));
   assert.equal(load(documentPage(state, featured))('.project-headline-devlog').length, 0);
   for (const devlog of project.linkedDevlogs) devlog.data.highlight = false;

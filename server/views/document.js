@@ -27,9 +27,10 @@ export function documentPage(state, doc) {
   const commentUrl = new URL(doc.url, state.site.url).href;
   const linkedProjectHtml = doc.linkedProjects?.length ? `<p class="linked-project">${doc.linkedProjects.length === 1 ? 'Project' : 'Projects'}: ${doc.linkedProjects.map(project => `<a href="${e(project.url)}">${e(project.title)}</a>`).join(' <span aria-hidden="true">·</span> ')}</p>` : '';
   const featuredDevlog = doc.type === 'project' ? highlightedDevlog(doc) : null;
+  const featuredExcerpt = featuredDevlog ? plainText(featuredDevlog.data.excerpt || '').trim() : '';
   const featuredDevlogHtml = featuredDevlog ? `<section class="project-headline-devlog" aria-labelledby="headline-devlog-title">
-    <div><p class="eyebrow">Featured devlog</p><h2 id="headline-devlog-title"><a href="${e(localUrl(featuredDevlog.url))}">${e(featuredDevlog.data.title)}</a></h2>
-    ${featuredDevlog.data.excerpt ? `<p class="headline-devlog-excerpt">${e(plainText(featuredDevlog.data.excerpt))}</p>` : ''}</div>
+    <div><p class="eyebrow">Featured devlog</p><h2 id="headline-devlog-title"><a href="${e(localUrl(featuredDevlog.url))}">${e(featuredExcerpt || featuredDevlog.data.title)}</a></h2>
+    ${featuredExcerpt ? `<p class="headline-devlog-excerpt">${e(featuredDevlog.data.title)}</p>` : ''}</div>
     <span class="headline-devlog-cta" aria-hidden="true">Read devlog <span>↗</span></span>
   </section>` : '';
   const linkedDevlogsHtml = doc.linkedDevlogs?.length ? `<section class="linked-devlogs" aria-labelledby="linked-devlogs-heading">
