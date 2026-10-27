@@ -636,6 +636,14 @@ a.document-nav-link:hover { border-color:var(--gold); background:var(--panel); }
   vertical-align:middle;
 }
 
+.prose img.image-compact {
+  display:block;
+  width:auto;
+  height:auto;
+  max-height:min(480px, 70vh);
+  margin-inline:auto;
+}
+
 .prose iframe {
   display:block;
   max-width:100%;
