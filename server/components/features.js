@@ -29,7 +29,7 @@ export function feature(data, name, type, renderMarkdown) {
         </div>
         ${item.tagline ? `<div class="intro-tagline">${renderMarkdown(item.tagline, data)}</div>` : ''}
       </article>
-      ${item.specialties?.length ? `<div class="intro-specialties" role="group" aria-label="Choose project group">${item.specialties.map(specialty => `<button class="specialty-button" type="button" data-tag="${escapeHtml(specialty)}" aria-controls="home-projects" aria-pressed="${specialty === data.selectedGroup}">${escapeHtml(specialty)}</button>`).join('')}</div>` : ''}`).join('')}</section>`;
+      ${item.specialties?.length ? `<div class="intro-specialties" role="group" aria-label="Explore projects">${item.specialties.map(specialty => `<button class="specialty-button" type="button" data-tag="${escapeHtml(specialty)}" aria-controls="home-projects" aria-pressed="${specialty === data.selectedGroup}">${escapeHtml(specialty)}</button>`).join('')}<a class="specialty-more" href="/projects.html">More...</a></div>` : ''}`).join('')}</section>`;
   }
   return `<section class="feature-row feature-${escapeHtml(type)}"${type === 'project' ? ' id="home-projects" aria-label="Selected projects"' : ''}>${data[name].map(item => `
     <article class="feature-item"${type === 'project' ? ` data-home-group="${escapeHtml(item.group || '')}"${item.group !== data.selectedGroup ? ' hidden' : ''}` : ''}>
