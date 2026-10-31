@@ -851,7 +851,8 @@ a.document-nav-link:hover { border-color:var(--gold); background:var(--panel); }
   }
 
   .project-detail-layout .project-sidebar .project-skills,
-  .project-detail-layout .project-sidebar .project-sidebar-tags {
+  .project-detail-layout .project-sidebar .project-sidebar-tags,
+  .project-detail-layout .project-sidebar .linked-devlogs {
     grid-column:1/-1;
   }
 
@@ -1059,7 +1060,7 @@ a.document-nav-link:hover { border-color:var(--gold); background:var(--panel); }
 .project-media-controls button:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
 .project-media-status { margin:6px 0 0; color:var(--muted); font-size:.75rem; }
 @media(max-width:650px) {
-  .project-detail-layout .project-sidebar { padding:24px 0 0; }
+  .project-detail-layout .project-sidebar { padding:24px 0; }
   .project-media-thumbnail { flex-basis:108px; }
   .project-media-controls { gap:6px; }
   .project-media-arrow { min-width:28px; height:44px; }
