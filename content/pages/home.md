@@ -5,7 +5,7 @@ intro:
   - image_path: "favicon.png"
     title: "ROB / KUANYEN HUANG"
     role: "Technical game designer."
-    excerpt: "Carnegie Mellon University Entertainment Technology Center graduate student with 8 years of game development experience.\n"
+    excerpt: "...with 8 years of experience across independent, academic, and commercial games. Specializes in Unity/C#, gameplay prototyping, systems design, and UI/UX design and implementation.\n"
     actions:
       - label: "Resume"
         url: "/assets/Huang_KuanYen_Resume.pdf"
