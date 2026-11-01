@@ -35,7 +35,8 @@ test('homepage defaults to Technical Game Design and preserves project order', a
   assert.equal($('#home-projects article[hidden]').length, 3);
   assert.deepEqual($('.specialty-button').map((_, el) => $(el).text()).get(), ['Tools', 'Technical Game Design', 'UI/UX']);
   assert.equal($('.specialty-button[aria-pressed="true"]').text(), 'Technical Game Design');
-  assert.equal($('.home-content a[href="/projects.html"]').length, 0);
+  assert.equal($('.intro-specialties > .specialty-button:last-of-type + a').text(), 'More...');
+  assert.equal($('.intro-specialties > .specialty-more').attr('href'), '/projects.html');
   assert.ok($('#home-projects .project-description').length > 0);
   assert.ok($('#home-projects .project-card-tags').length > 0);
   assert.equal(staticPages(updated).get('index.html'), html);
